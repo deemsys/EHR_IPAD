@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5969DF17FF14F100015709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5969DE17FF14F100015709 /* libsqlite3.dylib */; };
+		0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D0F0817FEA19B00E93F81 /* LoginViewController.m */; };
+		0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */; };
+		0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */; };
 		0DCD15D617FD4F5200748DD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
 		0DCD15D817FD4F5200748DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
 		0DCD15DA17FD4F5200748DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D917FD4F5200748DD7 /* UIKit.framework */; };
@@ -34,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5969DE17FF14F100015709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0D9D0F0717FEA19B00E93F81 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0D9D0F0817FEA19B00E93F81 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipadx2x.png"; sourceTree = "<group>"; };
 		0DCD15D217FD4F5200748DD7 /* EHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCD15D517FD4F5200748DD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5969DF17FF14F100015709 /* libsqlite3.dylib in Frameworks */,
 				0DCD15D817FD4F5200748DD7 /* CoreGraphics.framework in Frameworks */,
 				0DCD15DA17FD4F5200748DD7 /* UIKit.framework in Frameworks */,
 				0DCD15D617FD4F5200748DD7 /* Foundation.framework in Frameworks */,
@@ -79,9 +89,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5969DD17FF0ACB00015709 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		0D9D0EAD17FDAD1B00E93F81 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */,
+				0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0D9D0F0617FEA14600E93F81 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D0F0717FEA19B00E93F81 /* LoginViewController.h */,
+				0D9D0F0817FEA19B00E93F81 /* LoginViewController.m */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D5969DD17FF0ACB00015709 /* Register */,
+				0D9D0F0617FEA14600E93F81 /* LoginScreen */,
+				0D9D0EAD17FDAD1B00E93F81 /* Images */,
 				0DCD15DB17FD4F5200748DD7 /* EHR */,
 				0DCD15FA17FD4F5200748DD7 /* EHRTests */,
 				0DCD15D417FD4F5200748DD7 /* Frameworks */,
@@ -101,6 +139,7 @@
 		0DCD15D417FD4F5200748DD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D5969DE17FF14F100015709 /* libsqlite3.dylib */,
 				0DCD15D517FD4F5200748DD7 /* Foundation.framework */,
 				0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */,
 				0DCD15D917FD4F5200748DD7 /* UIKit.framework */,
@@ -232,9 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */,
 				0DCD15EE17FD4F5200748DD7 /* Images.xcassets in Resources */,
 				0DCD15E017FD4F5200748DD7 /* InfoPlist.strings in Resources */,
 				0DCD15E917FD4F5200748DD7 /* Main.storyboard in Resources */,
+				0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
 				0DCD15E217FD4F5200748DD7 /* main.m in Sources */,
 				0DCD15EC17FD4F5200748DD7 /* ViewAppViewController.m in Sources */,
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
@@ -468,6 +510,7 @@
 				0DCD160617FD4F5200748DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DCD160717FD4F5200748DD7 /* Build configuration list for PBXNativeTarget "EHRTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +519,7 @@
 				0DCD160917FD4F5200748DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

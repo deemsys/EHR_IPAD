@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */; };
+		0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542B181169C200BDAAB9 /* Patient3ViewController.m */; };
+		0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */; };
+		0D155432181169E800BDAAB9 /* Patient2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D155431181169E800BDAAB9 /* Patient2ViewController.m */; };
+		0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15543518116F4B00BDAAB9 /* WorkaccidentViewController.m */; };
+		0D15543918116F5700BDAAB9 /* Workaccident2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15543818116F5700BDAAB9 /* Workaccident2ViewController.m */; };
 		0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC00180EDD0400E38505 /* hardshipViewController.m */; };
 		0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC04180EDF0100E38505 /* noticeandrequestViewController.m */; };
 		0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC08180EDF1800E38505 /* HippaViewController.m */; };
@@ -83,6 +88,16 @@
 /* Begin PBXFileReference section */
 		0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insuranceverifyViewController.h; sourceTree = "<group>"; };
 		0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insuranceverifyViewController.m; sourceTree = "<group>"; };
+		0D15542A181169BB00BDAAB9 /* Patient3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient3ViewController.h; sourceTree = "<group>"; };
+		0D15542B181169C200BDAAB9 /* Patient3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient3ViewController.m; sourceTree = "<group>"; };
+		0D15542D181169C800BDAAB9 /* PatientInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientInfoViewController.h; sourceTree = "<group>"; };
+		0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientInfoViewController.m; sourceTree = "<group>"; };
+		0D155430181169E400BDAAB9 /* Patient2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient2ViewController.h; sourceTree = "<group>"; };
+		0D155431181169E800BDAAB9 /* Patient2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient2ViewController.m; sourceTree = "<group>"; };
+		0D15543418116F4400BDAAB9 /* WorkaccidentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkaccidentViewController.h; sourceTree = "<group>"; };
+		0D15543518116F4B00BDAAB9 /* WorkaccidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkaccidentViewController.m; sourceTree = "<group>"; };
+		0D15543718116F5000BDAAB9 /* Workaccident2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Workaccident2ViewController.h; sourceTree = "<group>"; };
+		0D15543818116F5700BDAAB9 /* Workaccident2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workaccident2ViewController.m; sourceTree = "<group>"; };
 		0D1FBBFF180EDD0400E38505 /* hardshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardshipViewController.h; sourceTree = "<group>"; };
 		0D1FBC00180EDD0400E38505 /* hardshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hardshipViewController.m; sourceTree = "<group>"; };
 		0D1FBC03180EDF0100E38505 /* noticeandrequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noticeandrequestViewController.h; sourceTree = "<group>"; };
@@ -202,6 +217,30 @@
 				0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */,
 			);
 			name = HIVC;
+			sourceTree = "<group>";
+		};
+		0D1554291811698E00BDAAB9 /* Patient Info */ = {
+			isa = PBXGroup;
+			children = (
+				0D15542D181169C800BDAAB9 /* PatientInfoViewController.h */,
+				0D155430181169E400BDAAB9 /* Patient2ViewController.h */,
+				0D155431181169E800BDAAB9 /* Patient2ViewController.m */,
+				0D15542B181169C200BDAAB9 /* Patient3ViewController.m */,
+				0D15542A181169BB00BDAAB9 /* Patient3ViewController.h */,
+				0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */,
+			);
+			name = "Patient Info";
+			sourceTree = "<group>";
+		};
+		0D15543318116F2500BDAAB9 /* Work Accident */ = {
+			isa = PBXGroup;
+			children = (
+				0D15543818116F5700BDAAB9 /* Workaccident2ViewController.m */,
+				0D15543718116F5000BDAAB9 /* Workaccident2ViewController.h */,
+				0D15543518116F4B00BDAAB9 /* WorkaccidentViewController.m */,
+				0D15543418116F4400BDAAB9 /* WorkaccidentViewController.h */,
+			);
+			name = "Work Accident";
 			sourceTree = "<group>";
 		};
 		0D1FBBFE180EDB5500E38505 /* Hardship */ = {
@@ -405,6 +444,8 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D15543318116F2500BDAAB9 /* Work Accident */,
+				0D1554291811698E00BDAAB9 /* Patient Info */,
 				0D155425181160EB00BDAAB9 /* HIVC */,
 				0D1FBC0E180FAC5B00E38505 /* perry */,
 				0D1FBC0A180EDF1C00E38505 /* AOB */,
@@ -623,17 +664,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */,
 				0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */,
 				0D2EAB711804187C004F5859 /* RegisterViewController.m in Sources */,
 				0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */,
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
+				0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */,
 				0D2EAB8318041B94004F5859 /* WelcomeViewController.m in Sources */,
 				0D1FBC11180FAC6D00E38505 /* perryViewController.m in Sources */,
 				0D2EAB7A1804190B004F5859 /* AutoAccidentViewController2.m in Sources */,
 				0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */,
 				0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */,
 				0DCD15E217FD4F5200748DD7 /* main.m in Sources */,
+				0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */,
 				0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */,
+				0D155432181169E800BDAAB9 /* Patient2ViewController.m in Sources */,
+				0D15543918116F5700BDAAB9 /* Workaccident2ViewController.m in Sources */,
 				0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */,
 				0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */,
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,

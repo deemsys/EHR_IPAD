@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */; };
 		0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC00180EDD0400E38505 /* hardshipViewController.m */; };
 		0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC04180EDF0100E38505 /* noticeandrequestViewController.m */; };
 		0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC08180EDF1800E38505 /* HippaViewController.m */; };
@@ -80,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insuranceverifyViewController.h; sourceTree = "<group>"; };
+		0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insuranceverifyViewController.m; sourceTree = "<group>"; };
 		0D1FBBFF180EDD0400E38505 /* hardshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardshipViewController.h; sourceTree = "<group>"; };
 		0D1FBC00180EDD0400E38505 /* hardshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hardshipViewController.m; sourceTree = "<group>"; };
 		0D1FBC03180EDF0100E38505 /* noticeandrequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noticeandrequestViewController.h; sourceTree = "<group>"; };
@@ -192,6 +195,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D155425181160EB00BDAAB9 /* HIVC */ = {
+			isa = PBXGroup;
+			children = (
+				0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */,
+				0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */,
+			);
+			name = HIVC;
+			sourceTree = "<group>";
+		};
 		0D1FBBFE180EDB5500E38505 /* Hardship */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +405,7 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D155425181160EB00BDAAB9 /* HIVC */,
 				0D1FBC0E180FAC5B00E38505 /* perry */,
 				0D1FBC0A180EDF1C00E38505 /* AOB */,
 				0D1FBC06180EDF0600E38505 /* Hippa  */,
@@ -625,6 +638,7 @@
 				0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */,
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,
 				0DCD15EC17FD4F5200748DD7 /* ViewAppViewController.m in Sources */,
+				0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */,
 				0D1FBC0D180EDF3500E38505 /* aobViewController.m in Sources */,
 				0D2EAB8C18047CB6004F5859 /* BlockAlertView.m in Sources */,
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,

@@ -86,7 +86,8 @@ int a;
        ([faxnumber.text length]!=0)&&
        ([sincerly.text length]!=0)&&
        ([patname2.text length]!=0)&&
-       ([authcr.text length]!=0))
+       ([authcr.text length]!=0)&&
+       (button1.isSelected==TRUE))
        
         
     {

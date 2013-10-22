@@ -194,7 +194,7 @@
                                     <segue destination="vIz-6D-ZDz" kind="push" id="m6i-x2-CeF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqO-TZ-bcv">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqO-TZ-bcv">
                                 <rect key="frame" x="374" y="922" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="perry">
@@ -266,7 +266,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSL-f9-ojX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSL-f9-ojX">
                                 <rect key="frame" x="71" y="177" width="636" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -690,7 +690,7 @@ Sheffield Village, Ohio 44035
                                     <action selector="insuranceswitchchange:" destination="Ybc-Ea-Zlb" eventType="valueChanged" id="ANr-Ov-goI"/>
                                 </connections>
                             </switch>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-4M-u4K">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-4M-u4K">
                                 <rect key="frame" x="83" y="456" width="624" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1957,7 +1957,7 @@ Sheffield Village, Ohio 44035
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gw-2Y-2vf">
-                                <rect key="frame" x="65" y="253" width="643" height="396"/>
+                                <rect key="frame" x="65" y="252" width="643" height="396"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Claimant herby directs any and all insurance carriers, attorneys, agencies, companies, individuals, and/or other legal entities (“payers.”), which may elect to pay or be obligated o pay benefits to me regardless of the issue of liability, for any medical conditions, accidents, injuries, or illnesses, past or future (“condition”), to pay directly to, and exclusively in the name of Perry Chiropractic and Therapy Center, such sums as may be owing to PCTC, for charges incurred by me. These charges include but are not limited to the following: charges for treatment, narrative reports, depositions, testimony, and any other charges incurred by me at PCTC..
@@ -2148,7 +2148,7 @@ Claimant agrees that each and every provision of this Agreement is reasonable ne
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-xp-VAR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-xp-VAR">
                                 <rect key="frame" x="81" y="151" width="606" height="362"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2318,7 +2318,7 @@ I authorize this office to release any information regarding my treatment, exami
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmB-Fq-JUg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmB-Fq-JUg">
                                 <rect key="frame" x="67" y="429" width="634" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2476,7 +2476,7 @@ I authorize this office to release any information regarding my treatment, exami
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-tr-OyV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-tr-OyV">
                                 <rect key="frame" x="73" y="149" width="631" height="529"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2682,7 +2682,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGp-r4-XFu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGp-r4-XFu">
                                 <rect key="frame" x="93" y="188" width="585" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -6023,14 +6023,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-jX-qjD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Position:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-jX-qjD">
                                 <rect key="frame" x="36" y="160" width="379" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-dY-CkG">
-                                <rect key="frame" x="105" y="170" width="629" height="29"/>
+                                <rect key="frame" x="180" y="170" width="554" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Sit a desk"/>
@@ -6043,7 +6043,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Load"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected1:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="tdy-tP-3Zt"/>
                                 </connections>
@@ -6063,6 +6063,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-v0-XmB">
                                 <rect key="frame" x="434" y="245" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="BT6-fQ-Fmj"/>
                                 </connections>
@@ -6080,7 +6081,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CB8-yw-JWQ">
-                                <rect key="frame" x="606" y="251" width="136" height="30"/>
+                                <rect key="frame" x="601" y="249" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -6103,7 +6104,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-RL-JgS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-RL-JgS">
                                 <rect key="frame" x="39" y="374" width="292" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -6177,7 +6178,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Bench"/>
                                     <segment title="Platform"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected3:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="nLA-Fm-lgz"/>
                                 </connections>
@@ -6185,6 +6186,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-aa-F9X">
                                 <rect key="frame" x="429" y="744" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch4onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="rYh-oV-mGN"/>
                                 </connections>
@@ -6209,7 +6212,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Stand"/>
                                     <segment title="Kneel"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected4:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="VZN-gS-bTM"/>
                                 </connections>
@@ -6252,6 +6255,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-yK-vV7">
                                 <rect key="frame" x="434" y="466" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="XD8-2Z-uhf"/>
                                 </connections>
@@ -6263,7 +6267,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zz3-2T-GpE">
-                                <rect key="frame" x="606" y="510" width="132" height="30"/>
+                                <rect key="frame" x="604" y="510" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -6277,7 +6281,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="On Machine"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected2:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="vZd-h8-nt5"/>
                                 </connections>
@@ -6291,6 +6295,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-iw-0vL">
                                 <rect key="frame" x="429" y="660" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch3onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="bmN-Ic-c9J"/>
                                 </connections>

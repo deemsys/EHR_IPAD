@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0DDCE718126E9200290BFD /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0DDCE618126E9200290BFD /* BG.png */; };
 		0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */; };
 		0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542B181169C200BDAAB9 /* Patient3ViewController.m */; };
 		0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */; };
@@ -32,7 +33,6 @@
 		0D2EAB671803CBF4004F5859 /* buttonbg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB661803CBF4004F5859 /* buttonbg.JPG */; };
 		0D2EAB6A1803D359004F5859 /* select1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB681803D359004F5859 /* select1.png */; };
 		0D2EAB6B1803D359004F5859 /* unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB691803D359004F5859 /* unselect.png */; };
-		0D2EAB6D1803FCC7004F5859 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB6C1803FCC7004F5859 /* BG.png */; };
 		0D2EAB711804187C004F5859 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB701804187C004F5859 /* RegisterViewController.m */; };
 		0D2EAB7A1804190B004F5859 /* AutoAccidentViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB791804190B004F5859 /* AutoAccidentViewController2.m */; };
 		0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB7C18041928004F5859 /* AutoAccidentViewController1.m */; };
@@ -41,10 +41,10 @@
 		0D2EAB8518041FC1004F5859 /* redTextBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB8418041FC1004F5859 /* redTextBox.png */; };
 		0D2EAB8C18047CB6004F5859 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB8818047CB6004F5859 /* BlockAlertView.m */; };
 		0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB8A18047CB6004F5859 /* BlockBackground.m */; };
-		0D2EAB9818051DD2004F5859 /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9618051DD2004F5859 /* alert.png */; };
-		0D2EAB9918051DD2004F5859 /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9718051DD2004F5859 /* alert@2x.png */; };
 		0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */; };
 		0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9B18051F21004F5859 /* alert-red-button.png */; };
+		0D476DB318153C8100DA10DA /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB118153C8100DA10DA /* alert.png */; };
+		0D476DB618153D8700DA10DA /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB518153D8700DA10DA /* alert@2x.png */; };
 		0D5969DF17FF14F100015709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5969DE17FF14F100015709 /* libsqlite3.dylib */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9C35E1180C850F00134BB6 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DE180C850F00134BB6 /* reset.png */; };
@@ -86,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0DDCE618126E9200290BFD /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 		0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insuranceverifyViewController.h; sourceTree = "<group>"; };
 		0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insuranceverifyViewController.m; sourceTree = "<group>"; };
 		0D15542A181169BB00BDAAB9 /* Patient3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient3ViewController.h; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 		0D2EAB661803CBF4004F5859 /* buttonbg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonbg.JPG; sourceTree = "<group>"; };
 		0D2EAB681803D359004F5859 /* select1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select1.png; sourceTree = "<group>"; };
 		0D2EAB691803D359004F5859 /* unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselect.png; sourceTree = "<group>"; };
-		0D2EAB6C1803FCC7004F5859 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 		0D2EAB6F1804187C004F5859 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		0D2EAB701804187C004F5859 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0D2EAB781804190B004F5859 /* AutoAccidentViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoAccidentViewController2.h; sourceTree = "<group>"; };
@@ -142,10 +142,10 @@
 		0D2EAB8918047CB6004F5859 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
 		0D2EAB8A18047CB6004F5859 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
 		0D2EAB8B18047CB6004F5859 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
-		0D2EAB9618051DD2004F5859 /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
-		0D2EAB9718051DD2004F5859 /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
 		0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button@2x.png"; sourceTree = "<group>"; };
 		0D2EAB9B18051F21004F5859 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
+		0D476DB118153C8100DA10DA /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
+		0D476DB518153D8700DA10DA /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
 		0D5969DE17FF14F100015709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
@@ -385,13 +385,14 @@
 			isa = PBXGroup;
 			children = (
 				0D2EAB521802D101004F5859 /* logo.png */,
-				0D2EAB9618051DD2004F5859 /* alert.png */,
+				0D476DB518153D8700DA10DA /* alert@2x.png */,
 				0DA24976180E6F3100C9A9C6 /* checkBox.png */,
+				0D476DB118153C8100DA10DA /* alert.png */,
 				0DA24977180E6F3100C9A9C6 /* checkBox@2x.png */,
 				0DA24978180E6F3100C9A9C6 /* checkBoxMarked.png */,
 				0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */,
-				0D2EAB9718051DD2004F5859 /* alert@2x.png */,
 				0D9C35DE180C850F00134BB6 /* reset.png */,
+				0D0DDCE618126E9200290BFD /* BG.png */,
 				0D9C35DF180C850F00134BB6 /* saveandcontinue.png */,
 				0D9C35E0180C850F00134BB6 /* submit.png */,
 				0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */,
@@ -399,7 +400,6 @@
 				0D2EAB681803D359004F5859 /* select1.png */,
 				0D2EAB691803D359004F5859 /* unselect.png */,
 				0D2EAB6418034245004F5859 /* register.png */,
-				0D2EAB6C1803FCC7004F5859 /* BG.png */,
 				0D2EAB8418041FC1004F5859 /* redTextBox.png */,
 				0D2EAB5C18033B1A004F5859 /* signin.png */,
 				0D2EAB6018033DE5004F5859 /* LoginBG.png */,
@@ -617,13 +617,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D476DB318153C8100DA10DA /* alert.png in Resources */,
 				0D2EAB6118033DE5004F5859 /* LoginBG.png in Resources */,
 				0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */,
 				0D2EAB6B1803D359004F5859 /* unselect.png in Resources */,
 				0DCD15EE17FD4F5200748DD7 /* Images.xcassets in Resources */,
 				0D2EAB541802D101004F5859 /* logo.png in Resources */,
 				0D9C35E2180C850F00134BB6 /* saveandcontinue.png in Resources */,
-				0D2EAB6D1803FCC7004F5859 /* BG.png in Resources */,
 				0D2EAB671803CBF4004F5859 /* buttonbg.JPG in Resources */,
 				0D9C35E1180C850F00134BB6 /* reset.png in Resources */,
 				0D2EAB551802D101004F5859 /* logo2.png in Resources */,
@@ -632,18 +632,18 @@
 				0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */,
 				0D9C35E3180C850F00134BB6 /* submit.png in Resources */,
 				0DA2497A180E6F3100C9A9C6 /* checkBox.png in Resources */,
-				0D2EAB9918051DD2004F5859 /* alert@2x.png in Resources */,
 				0DA2497C180E6F3100C9A9C6 /* checkBoxMarked.png in Resources */,
 				0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */,
 				0DA2497D180E6F3100C9A9C6 /* checkBoxMarked@2x.png in Resources */,
 				0D2EAB6518034245004F5859 /* register.png in Resources */,
 				0D2EAB6A1803D359004F5859 /* select1.png in Resources */,
 				0D2EAB5718033380004F5859 /* all-blocks.png in Resources */,
-				0D2EAB9818051DD2004F5859 /* alert.png in Resources */,
 				0D2EAB5E18033B1A004F5859 /* signin.png in Resources */,
 				0D2EAB5B18033A77004F5859 /* Select.png in Resources */,
+				0D476DB618153D8700DA10DA /* alert@2x.png in Resources */,
 				0DA2497B180E6F3100C9A9C6 /* checkBox@2x.png in Resources */,
 				0DCD15E917FD4F5200748DD7 /* Main.storyboard in Resources */,
+				0D0DDCE718126E9200290BFD /* BG.png in Resources */,
 				0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */,
 				0D2EAB5F18033B1A004F5859 /* signup.png in Resources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "/usr/include/sqlite3.h"
 
 @interface hardshipViewController : UIViewController
 {
@@ -15,6 +16,9 @@
     IBOutlet UITextField * sign;
     IBOutlet UITextField * witness;
     NSMutableDictionary * recorddict;
+    NSString * databasePath;
+    sqlite3 * ehrdb;
+    
 }
 
 -(IBAction)submit:(id)sender;

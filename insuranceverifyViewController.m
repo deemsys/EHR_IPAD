@@ -513,7 +513,29 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
 {
     recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
+}
+-(void)dismissKeyboard
+{
+    [patientname resignFirstResponder];
+    [spokewith resignFirstResponder];
+    [date resignFirstResponder];
+    [fax resignFirstResponder];
+    [amountdeduct resignFirstResponder];
+    [deductible resignFirstResponder];
+    [deductmet resignFirstResponder];
+    [visits resignFirstResponder];
+    [manipulationpercent resignFirstResponder];
+    [therapypercent resignFirstResponder];
+    [xraypercent resignFirstResponder];
+    [percentcovered resignFirstResponder];
+    [address resignFirstResponder];
+  
 }
 
 - (void)didReceiveMemoryWarning

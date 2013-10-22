@@ -229,6 +229,19 @@ int a;
     date2.text=@"";
     date3.text=@"";
 }
+-(void)dismissKeyboard{
+    [day resignFirstResponder];
+    [year resignFirstResponder];
+    [nextday resignFirstResponder];
+    [patientname resignFirstResponder];
+    [patientsign resignFirstResponder];
+    [custodialparent resignFirstResponder];
+    [guardsign resignFirstResponder];
+    [perrychiro resignFirstResponder];
+    [date1 resignFirstResponder];
+    [date2 resignFirstResponder];
+    [date3 resignFirstResponder];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -242,6 +255,11 @@ int a;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

@@ -250,7 +250,20 @@ int a;
     authcr.text=@"";
 
 }
-
+-(void)dismissKeyboard
+{
+    [insurancecompanyname resignFirstResponder];
+    [address resignFirstResponder];
+    [patientname resignFirstResponder];
+    [patname2 resignFirstResponder];
+    [date resignFirstResponder];
+    [enrollno resignFirstResponder];
+    [by resignFirstResponder];
+    [faxnumber resignFirstResponder];
+    [sincerly resignFirstResponder];
+    [authcr resignFirstResponder];
+    
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -265,6 +278,11 @@ int a;
     selectforms=[[NSMutableArray alloc]init];
   //  recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

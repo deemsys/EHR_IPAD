@@ -116,6 +116,12 @@ int a;
     name.text=@"";
     
 }
+-(void)dismissKeyboard
+{
+    [sign resignFirstResponder];
+    [date resignFirstResponder];
+    [name resignFirstResponder];
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -129,6 +135,11 @@ int a;
 {
    // recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

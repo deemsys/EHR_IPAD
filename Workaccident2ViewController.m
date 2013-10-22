@@ -164,8 +164,22 @@
     temp=[[NSMutableDictionary alloc]init];
     temp=recorddict;
     NSLog(@"temp in didload %@",temp );
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
+
 	// Do any additional setup after loading the view.
 }
+-(void)dismissKeyboard {
+    [segothertext resignFirstResponder];
+    [givespecificsyestext resignFirstResponder];
+    [noofemployessinjured resignFirstResponder];
+    [changesmadeinjob resignFirstResponder];
+}
+
 -(IBAction)submit:(id)sender
 {
     recorddict=[[NSMutableDictionary alloc]init];

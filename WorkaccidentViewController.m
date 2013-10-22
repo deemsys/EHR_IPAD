@@ -76,9 +76,31 @@
 {
     [super viewDidLoad];
     recorddict=[[NSMutableDictionary alloc]init];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
     
 }
+-(void)dismissKeyboard
+{
+    [jobclass resignFirstResponder];
+    [doyouother resignFirstResponder];
+    [carrything resignFirstResponder];
+    [howinjuryocc resignFirstResponder];
+    [howmuch resignFirstResponder];
+    [howoften resignFirstResponder];
+    [jobclass resignFirstResponder];
+    [jobinjuryyes resignFirstResponder];
+    [period resignFirstResponder];
+    [sawperson resignFirstResponder];
+    [titletext resignFirstResponder];
+    [typeother resignFirstResponder];
+    [fromwhere resignFirstResponder];
+}
+
 - (IBAction) toggleEnabledTextForSwitch1onSomeLabel: (id) sender
 {
 	if (switch1.on)

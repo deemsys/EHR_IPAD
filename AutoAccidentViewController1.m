@@ -287,6 +287,11 @@ int a;
 {
      recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 
@@ -546,6 +551,21 @@ int a;
     wascar.text=@"";
     speed.text=@"";
     
+}
+-(void)dismissKeyboard
+{
+    [claimno resignFirstResponder];
+    [adjustername resignFirstResponder];
+    [anyoneincar resignFirstResponder];
+    [mymake resignFirstResponder];
+    [mymodel resignFirstResponder];
+    [myyear resignFirstResponder];
+    [othermake resignFirstResponder];
+    [othermodel resignFirstResponder];
+    [otheryear resignFirstResponder];
+    [wascar resignFirstResponder]  ;
+    [speed resignFirstResponder];
+     
 }
 
 -(BOOL)validateUsername:(NSString *)user

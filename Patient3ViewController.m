@@ -59,17 +59,76 @@
 - (void)viewDidLoad
 {
     otherdis.hidden=YES;
+    NSString *docsDir;
+    NSArray *dirPaths;
     
+    // Get the documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    // Build the path to the database file
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"PATIENTINFO.db"]];
+    
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    
+    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    {
+		const char *dbpath = [databasePath UTF8String];
+        
+        if (sqlite3_open(dbpath, &PatientDB) == SQLITE_OK)
+        {
+            char *errMsg;const char *sql_stmt;
+           /* const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR NOT NULL            ,          StreetAddress VARCHAR NOT NULL,        City VARCHAR NOT NULL,     State VARCHAR NOT NULL,            ZipCode VARCHAR NOT NULL,            Homephone VARCHAR NOT NULL,            Pager VARCHAR NOT NULL,            MobileNumber VARCHAR NOT NULL,     DateOfBirth VARCHAR NOT NULL,            SocialSecurityNumber VARCHAR NOT NULL,        Gender VARCHAR NOT NULL,            MaritalStatus VARCHAR   NOT NULL,            Student VARCHAR   NOT NULL,            EmployerName VARCHAR   NOT NULL,            Occupation  VARCHAR   NOT NULL,            EmployerAddress  VARCHAR   NOT NULL,            Workphone  VARCHAR   NOT NULL,            EmployerCity  VARCHAR   NOT NULL,            Estate  VARCHAR   NOT NULL,            Ezip  VARCHAR   NOT NULL,            SpousesName  VARCHAR   NOT NULL,            SpousesEmp  VARCHAR   NOT NULL,            Spousesph  VARCHAR   NOT NULL,            Name_phone  VARCHAR   NOT NULL,            Chiropratic_care  VARCHAR   NOT NULL,            Symptoms  VARCHAR   NOT NULL,            Painscale  VARCHAR   NOT NULL,            Symptom1  VARCHAR   NOT NULL,            Painscale1  VARCHAR   NOT NULL,            Symptom2  VARCHAR   NOT NULL,            Painscale2  VARCHAR   NOT NULL,            Symptom_Accident  VARCHAR   NOT NULL,            Type_Of_Accident  VARCHAR   NOT NULL,            Date_Of_Accident  VARCHAR   NOT NULL,            Accident_Reported  VARCHAR   NOT NULL,            When  VARCHAR   NOT NULL,            Where  VARCHAR   NOT NULL,            Attorney_accident  VARCHAR   NOT NULL,            NameOfAttorney  VARCHAR   NOT NULL,            phone_Number  VARCHAR   NOT NULL,            Fault_accident  VARCHAR   NOT NULL,            Insurance  VARCHAR   NOT NULL,            Insurance_phone  VARCHAR   NOT NULL,            Name_ph  VARCHAR   NOT NULL,            policy  VARCHAR   NOT NULL,            Name_health  VARCHAR   NOT NULL,            Health_phone  VARCHAR   NOT NULL,            prev_accident  VARCHAR   NOT NULL,            Prev_When  VARCHAR   NOT NULL,            anemia  VARCHAR   DEFAULT NULL,            Muscular  VARCHAR   DEFAULT NULL,            Rheumatic  VARCHAR   DEFAULT NULL,            Allergies  VARCHAR   DEFAULT NULL,            Polio1  VARCHAR   DEFAULT NULL,            Multiple  VARCHAR   DEFAULT NULL,            HIV  VARCHAR   DEFAULT NULL,            Sinus  VARCHAR   DEFAULT NULL,            Asthma  VARCHAR   DEFAULT NULL,            German  VARCHAR   DEFAULT NULL,            Nervousness  VARCHAR   DEFAULT NULL,            Numbness  VARCHAR   DEFAULT NULL,            Convulsions  VARCHAR   DEFAULT NULL,            Epilepsy  VARCHAR   DEFAULT NULL,          Concussion  VARCHAR   DEFAULT NULL,            Dizziness  VARCHAR   DEFAULT NULL,            Neuritis  VARCHAR   DEFAULT NULL,            Rheumatism  VARCHAR   DEFAULT NULL,            Diabetes  VARCHAR   DEFAULT NULL,            Arthritis  VARCHAR   DEFAULT NULL,            Venereal  VARCHAR   DEFAULT NULL,            Backaches  VARCHAR   DEFAULT NULL,            Liver  VARCHAR   DEFAULT NULL,            Kidney  VARCHAR   DEFAULT NULL,            Thyroid  VARCHAR   DEFAULT NULL,            Alcoholism  VARCHAR   DEFAULT NULL,            Hepatitis  VARCHAR   DEFAULT NULL,            Mental  VARCHAR   DEFAULT NULL,            High  VARCHAR   DEFAULT NULL,            Digestive  VARCHAR   DEFAULT NULL,            Heart  VARCHAR   DEFAULT NULL,            other  VARCHAR   DEFAULT NULL,            illness  VARCHAR   DEFAULT NULL,            Dates  VARCHAR   DEFAULT NULL,            medications  VARCHAR   DEFAULT NULL,            Drink  VARCHAR   DEFAULT NULL,            Smoke  VARCHAR   DEFAULT NULL,            Drugs  VARCHAR   DEFAULT NULL,            Diet  VARCHAR   DEFAULT NULL,            Exercise  VARCHAR   DEFAULT NULL,            hazardous  VARCHAR   DEFAULT NULL,            hazardousyes  VARCHAR   DEFAULT NULL,            female  VARCHAR   DEFAULT NULL,            dr  VARCHAR   DEFAULT NULL,            patient  VARCHAR   DEFAULT NULL,            sign  VARCHAR   DEFAULT NULL ) ";
+            */
+            
+            if (sqlite3_exec(PatientDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            {
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
+                
+                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                [alert show];            }
+            
+            sqlite3_close(PatientDB);
+            
+        } else {
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open or create DB."];
+            
+            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+        }
+    }
+    
+
     [super viewDidLoad];
     //recorddict=[[NSMutableDictionary alloc]init];
     selecteddisease=[[NSMutableArray alloc]init];
     temp=[[NSMutableDictionary alloc]init];
     temp=recorddict;
     circle=[[NSMutableArray alloc]init];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
     
     
 	// Do any additional setup after loading the view.
 }
+-(void)dismissKeyboard
+{
+    [date resignFirstResponder];
+    [dr resignFirstResponder];
+    [otherdis resignFirstResponder];
+    [otheropt resignFirstResponder];
+    [surg resignFirstResponder];
+    [medhad resignFirstResponder];
+    [hazlist resignFirstResponder];
+    [patsign resignFirstResponder];
+     }
+
 - (IBAction) toggleEnabledTextForSwitch1onSomeLabel: (id) sender
 {
 	if (switch1.on){
@@ -446,6 +505,7 @@
     if((a==1)&&(b==1)&&(c==1))
     {
         NSLog(@"submit full recorddict values %@",recorddict);
+        [self savedata1];
     }
         
     }
@@ -458,5 +518,37 @@
                 [(UITextField*)subview setText:@""];
   
   
+}
+-(void)savedata1
+{
+    
+    sqlite3_stmt    *statement;NSString *insertSQL;
+    
+    const char *dbpath = [databasePath UTF8String];
+    
+    if (sqlite3_open(dbpath, &PatientDB) == SQLITE_OK)
+    {
+      /*  NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO PATIENTINFO (Name,                               Date,                               StreetAddress,                               City,                               State,                               Zipcode,                               Homephone,                               Pager,                               MobileNumber,                               DateOfBirth,                               SocialSecurityNumber,                               Gender,                               MaritalStatus,                               Student,                               EmployerName,                               Occupation,                               EmployerAddress,                               Workphone,                               EmployerCity,                               Estate,                               Ezip,                               SpousesName,                               SpousesEmp,                               Spousesph,                               Name_phone,                               Chiropratic_care,                               Symptoms,                               Painscale,                               Symptom_Accident,                               Date_Of_Accident,                               Accident_Reported,                               When,                               Where,                               Attorney_accident,                               TypeOfAccident,                               NameOfAttorney,                               phone_Number,                               Fault_accident,                               Insurance,                               Insurance_phone,                               Name_ph,                               policy,                               Name_health,                               Health_phone,                               prev_accident,                               Prev_When) VALUES (\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\")", [recorddict objectForKey:@"name"]];
+                              
+                               
+                  */
+        
+        const char *insert_stmt = [insertSQL UTF8String];
+        
+        sqlite3_prepare_v2(PatientDB, insert_stmt, -1, &statement, NULL);
+        if (sqlite3_step(statement) == SQLITE_DONE)
+        {
+            
+        } else {
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to insert data."];
+            
+            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+           
+        }
+        sqlite3_finalize(statement);
+        sqlite3_close(PatientDB);
+    }
 }
 @end

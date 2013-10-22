@@ -194,7 +194,13 @@ int a;
     sign.text=@"";
     witness.text=@"";
 }
-
+-(void)dismissKeyboard
+{
+    [date resignFirstResponder];
+    [name resignFirstResponder];
+    [sign resignFirstResponder];
+    [witness resignFirstResponder];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -255,6 +261,11 @@ int a;
     }
 
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

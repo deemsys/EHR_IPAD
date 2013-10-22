@@ -253,6 +253,19 @@ int a;
     medpay.text=@"";
     protectionreceived.text=@"";
 }
+-(void)dismissKeyboard
+{
+    [patientname resignFirstResponder];
+    [insuramceattroney resignFirstResponder];
+    [damageamount resignFirstResponder];
+    [faultinsurance resignFirstResponder];
+    [billed resignFirstResponder];
+    [remdate resignFirstResponder];
+    [botherattroney resignFirstResponder];
+    [medpay resignFirstResponder];
+    [protectionreceived resignFirstResponder];
+    
+}
 -(IBAction)checkboxSelected:(UIButton*)sender
 {
     sender.selected = !sender.selected;
@@ -272,6 +285,11 @@ int a;
    // recorddict=[[NSMutableDictionary alloc]init];
 
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

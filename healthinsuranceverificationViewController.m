@@ -275,6 +275,18 @@ int a;
     
 
 }
+-(void)dismissKeyboard
+{
+    [patientname resignFirstResponder];
+    [accidentdate resignFirstResponder];
+    [employersname resignFirstResponder];
+    [insurancecompany resignFirstResponder];
+    [insurancephone resignFirstResponder];
+    [policy resignFirstResponder];
+    [group resignFirstResponder];
+    [supplement resignFirstResponder];
+    [supplementphone resignFirstResponder];
+}
 -(IBAction)insuranceswitchchange:(id)sender
 {
     if (healthinsuranceswitch.isOn)
@@ -300,6 +312,11 @@ int a;
 {
  //recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

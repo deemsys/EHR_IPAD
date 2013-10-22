@@ -14,6 +14,8 @@
 
 @interface Patient3ViewController : UIViewController
 {
+    sqlite3*PatientDB;
+    NSString*databasePath;
     NSMutableDictionary *recorddict;
     IBOutlet UITextField*otherdis;
     IBOutlet UITextField*surg;
@@ -73,9 +75,7 @@
     IBOutlet UITextField*date;
 int a,b,c;
     IBOutlet UILabel*plslisthide;
-    NSString        *databasePath;
-    sqlite3 *contactDB;
-  
+      
     NSMutableDictionary*temp;
    
 

@@ -145,7 +145,23 @@ if(seg.selectedSegmentIndex==0)
 	// Do any additional setup after loading the view.
 }
 -(void)dismissKeyboard {
-    }
+    [sym1 resignFirstResponder];
+    [sym2 resignFirstResponder];
+    [sym3 resignFirstResponder];
+    [medwhen resignFirstResponder];
+    [medwhere resignFirstResponder];
+    [nameofattorney resignFirstResponder];
+    [attorneyph resignFirstResponder];
+    [autoname resignFirstResponder];
+    [autoph resignFirstResponder];
+    [autopolicy resignFirstResponder];
+    [helph resignFirstResponder];
+    [helname resignFirstResponder];
+    [optwhen resignFirstResponder];
+    [nop resignFirstResponder];
+    [comname resignFirstResponder];
+    [comph resignFirstResponder];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

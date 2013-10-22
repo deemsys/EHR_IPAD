@@ -198,6 +198,18 @@ else d=1;
     waswrong.text=@"";
     
 }
+-(void)dismissKeyboard
+{
+    [symptomsdays resignFirstResponder];
+    [symptomshours resignFirstResponder];
+    [hospitalcity resignFirstResponder];
+    [hospitalgoingother resignFirstResponder];
+    [hospitalstay resignFirstResponder];
+    [hospitalname resignFirstResponder];
+    [treatmentgiven resignFirstResponder];
+    [waswrong resignFirstResponder];
+    
+}
 -(IBAction)anyonecitedswichchange:(id)sender;
 {
     if (anyonecitedswitch.on)
@@ -422,6 +434,11 @@ else d=1;
     temp=[[NSMutableDictionary alloc]init];
     temp=recorddict;
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

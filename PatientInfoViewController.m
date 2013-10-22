@@ -241,8 +241,8 @@
 -(IBAction)saveandcontinue:(id)sender
 {
     
-     NSLog(@"selected value in gender %@",seg.text);
-    NSLog(@"selected value in marrital  %@",marital.text);
+    // NSLog(@"selected value in gender %@",seg.text);
+  //  NSLog(@"selected value in marrital  %@",marital.text);
 //NSLog(@"%@ sex",sex);
    // NSLog(@"%@ gender",gender);
     //   NSLog(@"%@ Student",resLabel.text);
@@ -599,11 +599,13 @@
 
     if ([segue.identifier isEqualToString:@"Patientdetail1"])
     {
+    
         
        Patient2ViewController *destViewController = [segue destinationViewController];
         destViewController.recorddict=recorddict;
         NSLog(@"recorddict in PatientVC first %@",recorddict);
        // destViewController.delegate=self;
+       
     }
     
  

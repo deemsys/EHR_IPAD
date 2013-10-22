@@ -521,6 +521,29 @@
  
                                                                 }
                                                             }
+                                                            else{
+                                                                if(([furtherinjurylabel.text isEqual:@"Yes"])&&
+                                                                   ([self onlyalphabetvalidate:injuryexplainlabel.text]))
+                                                                {
+                                                                    [recorddict setValue:injuryexplainlabel.text forKey:@"furtherinjuryfor"];
+                                                                    c=1;
+                                                                    
+                                                                }
+                                                                else if ([furtherinjurylabel.text isEqual:@"No"])
+                                                                {
+                                                                    c=1;
+                                                                    
+                                                                }
+                                                                else{
+                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid further injury explain data."];
+                                                                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                                                    [alert show];
+                                                                    
+                                                                }
+
+                                                                
+                                                            }
+                                                            
                                                         }
                                                         else if([unconsiouslabel.text isEqual:@"No"])
                                                         {
@@ -646,6 +669,23 @@
 
     
 }
+-(void)dismissKeyboard
+{
+    [bodypositionotherlabel resignFirstResponder];
+    [headpositionotherlabel resignFirstResponder];
+    [injuryexplainlabel resignFirstResponder];
+    [unconsiousforlabel resignFirstResponder];
+    [propertydamagelabel resignFirstResponder];
+    [myheadhitlabel resignFirstResponder];
+    [rlarmhitlabel resignFirstResponder];
+    [rLhiphitlabel resignFirstResponder];
+    [chesthitlabel resignFirstResponder];
+    [rlleghitlabel resignFirstResponder];
+    [rlshoulderhitlabel resignFirstResponder];
+    [rlkneehitlabel resignFirstResponder];
+    [otherparthitlabel resignFirstResponder];
+    
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -660,6 +700,11 @@
     temp=[[NSMutableDictionary alloc]init];
     temp=recorddict;
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 	// Do any additional setup after loading the view.
 }
 

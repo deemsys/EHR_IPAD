@@ -261,7 +261,7 @@ services if a third party payor reimburses for said charges.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7E-TY-Mnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2594" y="-8803"/>
+            <point key="canvasLocation" x="-2842" y="-10675"/>
         </scene>
         <!--View Controller - Release Of Medical Records Authorization-->
         <scene sceneID="7SQ-Fb-E28">
@@ -2669,7 +2669,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <rect key="frame" x="327" y="652" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Register">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3294,6 +3294,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Staff Auto Checklist" id="7bh-2m-pDx"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="billed" destination="t4w-cw-zwk" id="yxR-n6-7Lf"/>
                         <outlet property="botherattroney" destination="vwT-3J-Ep3" id="Ptg-l9-SgS"/>
@@ -4351,6 +4352,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Insurance Forms" id="RXb-qG-Il6"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="address" destination="bUf-jJ-ALa" id="sHK-7E-SX6"/>
                         <outlet property="amountdeduct" destination="9Nn-MB-WBw" id="c1Y-vN-laD"/>
@@ -6883,13 +6885,117 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
         <image name="checkBox.png" width="20" height="20"/>
         <image name="login.png" width="768" height="1024"/>
         <image name="loginad.png" width="768" height="1024"/>
         <image name="logindr.png" width="768" height="1024"/>
         <image name="regist.png" width="768" height="1024"/>
         <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
+        <image name="reset.png" width="1017" height="247"/>
         <image name="saveandcontinue.png" width="1017" height="247"/>
+        <image name="saveandcontinue.png" width="1017" height="247"/>
+        <image name="saveandcontinue.png" width="1017" height="247"/>
+        <image name="saveandcontinue.png" width="1017" height="247"/>
+        <image name="saveandcontinue.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
+        <image name="submit.png" width="1017" height="247"/>
         <image name="submit.png" width="1017" height="247"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

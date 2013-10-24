@@ -160,47 +160,6 @@ int a;
                                         [recorddict setValue:protectionreceived.text forKey:@"protectionreceived"];
                                             [recorddict setValue:billed.text forKey:@"billed"];
                                             [recorddict setValue:remdate.text forKey:@"remdate"];
-                                            sqlite3_stmt    *statement;
-                                            
-                                            const char *dbpath = [databasePath UTF8String];
-                                            
-                                            if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
-                                            {
-                                                NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO STAFFAUTOCHECK (patinfo,screening,aob,history,xray_sheet,consent,report,pat_name,insure,damage_amount,fault_insure,med_pay,other_attorney,protect_received,bill,re_date) VALUES (\"%@\", \"%@\", \"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\")",patinfo.text,screening.text,aob.text,history.text,xray_sheet.text,consent.text,report.text,patientname.text,insuramceattroney.text,damageamount.text,faultinsurance.text,medpay.text,botherattroney.text,protectionreceived.text,billed.text,remdate.text ];
-                                                
-                                                const char *insert_stmt = [insertSQL UTF8String];
-                                                
-                                                sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
-                                                if (sqlite3_step(statement) == SQLITE_DONE)
-                                                {
-                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
-                                                    
-                                                    //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                                                    [alert show];
-                                                  patientname.text=@"";
-                                                    insuramceattroney.text=@"";
-                                                    damageamount.text=@"";
-                                                    faultinsurance.text=@"";
-                                                    medpay.text=@"";
-                                                    botherattroney.text=@"";
-                                                    protectionreceived.text=@"";
-                                                    billed.text=@"";
-                                                    remdate.text=@"";
-                                                    
-                                
-                                                    
-                                                } else
-                                                {
-                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form submission failed."];
-                                                    
-                                                    //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                                                    [alert show];
-                                                }
-                                                sqlite3_finalize(statement);
-                                                sqlite3_close(ehrdb);
-                                            }
             }
             else
             {
@@ -344,53 +303,6 @@ int a;
 {
      selectforms=[[NSMutableArray alloc]init];
    // recorddict=[[NSMutableDictionary alloc]init];
-
-    NSString *docsDir;
-    NSArray *dirPaths;
-    
-    // Get the documents directory
-    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-    docsDir = [dirPaths objectAtIndex:0];
-    
-    // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
-    
-    NSFileManager *filemgr = [NSFileManager defaultManager];
-    
-    if ([filemgr fileExistsAtPath: databasePath ] == NO)
-    {
-		const char *dbpath = [databasePath UTF8String];
-        
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
-        {
-            char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS STAFFAUTOCHECK (ID INTEGER PRIMARY KEY AUTOINCREMENT, patinfo varchar DEFAULT NULL,screening varchar DEFAULT NULL,aob varchar DEFAULT NULL,history varchar DEFAULT NULL, xray_sheet varchar DEFAULT NULL,consent varchar DEFAULT NULL,report varchar DEFAULT NULL, pat_name varchar DEFAULT NULL, insure varchar DEFAULT NULL, damage_amount varchar DEFAULT NULL, fault_insure varchar DEFAULT NULL, med_pay varchar DEFAULT NULL,other_attorney varchar DEFAULT NULL, protect_received varchar DEFAULT NULL,bill varchar DEFAULT NULL, re_date varchar DEFAULT NULL,)";
-            
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
-            {
-                //status.text = @"Failed to create table";
-                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
-                
-                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                [alert show];
-            }
-            
-            sqlite3_close(ehrdb);
-            
-        }
-        else
-        {
-            // status.text = @"Failed to open/create database";
-            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open/create databse."];
-            
-            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-            [alert setDestructiveButtonWithTitle:@"x" block:nil];
-            [alert show];
-            
-        }
-    }
 
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

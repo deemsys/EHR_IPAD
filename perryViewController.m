@@ -154,12 +154,12 @@ int a;
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdbase3) == SQLITE_OK)
         {
             char *errMsg;
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PERRY (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT , NAME TEXT, SIGN TEXT, WITNESS TEXT)";
             
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(ehrdbase3, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 //status.text = @"Failed to create table";
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
@@ -169,7 +169,7 @@ int a;
                 [alert show];
             }
             
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdbase3);
             
         }
         else

@@ -43,8 +43,6 @@
 		0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9B18051F21004F5859 /* alert-red-button.png */; };
 		0D3667C71816B3AD0069FF78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
 		0D3667CA1816B7950069FF78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
-		0D476DB318153C8100DA10DA /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB118153C8100DA10DA /* alert.png */; };
-		0D476DB618153D8700DA10DA /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB518153D8700DA10DA /* alert@2x.png */; };
 		0D6799911818DF4900BDC1FC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6799901818DF4900BDC1FC /* libsqlite3.dylib */; };
 		0D6799961818EE8B00BDC1FC /* logindr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799921818EE8B00BDC1FC /* logindr.png */; };
 		0D6799971818EE8B00BDC1FC /* loginad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799931818EE8B00BDC1FC /* loginad.png */; };
@@ -78,6 +76,8 @@
 		0DCD15F717FD4F5200748DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D917FD4F5200748DD7 /* UIKit.framework */; };
 		0DCD15FF17FD4F5200748DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD15FD17FD4F5200748DD7 /* InfoPlist.strings */; };
 		0DCD160117FD4F5200748DD7 /* EHRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD160017FD4F5200748DD7 /* EHRTests.m */; };
+		0DE6A566181952A200A09BA7 /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A565181952A200A09BA7 /* alert@2x.png */; };
+		0DE6A568181952BA00A09BA7 /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A567181952BA00A09BA7 /* alert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,8 +147,6 @@
 		0D2EAB8B18047CB6004F5859 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
 		0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button@2x.png"; sourceTree = "<group>"; };
 		0D2EAB9B18051F21004F5859 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
-		0D476DB118153C8100DA10DA /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
-		0D476DB518153D8700DA10DA /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
 		0D6799901818DF4900BDC1FC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0D6799921818EE8B00BDC1FC /* logindr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logindr.png; sourceTree = "<group>"; };
 		0D6799931818EE8B00BDC1FC /* loginad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginad.png; sourceTree = "<group>"; };
@@ -195,6 +193,8 @@
 		0DCD15FC17FD4F5200748DD7 /* EHRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHRTests-Info.plist"; sourceTree = "<group>"; };
 		0DCD15FE17FD4F5200748DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DCD160017FD4F5200748DD7 /* EHRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHRTests.m; sourceTree = "<group>"; };
+		0DE6A565181952A200A09BA7 /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
+		0DE6A567181952BA00A09BA7 /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,17 +419,17 @@
 				0D6799931818EE8B00BDC1FC /* loginad.png */,
 				0D6799941818EE8B00BDC1FC /* regist.png */,
 				0D6799951818EE8B00BDC1FC /* BG.png */,
-				0D476DB518153D8700DA10DA /* alert@2x.png */,
 				0DA24976180E6F3100C9A9C6 /* checkBox.png */,
 				0D67999A1818EF7200BDC1FC /* login.png */,
-				0D476DB118153C8100DA10DA /* alert.png */,
 				0DA24977180E6F3100C9A9C6 /* checkBox@2x.png */,
 				0DA24978180E6F3100C9A9C6 /* checkBoxMarked.png */,
 				0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */,
 				0D9C35DE180C850F00134BB6 /* reset.png */,
 				0D9C35DF180C850F00134BB6 /* saveandcontinue.png */,
 				0D9C35E0180C850F00134BB6 /* submit.png */,
+				0DE6A567181952BA00A09BA7 /* alert.png */,
 				0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */,
+				0DE6A565181952A200A09BA7 /* alert@2x.png */,
 				0D2EAB9B18051F21004F5859 /* alert-red-button.png */,
 				0D2EAB681803D359004F5859 /* select1.png */,
 				0D2EAB691803D359004F5859 /* unselect.png */,
@@ -652,7 +652,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D476DB318153C8100DA10DA /* alert.png in Resources */,
+				0DE6A566181952A200A09BA7 /* alert@2x.png in Resources */,
 				0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */,
 				0D2EAB6B1803D359004F5859 /* unselect.png in Resources */,
 				0DCD15EE17FD4F5200748DD7 /* Images.xcassets in Resources */,
@@ -672,6 +672,7 @@
 				0D6799991818EE8B00BDC1FC /* BG.png in Resources */,
 				0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */,
 				0DA2497D180E6F3100C9A9C6 /* checkBoxMarked@2x.png in Resources */,
+				0DE6A568181952BA00A09BA7 /* alert.png in Resources */,
 				0D6799961818EE8B00BDC1FC /* logindr.png in Resources */,
 				0D67999B1818EF7200BDC1FC /* login.png in Resources */,
 				0D2EAB6518034245004F5859 /* register.png in Resources */,
@@ -679,7 +680,6 @@
 				0D2EAB5718033380004F5859 /* all-blocks.png in Resources */,
 				0D2EAB5E18033B1A004F5859 /* signin.png in Resources */,
 				0D2EAB5B18033A77004F5859 /* Select.png in Resources */,
-				0D476DB618153D8700DA10DA /* alert@2x.png in Resources */,
 				0DA2497B180E6F3100C9A9C6 /* checkBox@2x.png in Resources */,
 				0DCD15E917FD4F5200748DD7 /* Main.storyboard in Resources */,
 				0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */,

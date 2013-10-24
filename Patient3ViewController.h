@@ -14,7 +14,7 @@
 
 @interface Patient3ViewController : UIViewController
 {
-    sqlite3*ehrdb;
+    sqlite3*ehrdb6;
     NSString*databasePath;
     NSMutableDictionary *recorddict;
     IBOutlet UITextField*otherdis;

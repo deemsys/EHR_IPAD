@@ -364,13 +364,13 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
        
        const char *dbpath = [databasePath UTF8String];
        
-       if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+       if (sqlite3_open(dbpath, &ehrdb7) == SQLITE_OK)
        {
            NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO INSURANCEVERIFY(VERIFY_NAME,SPOKE_WITH,DATE,FAX,AMOUNT_DEDUCT,AMOUNT_DEDUCT_MET,MAX_VISIT,IS_CHIROPRACTIC,AT_WHAT,THERAPHY_COVER,ATWHAT,XRAY_COVER,ATWHAT,SUBJECT_DEDUCT,BENEFITS_HONORED,NETWORK_BENEFITS,DEDUCTIBLE,COVERED,CM,PT,OV,XRAY_DEDUCT,DOCTORS_ASSIGN,MAIL_CLAIMS) VALUES (\"%@\", \"%@\", \"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\",\"%@\")",patientname.text,spokewith.text,date.text,fax.text,amountdeduct.text,deductmet.text,visits.text,manipulationcoveredswitchlabel.text,manipulationpercent.text,therapycoveredswitchlabel.text,therapypercent.text,xraycoveredswitchlabel.text,xraypercent.text,subjectdeductswitchlabel.text,benefitshonoredswitchlabel.text,networkbenefitsswitchlabel.text,deductible.text,percentcovered.text,CM.text,pt.text,ov.text,xraydeductswitchlabel.text,honoredswitchlabel.text,address.text ];
            
            const char *insert_stmt = [insertSQL UTF8String];
            
-           sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+           sqlite3_prepare_v2(ehrdb7, insert_stmt, -1, &statement, NULL);
            if (sqlite3_step(statement) == SQLITE_DONE)
            {
                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
@@ -401,7 +401,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
                [alert show];
            }
            sqlite3_finalize(statement);
-           sqlite3_close(ehrdb);
+           sqlite3_close(ehrdb7);
        }
 
        NSLog(@"success!!!recorddict %@",recorddict);
@@ -568,7 +568,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehrdb7.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
@@ -576,12 +576,12 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdb7) == SQLITE_OK)
         {
             char *errMsg;
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS INSURANCEVERIFY (ID INTEGER PRIMARY KEY AUTOINCREMENT, VERIFY_NAME TEXT , SPOKE_WITH TEXT, DATE TEXT, FAX TEXT,AMOUNT_DEDUCT TEXT,AMOUNT_DEDUCT_MET TEXT,MAX_VISIT TEXT,IS_CHIROPRACTIC TEXT,AT_WHAT TEXT,THERAPHY_COVER TEXT,ATWHAT TEXT,XRAY_COVER TEXT,ATWHAT TEXT,SUBJECT_DEDUCT TEXT,BENEFITS_HONORED TEXT,NETWOTK_BENEFITS TEXT,DEDUCTIBLE TEXT,COVERED TEXT,CM TEXT,PT TEXT,OV TEXT,XRAY_DEDUCT TEXT,DOCTORS_ASSIGN TEXT,MAIL_CLAIMS TEXT)";
             
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(ehrdb7, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 //status.text = @"Failed to create table";
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
@@ -591,7 +591,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
                 [alert show];
             }
             
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdb7);
             
         }
         else

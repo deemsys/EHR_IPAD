@@ -17,7 +17,7 @@
     IBOutlet UITextField * witness;
     IBOutlet UITextField * date;
     NSString*databasePath;
-    sqlite3*ehrdb;
+    sqlite3*ehrdbase3;
     
 }
 

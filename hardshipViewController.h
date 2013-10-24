@@ -16,7 +16,7 @@
     IBOutlet UITextField * witness;
     NSMutableDictionary * recorddict;
     NSString *databasePath;
-    sqlite3 * ehrdb;
+    sqlite3 * ehrdbase;
     
 }
 

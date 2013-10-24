@@ -6885,117 +6885,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
         <image name="checkBox.png" width="20" height="20"/>
         <image name="login.png" width="768" height="1024"/>
         <image name="loginad.png" width="768" height="1024"/>
         <image name="logindr.png" width="768" height="1024"/>
         <image name="regist.png" width="768" height="1024"/>
         <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
-        <image name="reset.png" width="1017" height="247"/>
         <image name="saveandcontinue.png" width="1017" height="247"/>
-        <image name="saveandcontinue.png" width="1017" height="247"/>
-        <image name="saveandcontinue.png" width="1017" height="247"/>
-        <image name="saveandcontinue.png" width="1017" height="247"/>
-        <image name="saveandcontinue.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
-        <image name="submit.png" width="1017" height="247"/>
         <image name="submit.png" width="1017" height="247"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -68,7 +68,7 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehrdb6.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
@@ -76,13 +76,14 @@
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdb6) == SQLITE_OK)
         {
             char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR NOT NULL ,Date VARCHAR NOT NULL,          StreetAddress VARCHAR NOT NULL,        City VARCHAR NOT NULL,     State VARCHAR NOT NULL,            ZipCode VARCHAR NOT NULL,            Homephone VARCHAR NOT NULL,            Pager VARCHAR NOT NULL,            MobileNumber VARCHAR NOT NULL,     DateOfBirth VARCHAR NOT NULL,            SocialSecurityNumber VARCHAR NOT NULL,        Gender VARCHAR NOT NULL,            MaritalStatus VARCHAR   NOT NULL,            Student VARCHAR   NOT NULL,            EmployerName VARCHAR   NOT NULL,            Occupation  VARCHAR   NOT NULL,            EmployerAddress  VARCHAR   NOT NULL,            Workphone  VARCHAR   NOT NULL,            EmployerCity  VARCHAR   NOT NULL,            Estate  VARCHAR   NOT NULL,            Ezip  VARCHAR   NOT NULL,            SpousesName  VARCHAR   NOT NULL,            SpousesEmp  VARCHAR   NOT NULL,            Spousesph  VARCHAR   NOT NULL,            Name_friend VARCHAR   NOT NULL,Phone_friend  VARCHAR   NOT NULL,            Chiropratic_care  VARCHAR   NOT NULL,            Symptoms  VARCHAR   NOT NULL,            Painscale  VARCHAR   NOT NULL,            Symptom1  VARCHAR   NOT NULL,            Painscale1  VARCHAR   NOT NULL,            Symptom2  VARCHAR   NOT NULL,            Painscale2  VARCHAR   NOT NULL,            Symptom_Accident  VARCHAR   NOT NULL,            Type_Of_Accident  VARCHAR   NOT NULL,            Date_Of_Accident  VARCHAR   NOT NULL,            Accident_Reported  VARCHAR   NOT NULL,            When  VARCHAR   NOT NULL,            Where  VARCHAR   NOT NULL,            Attorney_accident  VARCHAR   NOT NULL,            NameOfAttorney  VARCHAR   NOT NULL,            phone_Number  VARCHAR   NOT NULL,            Fault_accident  VARCHAR   NOT NULL,            Insurance  VARCHAR   NOT NULL,            Insurance_phone  VARCHAR   NOT NULL,            Name_auto  VARCHAR   NOT NULL,  Phone_auto  VARCHAR   NOT NULL,           policy  VARCHAR   NOT NULL,            Name_health  VARCHAR   NOT NULL,            Health_phone  VARCHAR   NOT NULL,            prev_accident  VARCHAR   NOT NULL,            Prev_When  VARCHAR   NOT NULL,            anemia  VARCHAR   DEFAULT NULL,            Muscular  VARCHAR   DEFAULT NULL,            Rheumatic  VARCHAR   DEFAULT NULL,            Allergies  VARCHAR   DEFAULT NULL, Cancer VARCHAR DEFAULT NULL           Polio1  VARCHAR   DEFAULT NULL,            Multiple  VARCHAR   DEFAULT NULL,Scarlet VARCHAR DEFAULT NULL,            HIV  VARCHAR   DEFAULT NULL,            Sinus  VARCHAR   DEFAULT NULL,            Asthma  VARCHAR   DEFAULT NULL,            German  VARCHAR   DEFAULT NULL,            Nervousness  VARCHAR   DEFAULT NULL,            Numbness  VARCHAR   DEFAULT NULL,            Convulsions  VARCHAR   DEFAULT NULL,            Epilepsy  VARCHAR   DEFAULT NULL,          Concussion  VARCHAR   DEFAULT NULL,            Dizziness  VARCHAR   DEFAULT NULL,            Neuritis  VARCHAR   DEFAULT NULL,            Rheumatism  VARCHAR   DEFAULT NULL,            Diabetes  VARCHAR   DEFAULT NULL,            Arthritis  VARCHAR   DEFAULT NULL,            Venereal  VARCHAR   DEFAULT NULL,            Backaches  VARCHAR   DEFAULT NULL, Tuberculosis VARCHAR DEFAULT NULL,           Liver  VARCHAR   DEFAULT NULL,            Kidney  VARCHAR   DEFAULT NULL,            Thyroid  VARCHAR   DEFAULT NULL,            Alcoholism  VARCHAR   DEFAULT NULL,            Hepatitis  VARCHAR   DEFAULT NULL,            Mental  VARCHAR   DEFAULT NULL,            High  VARCHAR   DEFAULT NULL,            Digestive  VARCHAR   DEFAULT NULL,            Heart  VARCHAR   DEFAULT NULL,            other  VARCHAR   DEFAULT NULL, Ifother VARCHAR DEFAULT NULL,           illness  VARCHAR   DEFAULT NULL,            Dates  VARCHAR   DEFAULT NULL,            medications  VARCHAR   DEFAULT NULL,            Drink  VARCHAR   DEFAULT NULL,            Smoke  VARCHAR   DEFAULT NULL,            Drugs  VARCHAR   DEFAULT NULL,            Diet  VARCHAR   DEFAULT NULL,            Exercise  VARCHAR   DEFAULT NULL,            hazardous  VARCHAR   DEFAULT NULL,            hazardousyes  VARCHAR   DEFAULT NULL,            female  VARCHAR   DEFAULT NULL,            dr  VARCHAR   DEFAULT NULL,            patient  VARCHAR   DEFAULT NULL) ";
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Date TEXT, StreetAddress TEXT,        City TEXT,State TEXST, ZipCode TEXT,Homephone TEXT,            Pager TEXT, MobileNumber TEXT,     DateOfBirth TEXT,            SocialSecurityNumber TEXT, Gender TEXT, MaritalStatus TEXT,            Student TEXT,            EmployerName TEXT,            Occupation  TEXT,            EmployerAddress  TEXT,            Workphone  TEXT,            EmployerCity  TEXT,            Estate  TEXT,            Ezip  TEXT,            SpousesName  TEXT,            SpousesEmp  TEXT,            Spousesph  TEXT,            Name_friend TEXT,Phone_friend  TEXT,            Chiropratic_care  TEXT,            Symptoms  TEXT,            Painscale  TEXT,            Symptom1  TEXT,            Painscale1  TEXT,            Symptom2  TEXT,            Painscale2  TEXT,            Symptom_Accident  TEXT,            Type_Of_Accident  TEXT,            Date_Of_Accident  TEXT,            Accident_Reported  TEXT,            When  TEXT,            Where  TEXT,            Attorney_accident  TEXT,            NameOfAttorney  TEXT,            phone_Number  TEXT,            Fault_accident  TEXT,            Insurance  TEXT,            Insurance_phone  TEXT,            Name_auto  TEXT,  Phone_auto  TEXT,           policy  TEXT,            Name_health  TEXT,            Health_phone  TEXT,            prev_accident  TEXT,            Prev_When  TEXT,            anemia  TEXT,            Muscular  TEXT,            Rheumatic  TEXT,            Allergies  TEXT, Cancer VARCHAR DEFAULT NULL           Polio1  TEXT,            Multiple  TEXT,Scarlet VARCHAR DEFAULT NULL,            HIV  TEXT,            Sinus  TEXT,            Asthma  TEXT,            German  TEXT,            Nervousness  TEXT,            Numbness  TEXT,            Convulsions  TEXT,            Epilepsy  TEXT,          Concussion  TEXT,            Dizziness  TEXT,            Neuritis  TEXT,            Rheumatism  TEXT,            Diabetes  TEXT,            Arthritis  TEXT,            Venereal  TEXT,            Backaches  TEXT, Tuberculosis VARCHAR DEFAULT NULL,           Liver  TEXT,            Kidney  TEXT,            Thyroid  TEXT,            Alcoholism  TEXT,            Hepatitis  TEXT,            Mental  TEXT,            High  TEXT,            Digestive  TEXT,            Heart  TEXT,            other  TEXT, Ifother VARCHAR DEFAULT NULL,           illness  TEXT,            Dates  TEXT,            medications  TEXT,            Drink  TEXT,            Smoke  TEXT,            Drugs  TEXT,            Diet  TEXT,            Exercise  TEXT,            hazardous  TEXT,            hazardousyes  TEXT,            female  TEXT,            dr  TEXT,            patient  TEXT) ";
             
             
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            
+            if (sqlite3_exec(ehrdb6, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
                 
@@ -90,7 +91,7 @@
                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
                 [alert show];            }
             
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdb6);
             
         } else {
             BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open or create DB."];
@@ -645,7 +646,7 @@
     
     const char *dbpath = [databasePath UTF8String];
     
-    if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+    if (sqlite3_open(dbpath, &ehrdb6) == SQLITE_OK)
     {
          NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO PATIENTINFO (Name,Date, StreetAddress,  City,State,Zipcode, Homephone,Pager,MobileNumber,DateOfBirth,SocialSecurityNumber,Gender,  MaritalStatus, Student, EmployerName, Occupation,EmployerAddress,                               Workphone,EmployerCity,Estate,Ezip,SpousesName,SpousesEmp,Spousesph, Name_friend,Phone_friend, Chiropratic_care,Symptoms,Painscale,         Symptom1, Painscale1,Symptom2,Painscale2, Symptom_Accident, TypeOfAccident, Date_Of_Accident, Accident_Reported,When,Where,Attorney_accident,                              NameOfAttorney,phone_Number,Fault_accident,Insurance, Insurance_phone,Name_auto,Phone_auto,policy,  Name_health,  Health_phone,                               prev_accident,Prev_When,anemia, Muscular, Rheumatic,   Allergies,Cancer,   Polio1,         Multiple,Scarlet,         HIV,         Sinus,         Asthma,         German,         Nervousness,         Numbness,         Convulsions,         Epilepsy,         Concussion,         Dizziness,         Neuritis,         Rheumatism,         Diabetes,         Arthritis,         Venereal,         Backaches,Tuberculosis,         Liver,         Kidney,         Thyroid,         Alcoholism,         Hepatitis,         Mental,         High,         Digestive,         Heart,         other,         Ifother,         Illness,         Dates,         Medications,         Drink,         Smoke,         Drugs,         Diet,         Exercise,         Hazardous,         Hazardousyes,         Female,         Dr,         Patient) VALUES (\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\")", [recorddict objectForKey:@"name"],[recorddict objectForKey:@"todaydate"],[recorddict objectForKey:@"streetaddress"],
          [recorddict objectForKey:@"city"],
@@ -711,7 +712,7 @@
         
         const char *insert_stmt = [insertSQL UTF8String];
         
-        sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+        sqlite3_prepare_v2(ehrdb6, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
         {
             BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted Successfully."];
@@ -730,7 +731,7 @@
            
         }
         sqlite3_finalize(statement);
-        sqlite3_close(ehrdb);
+        sqlite3_close(ehrdb6);
     }
 }
 @end

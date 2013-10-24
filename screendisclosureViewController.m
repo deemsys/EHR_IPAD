@@ -83,13 +83,13 @@ int a;
         
         const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdb5) == SQLITE_OK)
         {
             NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO SCREENDISCLOSURE (date, name) VALUES (\"%@\", \"%@\")", date.text, name.text];
             
             const char *insert_stmt = [insertSQL UTF8String];
             
-            sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+            sqlite3_prepare_v2(ehrdb5, insert_stmt, -1, &statement, NULL);
             if (sqlite3_step(statement) == SQLITE_DONE)
             {
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
@@ -110,7 +110,7 @@ int a;
                 [alert show];
             }
             sqlite3_finalize(statement);
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdb5);
         }
 
     }
@@ -156,12 +156,12 @@ int a;
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdb5) == SQLITE_OK)
         {
             char *errMsg;
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS SCREENDISCLOSURE (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT , NAME TEXT)";
             
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(ehrdb5, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 //status.text = @"Failed to create table";
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
@@ -171,7 +171,7 @@ int a;
                 [alert show];
             }
             
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdb5);
             
         }
         else

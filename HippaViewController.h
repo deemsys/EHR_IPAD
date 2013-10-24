@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "/usr/include/sqlite3.h"
+
 
 
 
@@ -20,11 +20,8 @@
     IBOutlet UITextField * sign;
     IBOutlet UITextField * witness;
     IBOutlet UITextField * date;
-
-    
-
-    NSString * databasePath;
-    sqlite3 * ehrdb;
+    NSString *databasePath;
+    sqlite3 * ehrdbase1;
 }
 
 -(IBAction)submit:(id)sender;

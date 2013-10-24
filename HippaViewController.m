@@ -72,16 +72,16 @@ int a;
                         
                         const char *dbpath = [databasePath UTF8String];
                         
-                        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+                        if (sqlite3_open(dbpath, &ehrdbase1) == SQLITE_OK)
                         {
 
-                            NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO HIPPA (name, sign, witness, date) VALUES (\"%@\", \"%@\", \"%@\",\"%@\")", name.text, sign.text, witness.text, date.text];
+                            NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO HIPPATAB (name, sign, witness, date) VALUES (\"%@\", \"%@\", \"%@\",\"%@\")", name.text, sign.text, witness.text, date.text];
 
                           
                             
                             const char *insert_stmt = [insertSQL UTF8String];
                             
-                            sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+                            sqlite3_prepare_v2(ehrdbase1, insert_stmt, -1, &statement, NULL);
                             if (sqlite3_step(statement) == SQLITE_DONE)
                             {
                                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
@@ -106,7 +106,7 @@ int a;
                                 [alert show];
                             }
                             sqlite3_finalize(statement);
-                            sqlite3_close(ehrdb);
+                            sqlite3_close(ehrdbase1);
                         }
 
 
@@ -192,7 +192,7 @@ int a;
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehrdbase1.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
@@ -200,12 +200,12 @@ int a;
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdbase1) == SQLITE_OK)
         {
             char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS HIPPA (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT , SIGN TEXT, WITNESS TEXT, DATE TEXT)";
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS HIPPATAB (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, SIGN TEXT, WITNESS TEXT, DATE TEXT)";
             
-            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(ehrdbase1, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 //status.text = @"Failed to create table";
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
@@ -215,7 +215,7 @@ int a;
                 [alert show];
             }
             
-            sqlite3_close(ehrdb);
+            sqlite3_close(ehrdbase1);
             
         }
         else

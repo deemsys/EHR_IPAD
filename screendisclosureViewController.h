@@ -15,7 +15,7 @@
     IBOutlet UITextField * name;
     NSMutableDictionary * recorddict;
     NSString * databasePath;
-    sqlite3 * ehrdb;
+    sqlite3 * ehrdb5;
 
 }
 

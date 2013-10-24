@@ -28,8 +28,6 @@
     IBOutlet UITextField * protectionreceived;
     IBOutlet UITextField * billed;
     IBOutlet UITextField * remdate;
-    NSString * databasePath;
-    sqlite3 * ehrdb;
     IBOutlet UITextField*patinfo;
         IBOutlet UITextField*screening;
         IBOutlet UITextField*aob;

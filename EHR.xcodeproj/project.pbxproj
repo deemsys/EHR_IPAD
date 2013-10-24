@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0DDCE718126E9200290BFD /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0DDCE618126E9200290BFD /* BG.png */; };
 		0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */; };
 		0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542B181169C200BDAAB9 /* Patient3ViewController.m */; };
 		0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */; };
@@ -28,7 +27,6 @@
 		0D2EAB5B18033A77004F5859 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB5A18033A77004F5859 /* Select.png */; };
 		0D2EAB5E18033B1A004F5859 /* signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB5C18033B1A004F5859 /* signin.png */; };
 		0D2EAB5F18033B1A004F5859 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB5D18033B1A004F5859 /* signup.png */; };
-		0D2EAB6118033DE5004F5859 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB6018033DE5004F5859 /* LoginBG.png */; };
 		0D2EAB6518034245004F5859 /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB6418034245004F5859 /* register.png */; };
 		0D2EAB671803CBF4004F5859 /* buttonbg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB661803CBF4004F5859 /* buttonbg.JPG */; };
 		0D2EAB6A1803D359004F5859 /* select1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB681803D359004F5859 /* select1.png */; };
@@ -43,9 +41,18 @@
 		0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB8A18047CB6004F5859 /* BlockBackground.m */; };
 		0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */; };
 		0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9B18051F21004F5859 /* alert-red-button.png */; };
+		0D3667C71816B3AD0069FF78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
+		0D3667CA1816B7950069FF78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
 		0D476DB318153C8100DA10DA /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB118153C8100DA10DA /* alert.png */; };
 		0D476DB618153D8700DA10DA /* alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D476DB518153D8700DA10DA /* alert@2x.png */; };
-		0D5969DF17FF14F100015709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5969DE17FF14F100015709 /* libsqlite3.dylib */; };
+		0D6799911818DF4900BDC1FC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6799901818DF4900BDC1FC /* libsqlite3.dylib */; };
+		0D6799961818EE8B00BDC1FC /* logindr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799921818EE8B00BDC1FC /* logindr.png */; };
+		0D6799971818EE8B00BDC1FC /* loginad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799931818EE8B00BDC1FC /* loginad.png */; };
+		0D6799981818EE8B00BDC1FC /* regist.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799941818EE8B00BDC1FC /* regist.png */; };
+		0D6799991818EE8B00BDC1FC /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799951818EE8B00BDC1FC /* BG.png */; };
+		0D67999B1818EF7200BDC1FC /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D67999A1818EF7200BDC1FC /* login.png */; };
+		0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D67999E1819008800BDC1FC /* adminloginViewController.m */; };
+		0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6799A2181900B100BDC1FC /* doctorloginViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9C35E1180C850F00134BB6 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DE180C850F00134BB6 /* reset.png */; };
 		0D9C35E2180C850F00134BB6 /* saveandcontinue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DF180C850F00134BB6 /* saveandcontinue.png */; };
@@ -59,8 +66,6 @@
 		0DA2497D180E6F3100C9A9C6 /* checkBoxMarked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */; };
 		0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */; };
 		0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */; };
-		0DCD15D617FD4F5200748DD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
-		0DCD15D817FD4F5200748DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
 		0DCD15DA17FD4F5200748DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D917FD4F5200748DD7 /* UIKit.framework */; };
 		0DCD15E017FD4F5200748DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD15DE17FD4F5200748DD7 /* InfoPlist.strings */; };
 		0DCD15E217FD4F5200748DD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD15E117FD4F5200748DD7 /* main.m */; };
@@ -86,7 +91,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D0DDCE618126E9200290BFD /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 		0D1554261811611C00BDAAB9 /* insuranceverifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insuranceverifyViewController.h; sourceTree = "<group>"; };
 		0D1554271811612300BDAAB9 /* insuranceverifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insuranceverifyViewController.m; sourceTree = "<group>"; };
 		0D15542A181169BB00BDAAB9 /* Patient3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient3ViewController.h; sourceTree = "<group>"; };
@@ -121,7 +125,6 @@
 		0D2EAB5A18033A77004F5859 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select.png; sourceTree = "<group>"; };
 		0D2EAB5C18033B1A004F5859 /* signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signin.png; sourceTree = "<group>"; };
 		0D2EAB5D18033B1A004F5859 /* signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup.png; sourceTree = "<group>"; };
-		0D2EAB6018033DE5004F5859 /* LoginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBG.png; sourceTree = "<group>"; };
 		0D2EAB6418034245004F5859 /* register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register.png; sourceTree = "<group>"; };
 		0D2EAB661803CBF4004F5859 /* buttonbg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonbg.JPG; sourceTree = "<group>"; };
 		0D2EAB681803D359004F5859 /* select1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select1.png; sourceTree = "<group>"; };
@@ -146,7 +149,16 @@
 		0D2EAB9B18051F21004F5859 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
 		0D476DB118153C8100DA10DA /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
 		0D476DB518153D8700DA10DA /* alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert@2x.png"; sourceTree = "<group>"; };
-		0D5969DE17FF14F100015709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0D6799901818DF4900BDC1FC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0D6799921818EE8B00BDC1FC /* logindr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logindr.png; sourceTree = "<group>"; };
+		0D6799931818EE8B00BDC1FC /* loginad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginad.png; sourceTree = "<group>"; };
+		0D6799941818EE8B00BDC1FC /* regist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regist.png; sourceTree = "<group>"; };
+		0D6799951818EE8B00BDC1FC /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		0D67999A1818EF7200BDC1FC /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		0D67999D1819008800BDC1FC /* adminloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adminloginViewController.h; sourceTree = "<group>"; };
+		0D67999E1819008800BDC1FC /* adminloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminloginViewController.m; sourceTree = "<group>"; };
+		0D6799A1181900B100BDC1FC /* doctorloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorloginViewController.h; sourceTree = "<group>"; };
+		0D6799A2181900B100BDC1FC /* doctorloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorloginViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
 		0D9C35DE180C850F00134BB6 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
@@ -190,10 +202,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5969DF17FF14F100015709 /* libsqlite3.dylib in Frameworks */,
-				0DCD15D817FD4F5200748DD7 /* CoreGraphics.framework in Frameworks */,
+				0D6799911818DF4900BDC1FC /* libsqlite3.dylib in Frameworks */,
+				0D3667CA1816B7950069FF78 /* Foundation.framework in Frameworks */,
+				0D3667C71816B3AD0069FF78 /* CoreGraphics.framework in Frameworks */,
 				0DCD15DA17FD4F5200748DD7 /* UIKit.framework in Frameworks */,
-				0DCD15D617FD4F5200748DD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +384,24 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
+		0D67999C1819003F00BDC1FC /* Adminlogin */ = {
+			isa = PBXGroup;
+			children = (
+				0D67999D1819008800BDC1FC /* adminloginViewController.h */,
+				0D67999E1819008800BDC1FC /* adminloginViewController.m */,
+			);
+			name = Adminlogin;
+			sourceTree = "<group>";
+		};
+		0D6799A01819009000BDC1FC /* Doctorlogin */ = {
+			isa = PBXGroup;
+			children = (
+				0D6799A1181900B100BDC1FC /* doctorloginViewController.h */,
+				0D6799A2181900B100BDC1FC /* doctorloginViewController.m */,
+			);
+			name = Doctorlogin;
+			sourceTree = "<group>";
+		};
 		0D9AE5C7180D222B00493E14 /* Consenttotreatminor */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,14 +415,18 @@
 			isa = PBXGroup;
 			children = (
 				0D2EAB521802D101004F5859 /* logo.png */,
+				0D6799921818EE8B00BDC1FC /* logindr.png */,
+				0D6799931818EE8B00BDC1FC /* loginad.png */,
+				0D6799941818EE8B00BDC1FC /* regist.png */,
+				0D6799951818EE8B00BDC1FC /* BG.png */,
 				0D476DB518153D8700DA10DA /* alert@2x.png */,
 				0DA24976180E6F3100C9A9C6 /* checkBox.png */,
+				0D67999A1818EF7200BDC1FC /* login.png */,
 				0D476DB118153C8100DA10DA /* alert.png */,
 				0DA24977180E6F3100C9A9C6 /* checkBox@2x.png */,
 				0DA24978180E6F3100C9A9C6 /* checkBoxMarked.png */,
 				0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */,
 				0D9C35DE180C850F00134BB6 /* reset.png */,
-				0D0DDCE618126E9200290BFD /* BG.png */,
 				0D9C35DF180C850F00134BB6 /* saveandcontinue.png */,
 				0D9C35E0180C850F00134BB6 /* submit.png */,
 				0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */,
@@ -402,7 +436,6 @@
 				0D2EAB6418034245004F5859 /* register.png */,
 				0D2EAB8418041FC1004F5859 /* redTextBox.png */,
 				0D2EAB5C18033B1A004F5859 /* signin.png */,
-				0D2EAB6018033DE5004F5859 /* LoginBG.png */,
 				0D2EAB661803CBF4004F5859 /* buttonbg.JPG */,
 				0D2EAB5D18033B1A004F5859 /* signup.png */,
 				0D2EAB5A18033A77004F5859 /* Select.png */,
@@ -444,6 +477,8 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D6799A01819009000BDC1FC /* Doctorlogin */,
+				0D67999C1819003F00BDC1FC /* Adminlogin */,
 				0D15543318116F2500BDAAB9 /* Work Accident */,
 				0D1554291811698E00BDAAB9 /* Patient Info */,
 				0D155425181160EB00BDAAB9 /* HIVC */,
@@ -485,7 +520,7 @@
 		0DCD15D417FD4F5200748DD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D5969DE17FF14F100015709 /* libsqlite3.dylib */,
+				0D6799901818DF4900BDC1FC /* libsqlite3.dylib */,
 				0DCD15D517FD4F5200748DD7 /* Foundation.framework */,
 				0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */,
 				0DCD15D917FD4F5200748DD7 /* UIKit.framework */,
@@ -618,7 +653,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D476DB318153C8100DA10DA /* alert.png in Resources */,
-				0D2EAB6118033DE5004F5859 /* LoginBG.png in Resources */,
 				0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */,
 				0D2EAB6B1803D359004F5859 /* unselect.png in Resources */,
 				0DCD15EE17FD4F5200748DD7 /* Images.xcassets in Resources */,
@@ -627,14 +661,19 @@
 				0D2EAB671803CBF4004F5859 /* buttonbg.JPG in Resources */,
 				0D9C35E1180C850F00134BB6 /* reset.png in Resources */,
 				0D2EAB551802D101004F5859 /* logo2.png in Resources */,
+				0D6799981818EE8B00BDC1FC /* regist.png in Resources */,
 				0D2EAB8518041FC1004F5859 /* redTextBox.png in Resources */,
 				0DCD15E017FD4F5200748DD7 /* InfoPlist.strings in Resources */,
+				0D6799971818EE8B00BDC1FC /* loginad.png in Resources */,
 				0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */,
 				0D9C35E3180C850F00134BB6 /* submit.png in Resources */,
 				0DA2497A180E6F3100C9A9C6 /* checkBox.png in Resources */,
 				0DA2497C180E6F3100C9A9C6 /* checkBoxMarked.png in Resources */,
+				0D6799991818EE8B00BDC1FC /* BG.png in Resources */,
 				0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */,
 				0DA2497D180E6F3100C9A9C6 /* checkBoxMarked@2x.png in Resources */,
+				0D6799961818EE8B00BDC1FC /* logindr.png in Resources */,
+				0D67999B1818EF7200BDC1FC /* login.png in Resources */,
 				0D2EAB6518034245004F5859 /* register.png in Resources */,
 				0D2EAB6A1803D359004F5859 /* select1.png in Resources */,
 				0D2EAB5718033380004F5859 /* all-blocks.png in Resources */,
@@ -643,7 +682,6 @@
 				0D476DB618153D8700DA10DA /* alert@2x.png in Resources */,
 				0DA2497B180E6F3100C9A9C6 /* checkBox@2x.png in Resources */,
 				0DCD15E917FD4F5200748DD7 /* Main.storyboard in Resources */,
-				0D0DDCE718126E9200290BFD /* BG.png in Resources */,
 				0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */,
 				0D2EAB5F18033B1A004F5859 /* signup.png in Resources */,
 			);
@@ -671,6 +709,7 @@
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
 				0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */,
 				0D2EAB8318041B94004F5859 /* WelcomeViewController.m in Sources */,
+				0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */,
 				0D1FBC11180FAC6D00E38505 /* perryViewController.m in Sources */,
 				0D2EAB7A1804190B004F5859 /* AutoAccidentViewController2.m in Sources */,
 				0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */,
@@ -690,6 +729,7 @@
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,
 				0DA24975180E64F200C9A9C6 /* staffautocheckViewController.m in Sources */,
 				0DA24971180DC8F300C9A9C6 /* screendisclosureViewController.m in Sources */,
+				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,
 				0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */,
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
 			);
@@ -824,6 +864,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EHR/EHR-Prefix.pch";
 				INFOPLIST_FILE = "EHR/EHR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/deemsysinc/Desktop/EHR_WORKSPACE/EHR_IPAD,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -838,6 +882,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EHR/EHR-Prefix.pch";
 				INFOPLIST_FILE = "EHR/EHR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/deemsysinc/Desktop/EHR_WORKSPACE/EHR_IPAD,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

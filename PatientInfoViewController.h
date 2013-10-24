@@ -34,6 +34,7 @@
     IBOutlet UITextField * spouseemp;
     IBOutlet UITextField * spouseph;
     IBOutlet UITextField * relativeph;
+    IBOutlet UITextField *relativename;
      IBOutlet UISwitch *switch1;
     IBOutlet UISwitch *switch2;
     IBOutlet UILabel *seg;

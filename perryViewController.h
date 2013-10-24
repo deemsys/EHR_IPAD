@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "/usr/include/sqlite3.h"
 
 @interface perryViewController : UIViewController
 {
@@ -15,6 +16,8 @@
     IBOutlet UITextField * sign;
     IBOutlet UITextField * witness;
     IBOutlet UITextField * date;
+    NSString*databasePath;
+    sqlite3*ehrdb;
     
 }
 

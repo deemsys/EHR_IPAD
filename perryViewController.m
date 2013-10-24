@@ -137,6 +137,53 @@ int a;
 
 - (void)viewDidLoad
 {
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    // Get the documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    // Build the path to the database file
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
+    
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    
+    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    {
+		const char *dbpath = [databasePath UTF8String];
+        
+        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        {
+            char *errMsg;
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PERRY (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT , NAME TEXT, SIGN TEXT, WITNESS TEXT)";
+            
+            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            {
+                //status.text = @"Failed to create table";
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
+                
+                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                [alert show];
+            }
+            
+            sqlite3_close(ehrdb);
+            
+        }
+        else
+        {
+            // status.text = @"Failed to open/create database";
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open/create databse."];
+            
+            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+            
+        }
+    }
+
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self

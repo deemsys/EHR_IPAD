@@ -10,11 +10,11 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-#import <sqlite3.h>
+#import "/usr/include/sqlite3.h"
 
 @interface Patient3ViewController : UIViewController
 {
-    sqlite3*PatientDB;
+    sqlite3*ehrdb;
     NSString*databasePath;
     NSMutableDictionary *recorddict;
     IBOutlet UITextField*otherdis;
@@ -68,6 +68,43 @@
         IBOutlet UIButton*buttonx3;
         IBOutlet UIButton*buttonx4;
         IBOutlet UIButton*buttonx5;
+  
+     IBOutlet UITextField* Anemia;
+      IBOutlet UITextField*Muscular;  IBOutlet UITextField* Rheumatic;
+    IBOutlet UITextField* Allergies;
+      IBOutlet UITextField*Polio1;
+      IBOutlet UITextField*Multiple;
+     IBOutlet UITextField*Scarlet;
+      IBOutlet UITextField*HIV;
+      IBOutlet UITextField*Sinus;
+      IBOutlet UITextField*Asthma;
+      IBOutlet UITextField*German;
+      IBOutlet UITextField*Nervousness;
+      IBOutlet UITextField*Numbness;
+      IBOutlet UITextField*Convulsions;
+      IBOutlet UITextField*Epilepsy;
+      IBOutlet UITextField*Concussion;
+      IBOutlet UITextField*Dizziness;
+     IBOutlet UITextField* Neuritis;
+      IBOutlet UITextField*Rheumatism;
+     IBOutlet UITextField* Diabetes;
+      IBOutlet UITextField*Arthritis;
+      IBOutlet UITextField*Venereal;
+      IBOutlet UITextField*Backaches;
+      IBOutlet UITextField*Liver;
+     IBOutlet UITextField* Kidney;
+      IBOutlet UITextField*Thyroid;
+      IBOutlet UITextField*Alcoholism;
+      IBOutlet UITextField*Hepatitis;
+      IBOutlet UITextField*Mental;
+      IBOutlet UITextField*High;
+      IBOutlet UITextField*Digestive;
+      IBOutlet UITextField*Heart;
+    IBOutlet UITextField*Cancer;
+    IBOutlet UITextField*Tuberculosis;
+      IBOutlet UITextField*other;
+     IBOutlet UITextField*ifother;
+    IBOutlet UITextField*Drink,*smoke,*Drugs,*Diet,*Excercise;
     NSMutableArray*diseases;
     NSMutableArray*selecteddisease;
    

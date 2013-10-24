@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
 @interface authorizeandconsenttreatViewController : UIViewController
 {
@@ -14,7 +15,9 @@
     IBOutlet UITextField * date;
     IBOutlet UITextField * name;
     NSMutableDictionary * recorddict;
-    
+    NSString * databasePath;
+    sqlite3 * ehrdb;
+
 }
 
 -(IBAction)submit:(id)sender;

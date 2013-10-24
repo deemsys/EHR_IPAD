@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
 @interface insuranceverifyViewController : UIViewController
 {
@@ -45,7 +46,15 @@
     IBOutlet UILabel * what1;
     IBOutlet UILabel * what2;
     IBOutlet UILabel * what3;
+    IBOutlet UITextField *CM;
+    
+    IBOutlet UITextField *pt;
+    IBOutlet UITextField *ov;
     int a,b,c,d;
+    NSString * databasePath;
+    sqlite3 * ehrdb;
+    
+
 
 }
 -(IBAction)submit:(id)sender;

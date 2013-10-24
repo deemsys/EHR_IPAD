@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "/usr/include/sqlite3.h"
 
 @interface screendisclosureViewController : UIViewController
 {
     IBOutlet UITextField * date;
     IBOutlet UITextField * name;
     NSMutableDictionary * recorddict;
+    NSString * databasePath;
+    sqlite3 * ehrdb;
+
 }
 
 -(IBAction)submit:(id)sender;

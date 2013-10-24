@@ -231,6 +231,7 @@
     [spousename resignFirstResponder];
     [spouseph resignFirstResponder];
     [relativeph resignFirstResponder];
+    [relativename resignFirstResponder];
 }
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     
@@ -270,7 +271,8 @@
        ([relativeph.text length]!=0)&&
       (![fromd isEqual:@"Select DOB"])&&
        ([resLabel.text length]!=0)&&
-       ([resLabel2.text length]!=0))
+       ([resLabel2.text length]!=0)&&
+       ([relativename.text length]!=0))
     {
         c=0;
         if ([self validateNames:[name text]]==1)
@@ -315,7 +317,8 @@
                                                                                     {
                                                                                         if([self validatePager:[pager text]]==1)
                                                                                         {
-                                                                                            c=1;
+                                                              if ([self validateNames:[relativename text]]==1)
+                                                              {c=1;
                                                                                             [recorddict setValue:name.text forKey:@"name"];
                                                                                             [recorddict setValue:streetaddress.text forKey:@"streetaddress"];
                                                                                             [recorddict setValue:homeph.text forKey:@"homephone"];
@@ -335,6 +338,7 @@
                                                                                             [recorddict setValue:spouseemp.text forKey:@"spouseemp"];
                                                                                             [recorddict setValue:spouseph.text forKey:@"spousephone"];
                                                                                             [recorddict setValue:relativeph.text forKey:@"relativephone"];
+                                                                  [recorddict setValue:relativename.text forKey:@"relativename"];
                                                                                             [recorddict setValue:todaydate.text forKey:@"todaydate"];
                                                                                             [recorddict setValue:pager.text forKey:@"pager"];
                                                                                             [recorddict setValue:fromd.text forKey:@"DateOfBirth"];
@@ -343,6 +347,17 @@
                                                                                             [recorddict setValue:resLabel2.text forKey:@"hadchiropractic"];
                                                                                             [recorddict setValue:seg.text forKey:@"sex"];
                                                                                             [recorddict setValue:marital.text forKey:@"Maritalstatus"];
+                                                              }
+                                                              else{
+                                                                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Relative Name."];
+                                                                  
+                                                                  //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                                                                  [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                                                  [alert show];
+                                                                  
+                                                                  
+                                                              }
+                                                                  
                                                                                         }
                                                                                         else
                                                                                         {

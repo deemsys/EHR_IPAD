@@ -62,40 +62,42 @@ int a;
                 [recorddict setValue:date.text forKey:@"date"];
                         [recorddict setValue:sign.text forKey:@"sign"];
                         [recorddict setValue:witness.text forKey:@"witness"];
-                         sqlite3_stmt    *statement;
-                         
-                         const char *dbpath = [databasePath UTF8String];
-                         
-                         if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
-                         {
-                         NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO HARDSHIP (date, name, sign, witness) VALUES (\"%@\", \"%@\", \"%@\",\"%@\")", date.text, name.text, sign.text, witness.text];
-                         
-                         const char *insert_stmt = [insertSQL UTF8String];
-                         
-                         sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
-                         if (sqlite3_step(statement) == SQLITE_DONE)
-                         {
-                         BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
-                         
-                         //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                         [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                         [alert show];
-                         date.text=@"";
-                         name.text=@"";
-                         sign.text=@"";
-                         witness.text=@"";
-                         
-                         } else
-                         {
-                         BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form submission failed."];
-                         
-                         //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                         [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                         [alert show];
-                         }
-                         sqlite3_finalize(statement);
-                         sqlite3_close(ehrdb);
-                         }
+                        sqlite3_stmt    *statement;
+                        
+                        const char *dbpath = [databasePath UTF8String];
+                        
+                        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+                        {
+                            NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO HARDSHIP (name, date, sign, witness) VALUES (\"%@\", \"%@\", \"%@\", \"%@\")", name.text, date.text, sign.text, witness.text];
+                            
+                            const char *insert_stmt = [insertSQL UTF8String];
+                            
+                            sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+                            if (sqlite3_step(statement) == SQLITE_DONE)
+                            {
+                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted Successfully."];
+                                
+                                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                [alert show];
+                                name.text = @"";
+                                date.text = @"";
+                                sign.text = @"";
+                                witness.text=@"";
+                                
+                            }
+                            else
+                            {
+                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submission Failed."];
+                                
+                                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                [alert show];
+                            }
+                            sqlite3_finalize(statement);
+                            sqlite3_close(ehrdb);
+                        }
+
 
             }
             else
@@ -233,7 +235,7 @@ int a;
         if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
         {
             char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS HARDSHIP (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT , NAME TEXT, SIGN TEXT, WITNESS TEXT)";
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS HARDSHIP (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, DATEte TEXT, SIGN TEXT, WITNESS TEXT)";
             
             if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {

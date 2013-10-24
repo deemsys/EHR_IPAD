@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "/usr/include/sqlite3.h"
+
+
+
+
 @interface HippaViewController : UIViewController
 {
     NSMutableDictionary * recorddict;
@@ -15,7 +20,11 @@
     IBOutlet UITextField * sign;
     IBOutlet UITextField * witness;
     IBOutlet UITextField * date;
+
     
+
+    NSString * databasePath;
+    sqlite3 * ehrdb;
 }
 
 -(IBAction)submit:(id)sender;

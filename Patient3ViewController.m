@@ -68,7 +68,7 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"PATIENTINFO.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
@@ -76,13 +76,13 @@
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &PatientDB) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
         {
-            char *errMsg;const char *sql_stmt;
-           /* const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR NOT NULL            ,          StreetAddress VARCHAR NOT NULL,        City VARCHAR NOT NULL,     State VARCHAR NOT NULL,            ZipCode VARCHAR NOT NULL,            Homephone VARCHAR NOT NULL,            Pager VARCHAR NOT NULL,            MobileNumber VARCHAR NOT NULL,     DateOfBirth VARCHAR NOT NULL,            SocialSecurityNumber VARCHAR NOT NULL,        Gender VARCHAR NOT NULL,            MaritalStatus VARCHAR   NOT NULL,            Student VARCHAR   NOT NULL,            EmployerName VARCHAR   NOT NULL,            Occupation  VARCHAR   NOT NULL,            EmployerAddress  VARCHAR   NOT NULL,            Workphone  VARCHAR   NOT NULL,            EmployerCity  VARCHAR   NOT NULL,            Estate  VARCHAR   NOT NULL,            Ezip  VARCHAR   NOT NULL,            SpousesName  VARCHAR   NOT NULL,            SpousesEmp  VARCHAR   NOT NULL,            Spousesph  VARCHAR   NOT NULL,            Name_phone  VARCHAR   NOT NULL,            Chiropratic_care  VARCHAR   NOT NULL,            Symptoms  VARCHAR   NOT NULL,            Painscale  VARCHAR   NOT NULL,            Symptom1  VARCHAR   NOT NULL,            Painscale1  VARCHAR   NOT NULL,            Symptom2  VARCHAR   NOT NULL,            Painscale2  VARCHAR   NOT NULL,            Symptom_Accident  VARCHAR   NOT NULL,            Type_Of_Accident  VARCHAR   NOT NULL,            Date_Of_Accident  VARCHAR   NOT NULL,            Accident_Reported  VARCHAR   NOT NULL,            When  VARCHAR   NOT NULL,            Where  VARCHAR   NOT NULL,            Attorney_accident  VARCHAR   NOT NULL,            NameOfAttorney  VARCHAR   NOT NULL,            phone_Number  VARCHAR   NOT NULL,            Fault_accident  VARCHAR   NOT NULL,            Insurance  VARCHAR   NOT NULL,            Insurance_phone  VARCHAR   NOT NULL,            Name_ph  VARCHAR   NOT NULL,            policy  VARCHAR   NOT NULL,            Name_health  VARCHAR   NOT NULL,            Health_phone  VARCHAR   NOT NULL,            prev_accident  VARCHAR   NOT NULL,            Prev_When  VARCHAR   NOT NULL,            anemia  VARCHAR   DEFAULT NULL,            Muscular  VARCHAR   DEFAULT NULL,            Rheumatic  VARCHAR   DEFAULT NULL,            Allergies  VARCHAR   DEFAULT NULL,            Polio1  VARCHAR   DEFAULT NULL,            Multiple  VARCHAR   DEFAULT NULL,            HIV  VARCHAR   DEFAULT NULL,            Sinus  VARCHAR   DEFAULT NULL,            Asthma  VARCHAR   DEFAULT NULL,            German  VARCHAR   DEFAULT NULL,            Nervousness  VARCHAR   DEFAULT NULL,            Numbness  VARCHAR   DEFAULT NULL,            Convulsions  VARCHAR   DEFAULT NULL,            Epilepsy  VARCHAR   DEFAULT NULL,          Concussion  VARCHAR   DEFAULT NULL,            Dizziness  VARCHAR   DEFAULT NULL,            Neuritis  VARCHAR   DEFAULT NULL,            Rheumatism  VARCHAR   DEFAULT NULL,            Diabetes  VARCHAR   DEFAULT NULL,            Arthritis  VARCHAR   DEFAULT NULL,            Venereal  VARCHAR   DEFAULT NULL,            Backaches  VARCHAR   DEFAULT NULL,            Liver  VARCHAR   DEFAULT NULL,            Kidney  VARCHAR   DEFAULT NULL,            Thyroid  VARCHAR   DEFAULT NULL,            Alcoholism  VARCHAR   DEFAULT NULL,            Hepatitis  VARCHAR   DEFAULT NULL,            Mental  VARCHAR   DEFAULT NULL,            High  VARCHAR   DEFAULT NULL,            Digestive  VARCHAR   DEFAULT NULL,            Heart  VARCHAR   DEFAULT NULL,            other  VARCHAR   DEFAULT NULL,            illness  VARCHAR   DEFAULT NULL,            Dates  VARCHAR   DEFAULT NULL,            medications  VARCHAR   DEFAULT NULL,            Drink  VARCHAR   DEFAULT NULL,            Smoke  VARCHAR   DEFAULT NULL,            Drugs  VARCHAR   DEFAULT NULL,            Diet  VARCHAR   DEFAULT NULL,            Exercise  VARCHAR   DEFAULT NULL,            hazardous  VARCHAR   DEFAULT NULL,            hazardousyes  VARCHAR   DEFAULT NULL,            female  VARCHAR   DEFAULT NULL,            dr  VARCHAR   DEFAULT NULL,            patient  VARCHAR   DEFAULT NULL,            sign  VARCHAR   DEFAULT NULL ) ";
-            */
+            char *errMsg;
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR NOT NULL ,Date VARCHAR NOT NULL,          StreetAddress VARCHAR NOT NULL,        City VARCHAR NOT NULL,     State VARCHAR NOT NULL,            ZipCode VARCHAR NOT NULL,            Homephone VARCHAR NOT NULL,            Pager VARCHAR NOT NULL,            MobileNumber VARCHAR NOT NULL,     DateOfBirth VARCHAR NOT NULL,            SocialSecurityNumber VARCHAR NOT NULL,        Gender VARCHAR NOT NULL,            MaritalStatus VARCHAR   NOT NULL,            Student VARCHAR   NOT NULL,            EmployerName VARCHAR   NOT NULL,            Occupation  VARCHAR   NOT NULL,            EmployerAddress  VARCHAR   NOT NULL,            Workphone  VARCHAR   NOT NULL,            EmployerCity  VARCHAR   NOT NULL,            Estate  VARCHAR   NOT NULL,            Ezip  VARCHAR   NOT NULL,            SpousesName  VARCHAR   NOT NULL,            SpousesEmp  VARCHAR   NOT NULL,            Spousesph  VARCHAR   NOT NULL,            Name_friend VARCHAR   NOT NULL,Phone_friend  VARCHAR   NOT NULL,            Chiropratic_care  VARCHAR   NOT NULL,            Symptoms  VARCHAR   NOT NULL,            Painscale  VARCHAR   NOT NULL,            Symptom1  VARCHAR   NOT NULL,            Painscale1  VARCHAR   NOT NULL,            Symptom2  VARCHAR   NOT NULL,            Painscale2  VARCHAR   NOT NULL,            Symptom_Accident  VARCHAR   NOT NULL,            Type_Of_Accident  VARCHAR   NOT NULL,            Date_Of_Accident  VARCHAR   NOT NULL,            Accident_Reported  VARCHAR   NOT NULL,            When  VARCHAR   NOT NULL,            Where  VARCHAR   NOT NULL,            Attorney_accident  VARCHAR   NOT NULL,            NameOfAttorney  VARCHAR   NOT NULL,            phone_Number  VARCHAR   NOT NULL,            Fault_accident  VARCHAR   NOT NULL,            Insurance  VARCHAR   NOT NULL,            Insurance_phone  VARCHAR   NOT NULL,            Name_auto  VARCHAR   NOT NULL,  Phone_auto  VARCHAR   NOT NULL,           policy  VARCHAR   NOT NULL,            Name_health  VARCHAR   NOT NULL,            Health_phone  VARCHAR   NOT NULL,            prev_accident  VARCHAR   NOT NULL,            Prev_When  VARCHAR   NOT NULL,            anemia  VARCHAR   DEFAULT NULL,            Muscular  VARCHAR   DEFAULT NULL,            Rheumatic  VARCHAR   DEFAULT NULL,            Allergies  VARCHAR   DEFAULT NULL, Cancer VARCHAR DEFAULT NULL           Polio1  VARCHAR   DEFAULT NULL,            Multiple  VARCHAR   DEFAULT NULL,Scarlet VARCHAR DEFAULT NULL,            HIV  VARCHAR   DEFAULT NULL,            Sinus  VARCHAR   DEFAULT NULL,            Asthma  VARCHAR   DEFAULT NULL,            German  VARCHAR   DEFAULT NULL,            Nervousness  VARCHAR   DEFAULT NULL,            Numbness  VARCHAR   DEFAULT NULL,            Convulsions  VARCHAR   DEFAULT NULL,            Epilepsy  VARCHAR   DEFAULT NULL,          Concussion  VARCHAR   DEFAULT NULL,            Dizziness  VARCHAR   DEFAULT NULL,            Neuritis  VARCHAR   DEFAULT NULL,            Rheumatism  VARCHAR   DEFAULT NULL,            Diabetes  VARCHAR   DEFAULT NULL,            Arthritis  VARCHAR   DEFAULT NULL,            Venereal  VARCHAR   DEFAULT NULL,            Backaches  VARCHAR   DEFAULT NULL, Tuberculosis VARCHAR DEFAULT NULL,           Liver  VARCHAR   DEFAULT NULL,            Kidney  VARCHAR   DEFAULT NULL,            Thyroid  VARCHAR   DEFAULT NULL,            Alcoholism  VARCHAR   DEFAULT NULL,            Hepatitis  VARCHAR   DEFAULT NULL,            Mental  VARCHAR   DEFAULT NULL,            High  VARCHAR   DEFAULT NULL,            Digestive  VARCHAR   DEFAULT NULL,            Heart  VARCHAR   DEFAULT NULL,            other  VARCHAR   DEFAULT NULL, Ifother VARCHAR DEFAULT NULL,           illness  VARCHAR   DEFAULT NULL,            Dates  VARCHAR   DEFAULT NULL,            medications  VARCHAR   DEFAULT NULL,            Drink  VARCHAR   DEFAULT NULL,            Smoke  VARCHAR   DEFAULT NULL,            Drugs  VARCHAR   DEFAULT NULL,            Diet  VARCHAR   DEFAULT NULL,            Exercise  VARCHAR   DEFAULT NULL,            hazardous  VARCHAR   DEFAULT NULL,            hazardousyes  VARCHAR   DEFAULT NULL,            female  VARCHAR   DEFAULT NULL,            dr  VARCHAR   DEFAULT NULL,            patient  VARCHAR   DEFAULT NULL) ";
             
-            if (sqlite3_exec(PatientDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            
+            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
                 
@@ -90,7 +90,7 @@
                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
                 [alert show];            }
             
-            sqlite3_close(PatientDB);
+            sqlite3_close(ehrdb);
             
         } else {
             BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open or create DB."];
@@ -185,197 +185,316 @@
 
     if(button1.selected)
     {
+        Anemia.text=@"Anemia";
         [selecteddisease addObject:@"Anemia"];
         
     }
+    else
+        Anemia.text=NULL;
     if(button2.selected)
     {
+        Muscular.text=@"Muscular Dystrophy";
         [selecteddisease addObject:@"Muscular Dystrophy"];
         
     }
+    else
+        Muscular.text=NULL;
     if(button3.selected)
     {
+        Rheumatic.text=@"Rheumatic Fever";
        [selecteddisease addObject:@"Rheumatic Fever"];
 
         
     }
+    else
+        Rheumatic.text=NULL;
     if(button4.selected)
     {
-        
+        Allergies.text=@"Allergies";
         [selecteddisease addObject:@" Allergies"];
         
     }
-    if(button5.selected)
+    else
+        Allergies.text=@"Allergies";
+        if(button5.selected)
     {
+        Polio1.text=@"Polio";
          [selecteddisease addObject:@"Polio"];
         
     }
+    else
+        Polio1.text=NULL;
     if(button6.selected)
     {
+        Multiple.text=@"Multiple Sclerosis";
           [selecteddisease addObject:@"Multiple Sclerosis"];
     }
+    else
+        Multiple.text=NULL;
     if(button7.selected)
     {
+    Scarlet.text=@"Scarlet Fever";
          [selecteddisease addObject:@"Scarlet Fever"];
         
     }
+    else
+        Scarlet.text=NULL;
     if(button8.selected)
     {
+        HIV.text=@"HIV";
          [selecteddisease addObject:@"HIV"];
     }
+    else
+        HIV.text=NULL;
     if(button9.selected)
     {
+        Asthma.text=@"Asthma";
           [selecteddisease addObject:@"Asthma"];
     }
+    else
+        Asthma.text=NULL;
     if(button10.selected)
     {
+        German.text=@"German Measles";
         [selecteddisease addObject:@"German Measles"];
     }
+    else
+        German.text=NULL;
     if(button11.selected)
     {
+        Nervousness.text=@"Nervousness";
          [selecteddisease addObject:@" Nervousness"];
         
     }
+    else
+        Nervousness.text=NULL;
     if(button12.selected)
     {
+        Numbness.text=@"Numbness";
          [selecteddisease addObject:@"Numbness"];
     }
+    else
+        Numbness.text=NULL;
     if(button13.selected)
     {
+        Epilepsy.text=@"Epilepsy";
         [selecteddisease addObject:@"Epilepsy"];
     }
+    else
+        Epilepsy.text=NULL;
     if(button14.selected)
     {
+        Concussion.text=@"Concussion";
        [selecteddisease addObject:@"Concussion"];
     }
     if(button15.selected)
     {
+        Dizziness.text=@"Dizziness";
         [selecteddisease addObject:@"Dizziness"];
         
     }
+    else
+        Dizziness.text=NULL;
     if(button16.selected)
     {
+        Neuritis.text=@"Neuritis";
         [selecteddisease addObject:@"Neuritis"];
         
     }
+    else
+        Neuritis.text=NULL;
     if(button17.selected)
     {
+        Diabetes.text=@"Disbetes";
        [selecteddisease addObject:@"Diabetes "];
         
     }
+    else
+        Diabetes.text=NULL;
     if(button18.selected)
     {
+        Arthritis.text=@"Arthritis";
         [selecteddisease addObject:@"Arthritis"];
     }
+    else
+        Arthritis.text=NULL;
     if(button19.selected)
     {
+        Venereal.text=@"Venereal Disease";
        
         [selecteddisease addObject:@"Venereal Disease"];
         
     }
+    else
+        Venereal.text=NULL;
     if(button20.selected)
     {
-       
+       Backaches.text=@"Backaches";
         [selecteddisease addObject:@"Backaches"];
         
     }
     if(button21.selected)
     {
+        Liver.text=@"Liver Disease";
                [selecteddisease addObject:@"Liver Disease"];
         
     }
+    else
+        Liver.text=NULL;
     if(button22.selected)
     {
+        Kidney.text=@"Kidney Disease";
                 [selecteddisease addObject:@"Kidney Disease"];
         
     }
+    else
+        Kidney.text=NULL;
     if(button23.selected)
     {
+        Thyroid.text=@"Thyroid Disease";
         [selecteddisease addObject:@"Thyroid Disease"];
         
     }
+    else
+        Thyroid.text=NULL;
     if(button24.selected)
     {
+        Alcoholism.text=@"Alcoholism";
          [selecteddisease addObject:@"Alcoholism"];
         
     }
+    else
+        Thyroid.text=NULL;
     if(button25.selected)
     {
+        Mental.text=@"Mental Illness";
          [selecteddisease addObject:@"Mental Illness"];
         
     }
+    else
+        Thyroid.text=NULL;
     if(button26.selected)
     {
+        High.text=@"High Blood Pressure";
         [selecteddisease addObject:@"High Blood Pressure"];
     }
+    else
+        High.text=NULL;
     if(button27.selected)
     {
+        Digestive.text=@"Digestive Disorders";
         [selecteddisease addObject:@"Digestive Disorders"];
         
     }
+    else
+        Digestive.text=NULL;
+    
     if(button28.selected)
     {
+        Heart.text=@"Heart trouble";
         [selecteddisease addObject:@"Heart trouble"];
     }
+    else
+        Heart.text=NULL;
     if(button29.selected)
     {
+        Cancer.text=@"Cancer";
          [selecteddisease addObject:@" Cancer "];
     }
+    else
+        Cancer.text=NULL;
     if(button30.selected)
     {
+        Sinus.text=@"Sinus Trouble";
          [selecteddisease addObject:@"Sinus Trouble"];
         
     }
+    else
+        Sinus.text=NULL;
     if(button31.selected)
     {
+        Convulsions.text=@"Convulsions";
          [selecteddisease addObject:@"Convulsions"];
         
     }
+    else
+        Convulsions.text=NULL;
     if(button32.selected)
     {
-         [selecteddisease addObject:@"Rheumatism"];
+        Rheumatism.text=@"Rhematism";
+        [selecteddisease addObject:@"Rheumatism"];
         
     }
+    else
+        Rheumatism.text=NULL;
     if(button33.selected)
     {
+        Tuberculosis.text=@"Tuberculosis";
          [selecteddisease addObject:@"Tuberculosis"];
     }
+    else
+        Tuberculosis.text=NULL;
     if(button34.selected)
     {
+        Hepatitis.text=@"Hepatitis";
         [selecteddisease addObject:@"Hepatitis"];
         
     }
+    else
+        Hepatitis.text=NULL;
     if(button35.selected)
     {
+        other.text=@"other";
+        ifother.text=otherdis.text;
         [selecteddisease addObject:otherdis.text];
         
     }
+    else
+    {
+        other.text=NULL;
+        ifother.text=NULL;
+    }
     if(buttonx1.selected)
     {
+        Drink.text=@"Drink Regularly";
        // NSLog(@"selected %hhd",buttonx1.selected);
         [circle addObject:@"Drink Regularly"];
         
     }
+    else
+        Drink.text=NULL;
     if(buttonx2.selected)
     {
+     Diet.text=@"Eat a Poor Diet";
         [circle addObject:@"Eat a Poor Diet"];
         
     }
+    else
+        Diet.text=NULL;
     if(buttonx3.selected)
     {
+        Excercise.text=@"Exercise Regularly";
         [circle addObject:@"Exercise Regularly"];
         
     }
+    else
+        Excercise.text=NULL;
     if(buttonx4.selected)
     {
+        smoke.text=@"Smoke";
         [circle addObject:@"Smoke"];
         
     }
+    else
+        smoke.text=NULL;
     if(buttonx5.selected)
     {
+        Drugs.text=@"Take Recreational Dugs";
         [circle addObject:@"Take Recreational Dugs"];
         
     }
+    else
+        Drugs.text=NULL;
     
     [recorddict setObject:selecteddisease forKey:@"selecteddis"];
     [recorddict setObject:circle forKey:@"doyoucircle"];
@@ -522,25 +641,88 @@
 -(void)savedata1
 {
     
-    sqlite3_stmt    *statement;NSString *insertSQL;
+    sqlite3_stmt    *statement;
     
     const char *dbpath = [databasePath UTF8String];
     
-    if (sqlite3_open(dbpath, &PatientDB) == SQLITE_OK)
+    if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
     {
-      /*  NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO PATIENTINFO (Name,                               Date,                               StreetAddress,                               City,                               State,                               Zipcode,                               Homephone,                               Pager,                               MobileNumber,                               DateOfBirth,                               SocialSecurityNumber,                               Gender,                               MaritalStatus,                               Student,                               EmployerName,                               Occupation,                               EmployerAddress,                               Workphone,                               EmployerCity,                               Estate,                               Ezip,                               SpousesName,                               SpousesEmp,                               Spousesph,                               Name_phone,                               Chiropratic_care,                               Symptoms,                               Painscale,                               Symptom_Accident,                               Date_Of_Accident,                               Accident_Reported,                               When,                               Where,                               Attorney_accident,                               TypeOfAccident,                               NameOfAttorney,                               phone_Number,                               Fault_accident,                               Insurance,                               Insurance_phone,                               Name_ph,                               policy,                               Name_health,                               Health_phone,                               prev_accident,                               Prev_When) VALUES (\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\")", [recorddict objectForKey:@"name"]];
-                              
+         NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO PATIENTINFO (Name,Date, StreetAddress,  City,State,Zipcode, Homephone,Pager,MobileNumber,DateOfBirth,SocialSecurityNumber,Gender,  MaritalStatus, Student, EmployerName, Occupation,EmployerAddress,                               Workphone,EmployerCity,Estate,Ezip,SpousesName,SpousesEmp,Spousesph, Name_friend,Phone_friend, Chiropratic_care,Symptoms,Painscale,         Symptom1, Painscale1,Symptom2,Painscale2, Symptom_Accident, TypeOfAccident, Date_Of_Accident, Accident_Reported,When,Where,Attorney_accident,                              NameOfAttorney,phone_Number,Fault_accident,Insurance, Insurance_phone,Name_auto,Phone_auto,policy,  Name_health,  Health_phone,                               prev_accident,Prev_When,anemia, Muscular, Rheumatic,   Allergies,Cancer,   Polio1,         Multiple,Scarlet,         HIV,         Sinus,         Asthma,         German,         Nervousness,         Numbness,         Convulsions,         Epilepsy,         Concussion,         Dizziness,         Neuritis,         Rheumatism,         Diabetes,         Arthritis,         Venereal,         Backaches,Tuberculosis,         Liver,         Kidney,         Thyroid,         Alcoholism,         Hepatitis,         Mental,         High,         Digestive,         Heart,         other,         Ifother,         Illness,         Dates,         Medications,         Drink,         Smoke,         Drugs,         Diet,         Exercise,         Hazardous,         Hazardousyes,         Female,         Dr,         Patient) VALUES (\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\",\"%@\",\"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\", \"%@\")", [recorddict objectForKey:@"name"],[recorddict objectForKey:@"todaydate"],[recorddict objectForKey:@"streetaddress"],
+         [recorddict objectForKey:@"city"],
+         [recorddict objectForKey:@"state"],
+         [recorddict objectForKey:@"zipcode"],
+         [recorddict objectForKey:@"homephone"],
+         [recorddict objectForKey:@"pager"],
+         [recorddict objectForKey:@"cellphone"],
+         [recorddict objectForKey:@"DateOfBirth"],
+         [recorddict objectForKey:@"ssn"],
+         [recorddict objectForKey:@"sex"],
+         [recorddict objectForKey:@"Maritalstatus"],
+         [recorddict objectForKey:@"Student"],
+         [recorddict objectForKey:@"empname"],
+         [recorddict objectForKey:@"occupation"],
+         [recorddict objectForKey:@"empaddress"],
+         [recorddict objectForKey:@"workphone"],
+         [recorddict objectForKey:@"empcity"],
+         [recorddict objectForKey:@"workstate"],
+         [recorddict objectForKey:@"workzipcode"],
+         [recorddict objectForKey:@"spousename"],
+         [recorddict objectForKey:@"spouseemp"],
+         [recorddict objectForKey:@"spousephone"],
+         [recorddict objectForKey:@"relativename"],
+         [recorddict objectForKey:@"relativephone"],
+         [recorddict objectForKey:@"hadchiropractic"],
+         [recorddict objectForKey:@"symptom1"],
+         [recorddict objectForKey:@"symrate1"],
+         [recorddict objectForKey:@"symptom2"],
+         [recorddict objectForKey:@"symrate2"],
+         [recorddict objectForKey:@"symptom3"],
+         [recorddict objectForKey:@"symrate3"],
+         [recorddict objectForKey:@"symduetoacc"],
+         [recorddict objectForKey:@"TypeOfaccident"],
+         [recorddict objectForKey:@"Dateofaccident"],
+         [recorddict objectForKey:@"accreported"],
+         [recorddict objectForKey:@"Medicaltime"],
+         [recorddict objectForKey:@"MedicalLocation"],
+         [recorddict objectForKey:@"retainedattorney"],
+         [recorddict objectForKey:@"nameofattorney"],
+         [recorddict objectForKey:@"attorneyphone"],
+         [recorddict objectForKey:@"NOP"],
+         [recorddict objectForKey:@"insurancecom"],
+         [recorddict objectForKey:@"insurancepho"],
+         [recorddict objectForKey:@"autoname"],
+         [recorddict objectForKey:@"autoph"],
+         [recorddict objectForKey:@"autopolicy"],
+         [recorddict objectForKey:@"healthname"],
+         [recorddict objectForKey:@"healthphone"],
+         [recorddict objectForKey:@"prevautoorwork"],
+         [recorddict objectForKey:@"prevauto"],Anemia.text,Muscular.text,Rheumatic.text,Allergies.text,Polio1.text,Multiple.text,HIV.text,Sinus.text,Asthma.text,German.text,Nervousness.text,Numbness.text,Convulsions.text,Epilepsy.text,Concussion.text,Dizziness.text,Neuritis.text,Rheumatism.text,Diabetes.text,Arthritis.text,Venereal.text,Backaches.text,Liver.text,Kidney.text,Thyroid.text,Alcoholism.text,Hepatitis.text,Mental.text,High.text,Digestive.text,Heart.text,other.text,ifother.text,
+                  [recorddict objectForKey:@"majorillness"],
+         [recorddict objectForKey:@"majorillnessdate"],
+         [recorddict objectForKey:@"medicines"],Drink.text,smoke.text,Drugs.text,Diet.text,Excercise.text,
+         
+         [recorddict objectForKey:@"hazardoussubstances"],
+         [recorddict objectForKey:@"hazardouslist"],
+         [recorddict objectForKey:@"femalepregnant"],
+         [recorddict objectForKey:@"docotorsign"],
+                                [recorddict objectForKey:@"patientsign"] ];
                                
-                  */
+               
         
         const char *insert_stmt = [insertSQL UTF8String];
         
-        sqlite3_prepare_v2(PatientDB, insert_stmt, -1, &statement, NULL);
+        sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
         {
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted Successfully."];
             
-        } else {
-            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to insert data."];
+            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+        }
+        else
+        {
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submission Failed."];
             
             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
             [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -548,7 +730,7 @@
            
         }
         sqlite3_finalize(statement);
-        sqlite3_close(PatientDB);
+        sqlite3_close(ehrdb);
     }
 }
 @end

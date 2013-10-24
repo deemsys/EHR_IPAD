@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "/usr/include/sqlite3.h"
 @interface staffautocheckViewController : UIViewController
 {
     NSMutableDictionary * recorddict;
@@ -28,8 +28,16 @@
     IBOutlet UITextField * protectionreceived;
     IBOutlet UITextField * billed;
     IBOutlet UITextField * remdate;
-    
-    
+    NSString * databasePath;
+    sqlite3 * ehrdb;
+    IBOutlet UITextField*patinfo;
+        IBOutlet UITextField*screening;
+        IBOutlet UITextField*aob;
+        IBOutlet UITextField*history;
+        IBOutlet UITextField*xray_sheet;
+        IBOutlet UITextField*consent;
+    IBOutlet UITextField*report;
+           
 }
 
 -(IBAction)submit:(id)sender;

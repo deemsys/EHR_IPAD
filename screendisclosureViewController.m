@@ -49,7 +49,7 @@ int a;
                     a=1;
                     [recorddict setValue:name.text forKey:@"name"];
                     [recorddict setValue:date.text forKey:@"date"];
-            }
+                            }
             else
             {
                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
@@ -79,10 +79,40 @@ int a;
     if (a==1)
     {
         NSLog(@"recorddict in ROMRA %@",recorddict);
-    }
-    else
-    {
-        NULL;
+        sqlite3_stmt    *statement;
+        
+        const char *dbpath = [databasePath UTF8String];
+        
+        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        {
+            NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO SCREENDISCLOSURE (date, name) VALUES (\"%@\", \"%@\")", date.text, name.text];
+            
+            const char *insert_stmt = [insertSQL UTF8String];
+            
+            sqlite3_prepare_v2(ehrdb, insert_stmt, -1, &statement, NULL);
+            if (sqlite3_step(statement) == SQLITE_DONE)
+            {
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form Submitted successfully."];
+                
+                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                [alert show];
+                date.text=@"";
+                name.text=@"";
+                
+                
+            } else
+            {
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Form submission failed."];
+                
+                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                [alert show];
+            }
+            sqlite3_finalize(statement);
+            sqlite3_close(ehrdb);
+        }
+
     }
     
 
@@ -109,6 +139,53 @@ int a;
 
 - (void)viewDidLoad
 {
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    // Get the documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    // Build the path to the database file
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"ehr.db"]];
+    
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    
+    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    {
+		const char *dbpath = [databasePath UTF8String];
+        
+        if (sqlite3_open(dbpath, &ehrdb) == SQLITE_OK)
+        {
+            char *errMsg;
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS SCREENDISCLOSURE (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT , NAME TEXT)";
+            
+            if (sqlite3_exec(ehrdb, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            {
+                //status.text = @"Failed to create table";
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to create table."];
+                
+                //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                [alert show];
+            }
+            
+            sqlite3_close(ehrdb);
+            
+        }
+        else
+        {
+            // status.text = @"Failed to open/create database";
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Failed to open/create databse."];
+            
+            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+            
+        }
+    }
+
    //  recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

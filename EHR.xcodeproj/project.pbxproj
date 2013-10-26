@@ -84,6 +84,12 @@
 		0DE6A573181B889A00A09BA7 /* nextbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A56D181B889A00A09BA7 /* nextbutton.png */; };
 		0DE6A574181B889A00A09BA7 /* previousbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A56E181B889A00A09BA7 /* previousbutton.png */; };
 		0DE6A576181B9D2200A09BA7 /* submitbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A575181B9D2200A09BA7 /* submitbutton.png */; };
+		0DE6A57F181BA20A00A09BA7 /* soapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A57E181BA20A00A09BA7 /* soapViewController.m */; };
+		0DE6A582181BA22500A09BA7 /* radiologicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A581181BA22500A09BA7 /* radiologicalViewController.m */; };
+		0DE6A585181BA23600A09BA7 /* initialexamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A584181BA23600A09BA7 /* initialexamViewController.m */; };
+		0DE6A588181BA24800A09BA7 /* physicalexamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A587181BA24800A09BA7 /* physicalexamViewController.m */; };
+		0DE6A58B181BA25B00A09BA7 /* doctorportalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A58A181BA25B00A09BA7 /* doctorportalViewController.m */; };
+		0DE6A58E181BA26C00A09BA7 /* adminportalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6A58D181BA26C00A09BA7 /* adminportalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +213,18 @@
 		0DE6A56D181B889A00A09BA7 /* nextbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextbutton.png; sourceTree = "<group>"; };
 		0DE6A56E181B889A00A09BA7 /* previousbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previousbutton.png; sourceTree = "<group>"; };
 		0DE6A575181B9D2200A09BA7 /* submitbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submitbutton.png; sourceTree = "<group>"; };
+		0DE6A57D181BA20A00A09BA7 /* soapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soapViewController.h; sourceTree = "<group>"; };
+		0DE6A57E181BA20A00A09BA7 /* soapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soapViewController.m; sourceTree = "<group>"; };
+		0DE6A580181BA22500A09BA7 /* radiologicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiologicalViewController.h; sourceTree = "<group>"; };
+		0DE6A581181BA22500A09BA7 /* radiologicalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radiologicalViewController.m; sourceTree = "<group>"; };
+		0DE6A583181BA23600A09BA7 /* initialexamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initialexamViewController.h; sourceTree = "<group>"; };
+		0DE6A584181BA23600A09BA7 /* initialexamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = initialexamViewController.m; sourceTree = "<group>"; };
+		0DE6A586181BA24800A09BA7 /* physicalexamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physicalexamViewController.h; sourceTree = "<group>"; };
+		0DE6A587181BA24800A09BA7 /* physicalexamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = physicalexamViewController.m; sourceTree = "<group>"; };
+		0DE6A589181BA25B00A09BA7 /* doctorportalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorportalViewController.h; sourceTree = "<group>"; };
+		0DE6A58A181BA25B00A09BA7 /* doctorportalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorportalViewController.m; sourceTree = "<group>"; };
+		0DE6A58C181BA26C00A09BA7 /* adminportalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adminportalViewController.h; sourceTree = "<group>"; };
+		0DE6A58D181BA26C00A09BA7 /* adminportalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminportalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,6 +513,12 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0DE6A57C181BA1DA00A09BA7 /* soapnotes */,
+				0DE6A57B181BA1BF00A09BA7 /* Radiologicalreport */,
+				0DE6A57A181BA1B600A09BA7 /* InitialExam */,
+				0DE6A579181BA1AB00A09BA7 /* Physicalexam */,
+				0DE6A578181BA19300A09BA7 /* Doctorportal */,
+				0DE6A577181BA17F00A09BA7 /* Adminportal */,
 				0D6799A01819009000BDC1FC /* Doctorlogin */,
 				0D67999C1819003F00BDC1FC /* Adminlogin */,
 				0D15543318116F2500BDAAB9 /* Work Accident */,
@@ -588,6 +612,60 @@
 				0DCD15FD17FD4F5200748DD7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DE6A577181BA17F00A09BA7 /* Adminportal */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A58C181BA26C00A09BA7 /* adminportalViewController.h */,
+				0DE6A58D181BA26C00A09BA7 /* adminportalViewController.m */,
+			);
+			name = Adminportal;
+			sourceTree = "<group>";
+		};
+		0DE6A578181BA19300A09BA7 /* Doctorportal */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A589181BA25B00A09BA7 /* doctorportalViewController.h */,
+				0DE6A58A181BA25B00A09BA7 /* doctorportalViewController.m */,
+			);
+			name = Doctorportal;
+			sourceTree = "<group>";
+		};
+		0DE6A579181BA1AB00A09BA7 /* Physicalexam */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A586181BA24800A09BA7 /* physicalexamViewController.h */,
+				0DE6A587181BA24800A09BA7 /* physicalexamViewController.m */,
+			);
+			name = Physicalexam;
+			sourceTree = "<group>";
+		};
+		0DE6A57A181BA1B600A09BA7 /* InitialExam */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A583181BA23600A09BA7 /* initialexamViewController.h */,
+				0DE6A584181BA23600A09BA7 /* initialexamViewController.m */,
+			);
+			name = InitialExam;
+			sourceTree = "<group>";
+		};
+		0DE6A57B181BA1BF00A09BA7 /* Radiologicalreport */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A580181BA22500A09BA7 /* radiologicalViewController.h */,
+				0DE6A581181BA22500A09BA7 /* radiologicalViewController.m */,
+			);
+			name = Radiologicalreport;
+			sourceTree = "<group>";
+		};
+		0DE6A57C181BA1DA00A09BA7 /* soapnotes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6A57D181BA20A00A09BA7 /* soapViewController.h */,
+				0DE6A57E181BA20A00A09BA7 /* soapViewController.m */,
+			);
+			name = soapnotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -726,8 +804,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE6A588181BA24800A09BA7 /* physicalexamViewController.m in Sources */,
+				0DE6A582181BA22500A09BA7 /* radiologicalViewController.m in Sources */,
 				0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */,
 				0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */,
+				0DE6A585181BA23600A09BA7 /* initialexamViewController.m in Sources */,
 				0D2EAB711804187C004F5859 /* RegisterViewController.m in Sources */,
 				0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */,
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
@@ -753,9 +834,12 @@
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,
 				0DA24975180E64F200C9A9C6 /* staffautocheckViewController.m in Sources */,
 				0DA24971180DC8F300C9A9C6 /* screendisclosureViewController.m in Sources */,
+				0DE6A57F181BA20A00A09BA7 /* soapViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,
+				0DE6A58E181BA26C00A09BA7 /* adminportalViewController.m in Sources */,
 				0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */,
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
+				0DE6A58B181BA25B00A09BA7 /* doctorportalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Patient Portal-->
+        <!--Welcome View Controller - Patient Portal-->
         <scene sceneID="IAw-6v-qTO">
             <objects>
-                <viewController modalPresentationStyle="pageSheet" id="6rh-yg-v9g" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="6rh-yg-v9g" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8cf-20-D9b"/>
                         <viewControllerLayoutGuide type="bottom" id="lbV-HD-U64"/>
@@ -261,7 +261,7 @@ services if a third party payor reimburses for said charges.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7E-TY-Mnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2842" y="-10675"/>
+            <point key="canvasLocation" x="-2922" y="-9979"/>
         </scene>
         <!--View Controller - Release Of Medical Records Authorization-->
         <scene sceneID="7SQ-Fb-E28">
@@ -2683,10 +2683,10 @@ Signature below is only acknowledgement that you have received this Notice of ou
             </objects>
             <point key="canvasLocation" x="-9198" y="-11997"/>
         </scene>
-        <!--View Controller - Admin Portal-->
+        <!--Adminportal View Controller - Admin Portal-->
         <scene sceneID="SD6-ll-G4h">
             <objects>
-                <viewController id="Tbl-0P-MpI" sceneMemberID="viewController">
+                <viewController id="Tbl-0P-MpI" customClass="adminportalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MMr-9a-juS"/>
                         <viewControllerLayoutGuide type="bottom" id="jMR-1d-a0T"/>
@@ -2724,10 +2724,85 @@ Signature below is only acknowledgement that you have received this Notice of ou
             </objects>
             <point key="canvasLocation" x="-7984" y="-10741"/>
         </scene>
-        <!--View Controller - Doctor Portal-->
+        <!--Physicalexam View Controller-->
+        <scene sceneID="25Z-MI-nLt">
+            <objects>
+                <viewController id="x3r-Fz-dXY" customClass="physicalexamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcq-tP-jAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ekn-ym-ZSN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TFZ-zY-Yce">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tvy-fv-uL7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNn-8l-vin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5849" y="-11820"/>
+        </scene>
+        <!--Initialexam View Controller-->
+        <scene sceneID="j6t-xo-Cfl">
+            <objects>
+                <viewController id="3pN-Gf-gcr" customClass="initialexamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UqY-S8-8zK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eH0-Kd-JM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MhV-8B-kDg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MlA-Oh-bGR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="652-nj-A1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4721" y="-11724"/>
+        </scene>
+        <!--Radiological View Controller-->
+        <scene sceneID="BwQ-IL-KJQ">
+            <objects>
+                <viewController id="F62-4L-kkd" customClass="radiologicalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ma5-Zl-Bqj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bnx-2q-GHu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3a-vo-AFK">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0H0-yW-ifn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6t-gt-dAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3745" y="-11412"/>
+        </scene>
+        <!--Soap View Controller-->
+        <scene sceneID="DJj-Ev-Eoh">
+            <objects>
+                <viewController id="ooa-21-tWJ" customClass="soapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVT-9x-ZPZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9j3-x3-k6X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MfR-jF-ceh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuf-ff-0wA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2873" y="-11716"/>
+        </scene>
+        <!--Doctorportal View Controller - Doctor Portal-->
         <scene sceneID="Wes-Q2-4jU">
             <objects>
-                <viewController id="glK-Nm-Fsw" sceneMemberID="viewController">
+                <viewController id="glK-Nm-Fsw" customClass="doctorportalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YZH-EL-1dD"/>
                         <viewControllerLayoutGuide type="bottom" id="ZFj-0k-FTO"/>
@@ -2742,6 +2817,9 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <state key="normal" title="Physical Exam">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="x3r-Fz-dXY" kind="push" id="JFj-hw-IRt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gap-Js-HHA">
                                 <rect key="frame" x="352" y="291" width="79" height="30"/>
@@ -2749,6 +2827,11 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <state key="normal" title="Initial Exam">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3pN-Gf-gcr" kind="popover" popoverAnchorView="Gap-Js-HHA" id="Zq7-LN-raf">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-S0-KNr">
                                 <rect key="frame" x="337" y="385" width="136" height="30"/>
@@ -2756,6 +2839,9 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <state key="normal" title="Radiological Report">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="F62-4L-kkd" kind="custom" id="md6-D3-Uac"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weK-3f-TuF">
                                 <rect key="frame" x="352" y="452" width="81" height="30"/>
@@ -2763,6 +2849,9 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <state key="normal" title="Soap Notes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ooa-21-tWJ" kind="modal" id="g8y-Xz-p7Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2771,12 +2860,12 @@ Signature below is only acknowledgement that you have received this Notice of ou
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUu-WS-ypQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8040" y="-9445"/>
+            <point key="canvasLocation" x="-6720" y="-10341"/>
         </scene>
-        <!--View Controller - Patient Login-->
+        <!--Login View Controller - Patient Login-->
         <scene sceneID="nnS-N7-qDL">
             <objects>
-                <viewController id="FzZ-Li-GLW" sceneMemberID="viewController">
+                <viewController id="FzZ-Li-GLW" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Dy-Li-AXe"/>
                         <viewControllerLayoutGuide type="bottom" id="Mmo-zL-UPB"/>
@@ -6273,7 +6362,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Load"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected1:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="tdy-tP-3Zt"/>
                                 </connections>
@@ -6293,7 +6382,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-v0-XmB">
                                 <rect key="frame" x="434" y="245" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.21760298921664989" green="0.25536125484653388" blue="0.47191884566326525" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="BT6-fQ-Fmj"/>
                                 </connections>
@@ -6408,7 +6498,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Bench"/>
                                     <segment title="Platform"/>
                                 </segments>
-                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected3:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="nLA-Fm-lgz"/>
                                 </connections>
@@ -6417,7 +6507,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="429" y="744" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.21760298921664989" green="0.25536125484653388" blue="0.47191884566326525" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch4onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="rYh-oV-mGN"/>
                                 </connections>
@@ -6442,7 +6532,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Stand"/>
                                     <segment title="Kneel"/>
                                 </segments>
-                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected4:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="VZN-gS-bTM"/>
                                 </connections>
@@ -6485,7 +6575,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-yK-vV7">
                                 <rect key="frame" x="434" y="466" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.21760298921664989" green="0.25536125484653388" blue="0.47191884566326525" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="XD8-2Z-uhf"/>
                                 </connections>
@@ -6511,7 +6601,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="On Machine"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.35399394132653061" green="0.14714251859685593" blue="0.0030278881289873632" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected2:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="vZd-h8-nt5"/>
                                 </connections>
@@ -6526,7 +6616,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="429" y="660" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="0.3539939413" green="0.14714251859999999" blue="0.0030278881290000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.21760298921664989" green="0.25536125484653388" blue="0.47191884566326525" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch3onSomeLabel:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="bmN-Ic-c9J"/>
                                 </connections>

@@ -83,6 +83,7 @@
 		0DE6A572181B889A00A09BA7 /* signinbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A56C181B889900A09BA7 /* signinbutton.png */; };
 		0DE6A573181B889A00A09BA7 /* nextbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A56D181B889A00A09BA7 /* nextbutton.png */; };
 		0DE6A574181B889A00A09BA7 /* previousbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A56E181B889A00A09BA7 /* previousbutton.png */; };
+		0DE6A576181B9D2200A09BA7 /* submitbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6A575181B9D2200A09BA7 /* submitbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +206,7 @@
 		0DE6A56C181B889900A09BA7 /* signinbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinbutton.png; sourceTree = "<group>"; };
 		0DE6A56D181B889A00A09BA7 /* nextbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextbutton.png; sourceTree = "<group>"; };
 		0DE6A56E181B889A00A09BA7 /* previousbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previousbutton.png; sourceTree = "<group>"; };
+		0DE6A575181B9D2200A09BA7 /* submitbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submitbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,6 +428,7 @@
 			children = (
 				0D2EAB521802D101004F5859 /* logo.png */,
 				0D6799921818EE8B00BDC1FC /* logindr.png */,
+				0DE6A575181B9D2200A09BA7 /* submitbutton.png */,
 				0D6799931818EE8B00BDC1FC /* loginad.png */,
 				0D6799941818EE8B00BDC1FC /* regist.png */,
 				0D6799951818EE8B00BDC1FC /* BG.png */,
@@ -674,6 +677,7 @@
 				0D2EAB541802D101004F5859 /* logo.png in Resources */,
 				0D9C35E2180C850F00134BB6 /* saveandcontinue.png in Resources */,
 				0D2EAB671803CBF4004F5859 /* buttonbg.JPG in Resources */,
+				0DE6A576181B9D2200A09BA7 /* submitbutton.png in Resources */,
 				0DE6A571181B889A00A09BA7 /* resetbutton.png in Resources */,
 				0D9C35E1180C850F00134BB6 /* reset.png in Resources */,
 				0D2EAB551802D101004F5859 /* logo2.png in Resources */,

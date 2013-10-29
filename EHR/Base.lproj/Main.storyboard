@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="63" width="768" height="966"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-ey-AES">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-ey-AES">
                                 <rect key="frame" x="215" y="121" width="339" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Auto Accident">
@@ -30,7 +30,7 @@
                                     <segue destination="Iod-xn-Ifn" kind="push" identifier="autoacc1" id="QcP-BV-9zq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9w-ht-xtU">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9w-ht-xtU">
                                 <rect key="frame" x="314" y="404" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Consent to treat a minor">
@@ -41,9 +41,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brb-E2-cHg">
-                                <rect key="frame" x="309" y="454" width="196" height="30"/>
+                                <rect key="frame" x="309" y="454" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Health Insurance Verification">
+                                <state key="normal" title="Insurance Waiver">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -51,9 +51,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7y-E2-kcl">
-                                <rect key="frame" x="275" y="505" width="279" height="30"/>
+                                <rect key="frame" x="299" y="505" width="128" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Release of medical records authorization">
+                                <state key="normal" title="Release of records">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -130,7 +130,7 @@
                                     <segue destination="fx5-s3-qW1" kind="push" id="IMv-pd-ggh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-C2-vUh">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-C2-vUh">
                                 <rect key="frame" x="311" y="165" width="147" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Work Accident">
@@ -230,7 +230,7 @@ services if a third party payor reimburses for said charges.
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-Bf-TeU">
-                                <rect key="frame" x="242" y="695" width="111" height="33"/>
+                                <rect key="frame" x="211" y="695" width="111" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -239,10 +239,20 @@ services if a third party payor reimburses for said charges.
                                     <action selector="submit:" destination="acX-fx-FwB" eventType="touchUpInside" id="DqD-2b-wBt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-3Z-JbK">
-                                <rect key="frame" x="437" y="695" width="97" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wja-dD-aiG">
+                                <rect key="frame" x="341" y="696" width="111" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="acX-fx-FwB" eventType="touchUpInside" id="vyn-JI-9wi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-3Z-JbK">
+                                <rect key="frame" x="468" y="695" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -375,10 +385,20 @@ Sheffield Village, Ohio 44035
                                     <action selector="submit:" destination="jcD-tC-yqD" eventType="touchUpInside" id="Njf-JU-PeK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-9z-mVb">
-                                <rect key="frame" x="422" y="492" width="109" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm6-jd-Q9M">
+                                <rect key="frame" x="373" y="492" width="109" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="jcD-tC-yqD" eventType="touchUpInside" id="cFh-7W-V15"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-9z-mVb">
+                                <rect key="frame" x="511" y="492" width="109" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -397,7 +417,7 @@ Sheffield Village, Ohio 44035
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPd-ZK-jBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3378" y="-6362"/>
+            <point key="canvasLocation" x="-2862" y="-6490"/>
         </scene>
         <!--Healthinsuranceverification View Controller - Health Insurance Verification-->
         <scene sceneID="jOS-hn-rI8">
@@ -615,10 +635,20 @@ Sheffield Village, Ohio 44035
                                     <action selector="submit:" destination="Ybc-Ea-Zlb" eventType="touchUpInside" id="U7k-SP-eJt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-P3-bsv">
-                                <rect key="frame" x="406" y="783" width="99" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyX-Qi-XPS">
+                                <rect key="frame" x="359" y="783" width="99" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="Ybc-Ea-Zlb" eventType="touchUpInside" id="gea-j2-KDI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-P3-bsv">
+                                <rect key="frame" x="466" y="783" width="99" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -795,9 +825,9 @@ Sheffield Village, Ohio 44035
                                 <textInputTraits key="textInputTraits" autocorrectionType="yes" keyboardType="alphabet"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HV-pv-7lS">
-                                <rect key="frame" x="408" y="875" width="93" height="30"/>
+                                <rect key="frame" x="460" y="875" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -812,6 +842,16 @@ Sheffield Village, Ohio 44035
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="Aya-ra-V0J" eventType="touchUpInside" id="086-Yq-wZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-0y-h83">
+                                <rect key="frame" x="342" y="875" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="Aya-ra-V0J" eventType="touchUpInside" id="spk-8T-K9S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -829,7 +869,7 @@ Sheffield Village, Ohio 44035
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtK-C9-jsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3623" y="-8731"/>
+            <point key="canvasLocation" x="-3378" y="-8755"/>
         </scene>
         <!--Auto Accident View Controller2 - Auto Accident 2-->
         <scene sceneID="4Pw-hU-Qyd">
@@ -1206,8 +1246,18 @@ Sheffield Village, Ohio 44035
                                     <segue destination="bIY-qE-OMZ" kind="push" identifier="autoacc5" id="SVg-re-Tvd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-ix-hwk">
+                                <rect key="frame" x="342" y="948" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveandcontinue:" destination="Lr5-rO-Ist" eventType="touchUpInside" id="O1b-sv-yYw"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxx-6e-E4J">
-                                <rect key="frame" x="438" y="948" width="94" height="30"/>
+                                <rect key="frame" x="449" y="948" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="resetbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1560,7 +1610,7 @@ Sheffield Village, Ohio 44035
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rp-SO-hSU">
-                                <rect key="frame" x="282" y="877" width="118" height="44"/>
+                                <rect key="frame" x="224" y="877" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1569,10 +1619,20 @@ Sheffield Village, Ohio 44035
                                     <action selector="submit:" destination="bIY-qE-OMZ" eventType="touchUpInside" id="BSX-0b-du1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJA-FJ-3ev">
-                                <rect key="frame" x="455" y="877" width="102" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMt-2w-Z3j">
+                                <rect key="frame" x="355" y="877" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="bIY-qE-OMZ" eventType="touchUpInside" id="8Yq-Ck-sJ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJA-FJ-3ev">
+                                <rect key="frame" x="495" y="877" width="102" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1991,7 +2051,7 @@ Claimant agrees that each and every provision of this Agreement is reasonable ne
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dt8-gB-gly">
-                                <rect key="frame" x="235" y="866" width="112" height="39"/>
+                                <rect key="frame" x="219" y="866" width="112" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2001,13 +2061,23 @@ Claimant agrees that each and every provision of this Agreement is reasonable ne
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCE-Z3-3Zu">
-                                <rect key="frame" x="409" y="866" width="112" height="39"/>
+                                <rect key="frame" x="345" y="866" width="112" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="Nd2-ME-ixY" eventType="touchUpInside" id="dmS-CX-VIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-cZ-5dT">
+                                <rect key="frame" x="459" y="866" width="112" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="Nd2-ME-ixY" eventType="touchUpInside" id="7TX-8i-Dfi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2030,7 +2100,7 @@ Claimant agrees that each and every provision of this Agreement is reasonable ne
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brt-9R-Uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9984" y="-7209"/>
+            <point key="canvasLocation" x="-10696" y="-7393"/>
         </scene>
         <!--Perry View Controller - Consent forms-->
         <scene sceneID="rpQ-wg-Xrs">
@@ -2128,14 +2198,21 @@ I authorize this office to release any information regarding my treatment, exami
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-uV-Y1l">
-                                <rect key="frame" x="414" y="692" width="106" height="37"/>
+                                <rect key="frame" x="364" y="692" width="106" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="mO8-in-qlY" eventType="touchUpInside" id="Xni-6y-cio"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsM-vN-RIY">
+                                <rect key="frame" x="484" y="692" width="98" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2253,8 +2330,8 @@ I authorize this office to release any information regarding my treatment, exami
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Fax this back to :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-uO-OKh">
-                                <rect key="frame" x="108" y="759" width="188" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-uO-OKh">
+                                <rect key="frame" x="108" y="759" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -2271,8 +2348,8 @@ I authorize this office to release any information regarding my treatment, exami
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clinic's Fax Number" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-SR-usU">
-                                <rect key="frame" x="297" y="754" width="254" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="info@example.com" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-SR-usU">
+                                <rect key="frame" x="108" y="785" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -2284,7 +2361,7 @@ I authorize this office to release any information regarding my treatment, exami
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FV-LB-pZD">
-                                <rect key="frame" x="249" y="900" width="94" height="39"/>
+                                <rect key="frame" x="221" y="900" width="94" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2294,13 +2371,23 @@ I authorize this office to release any information regarding my treatment, exami
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk0-Ez-yCr">
-                                <rect key="frame" x="393" y="900" width="94" height="39"/>
+                                <rect key="frame" x="348" y="900" width="94" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="0Yt-lY-cOf" eventType="touchUpInside" id="Xa5-RN-iNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYA-OX-YgO">
+                                <rect key="frame" x="467" y="900" width="94" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="0Yt-lY-cOf" eventType="touchUpInside" id="7gt-Pf-Xe4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j4-ch-EdW">
@@ -2487,7 +2574,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-8e-fNk">
-                                <rect key="frame" x="265" y="803" width="101" height="41"/>
+                                <rect key="frame" x="194" y="803" width="101" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2497,13 +2584,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qp-rY-xZU">
-                                <rect key="frame" x="449" y="803" width="101" height="41"/>
+                                <rect key="frame" x="318" y="803" width="101" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="vIz-6D-ZDz" eventType="touchUpInside" id="rAf-c7-5aG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-wM-sXa">
+                                <rect key="frame" x="439" y="803" width="101" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vIz-6D-ZDz" eventType="touchUpInside" id="Din-DM-74d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2706,9 +2803,9 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-Mh-Eie">
-                                <rect key="frame" x="313" y="404" width="116" height="30"/>
+                                <rect key="frame" x="313" y="404" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Health insuarnce">
+                                <state key="normal" title="Health Insurance ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2738,6 +2835,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Tvy-fv-uL7"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNn-8l-vin" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2757,6 +2855,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MlA-Oh-bGR"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="652-nj-A1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2776,6 +2875,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0H0-yW-ifn"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6t-gt-dAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2794,6 +2894,8 @@ Signature below is only acknowledgement that you have received this Notice of ou
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FXv-gb-x6G"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuf-ff-0wA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2818,7 +2920,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x3r-Fz-dXY" kind="push" id="JFj-hw-IRt"/>
+                                    <segue destination="x3r-Fz-dXY" kind="push" id="QBt-jX-TPa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gap-Js-HHA">
@@ -2828,9 +2930,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3pN-Gf-gcr" kind="popover" popoverAnchorView="Gap-Js-HHA" id="Zq7-LN-raf">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="3pN-Gf-gcr" kind="push" id="SoM-aa-krW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-S0-KNr">
@@ -2840,7 +2940,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F62-4L-kkd" kind="custom" id="md6-D3-Uac"/>
+                                    <segue destination="F62-4L-kkd" kind="push" id="StO-GV-t8M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weK-3f-TuF">
@@ -2850,7 +2950,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ooa-21-tWJ" kind="modal" id="g8y-Xz-p7Z"/>
+                                    <segue destination="ooa-21-tWJ" kind="push" id="6qJ-bF-kY1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2885,7 +2985,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6rh-yg-v9g" kind="push" id="Ays-zk-8Br"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="ve9-fo-ySL"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-FR-xOg">
@@ -3077,7 +3177,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-KS-4Cf">
-                                <rect key="frame" x="273" y="651" width="84" height="36"/>
+                                <rect key="frame" x="187" y="651" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -3087,13 +3187,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5My-U8-4FZ">
-                                <rect key="frame" x="420" y="651" width="84" height="36"/>
+                                <rect key="frame" x="303" y="651" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="CLZ-Un-4Hq" eventType="touchUpInside" id="0VW-O1-kHA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyK-Go-qDk">
+                                <rect key="frame" x="416" y="651" width="84" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="CLZ-Un-4Hq" eventType="touchUpInside" id="eHI-p4-VlM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3360,9 +3470,9 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIF-au-yhg">
-                                <rect key="frame" x="266" y="773" width="94" height="36"/>
+                                <rect key="frame" x="250" y="773" width="94" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="submitbutton.png">
+                                <state key="normal" backgroundImage="updatebutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -3370,13 +3480,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-FY-5sI">
-                                <rect key="frame" x="444" y="773" width="94" height="36"/>
+                                <rect key="frame" x="370" y="773" width="94" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="FdJ-1R-6Wt" eventType="touchUpInside" id="r3g-fp-YFN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBF-Ot-oRd">
+                                <rect key="frame" x="486" y="773" width="94" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="FdJ-1R-6Wt" eventType="touchUpInside" id="0hB-dj-hYG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3424,7 +3544,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYi-GH-1XR">
-                                <rect key="frame" x="266" y="599" width="102" height="36"/>
+                                <rect key="frame" x="178" y="599" width="102" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -3434,13 +3554,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-ye-l8e">
-                                <rect key="frame" x="427" y="599" width="102" height="36"/>
+                                <rect key="frame" x="305" y="599" width="102" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="8e5-90-kQx" eventType="touchUpInside" id="RBO-SR-XZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmA-ul-kty">
+                                <rect key="frame" x="434" y="599" width="102" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="8e5-90-kQx" eventType="touchUpInside" id="yCX-R7-XhX"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qes-gz-9CC">
@@ -3731,7 +3861,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="579-Ae-rjk">
-                                <rect key="frame" x="237" y="953" width="114" height="30"/>
+                                <rect key="frame" x="238" y="953" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="nextbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -3742,13 +3872,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-BW-Iq9">
-                                <rect key="frame" x="425" y="953" width="87" height="30"/>
+                                <rect key="frame" x="443" y="950" width="95" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="resetbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clearall:" destination="Iod-xn-Ifn" eventType="touchUpInside" id="1pH-IL-SCe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agh-QZ-QLN">
+                                <rect key="frame" x="346" y="950" width="95" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearall:" destination="Iod-xn-Ifn" eventType="touchUpInside" id="4gt-dd-iAn"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-8T-foL">
@@ -4412,7 +4552,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-6A-Fbi">
-                                <rect key="frame" x="251" y="791" width="89" height="30"/>
+                                <rect key="frame" x="232" y="791" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -4422,13 +4562,23 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-uS-zFO">
-                                <rect key="frame" x="424" y="791" width="89" height="30"/>
+                                <rect key="frame" x="355" y="791" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="Ovc-VP-zrH" eventType="touchUpInside" id="Llc-7N-plZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsC-ky-mnw">
+                                <rect key="frame" x="472" y="791" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="Ovc-VP-zrH" eventType="touchUpInside" id="yXU-F8-byF"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX4-e9-rVC">
@@ -4713,7 +4863,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aL-G3-s5g">
-                                <rect key="frame" x="232" y="946" width="141" height="35"/>
+                                <rect key="frame" x="232" y="946" width="118" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="nextbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -4721,6 +4871,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <connections>
                                     <action selector="saveandcontinue:" destination="fx5-s3-qW1" eventType="touchUpInside" id="XFK-fR-r86"/>
                                     <segue destination="n1r-fg-hQc" kind="push" identifier="Patientdetail1" id="vP9-FH-xrh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-If-OG2">
+                                <rect key="frame" x="355" y="946" width="118" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveandcontinue:" destination="fx5-s3-qW1" eventType="touchUpInside" id="SsF-wy-1RG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wat-9F-RGc">
@@ -4918,7 +5078,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRb-mZ-fFP">
-                                <rect key="frame" x="466" y="946" width="64" height="35"/>
+                                <rect key="frame" x="473" y="946" width="115" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="resetbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -5274,6 +5434,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="g7d-uW-Rgl" kind="push" identifier="Patientdetail2" id="Z1F-YL-7pw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-A5-n1P">
+                                <rect key="frame" x="339" y="936" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="savecontinuebtn:" destination="n1r-fg-hQc" eventType="touchUpInside" id="N7W-2B-Lfg"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgZ-d6-rDb">
                                 <rect key="frame" x="390" y="418" width="99" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5359,7 +5529,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H30-D9-uKJ">
-                                <rect key="frame" x="445" y="935" width="100" height="35"/>
+                                <rect key="frame" x="457" y="936" width="100" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="resetbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -5451,17 +5621,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="58" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dr." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VTu-rA-Dla">
-                                <rect key="frame" x="47" y="887" width="253" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="253" id="9rH-mm-y6L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="60" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Patient's Signature" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-v8-qdF">
-                                <rect key="frame" x="438" y="887" width="265" height="30"/>
+                                <rect key="frame" x="55" y="894" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="265" id="pm1-0G-AUQ"/>
@@ -5470,7 +5631,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="59" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Patient's Signature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utS-Ak-Wv8">
-                                <rect key="frame" x="445" y="853" width="164" height="26"/>
+                                <rect key="frame" x="55" y="860" width="164" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="FFc-8Z-M49"/>
@@ -6064,10 +6225,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="submit:" destination="g7d-uW-Rgl" eventType="touchUpInside" id="bKh-uy-wdh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-vg-TuN">
-                                <rect key="frame" x="445" y="944" width="81" height="32"/>
+                            <button opaque="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1r-QF-nwe">
+                                <rect key="frame" x="329" y="943" width="90" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="g7d-uW-Rgl" eventType="touchUpInside" id="Idt-Zd-vdb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-vg-TuN">
+                                <rect key="frame" x="445" y="943" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -6230,12 +6401,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="57" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anF-KY-GBG">
-                                <rect key="frame" x="55" y="858" width="245" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="38" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM-DD-YYYY" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hOH-JS-d7o">
                                 <rect key="frame" x="582" y="605" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -6249,8 +6414,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstAttribute="bottom" secondItem="T8L-Qh-24U" secondAttribute="bottom" id="7sD-hN-YLA"/>
                             <constraint firstItem="Zec-v8-qdF" firstAttribute="top" secondItem="utS-Ak-Wv8" secondAttribute="bottom" constant="8" symbolic="YES" id="CnL-Jx-Qt6"/>
                             <constraint firstAttribute="trailing" secondItem="Zec-v8-qdF" secondAttribute="trailing" constant="65" id="hAR-w6-f9A"/>
-                            <constraint firstItem="Zec-v8-qdF" firstAttribute="baseline" secondItem="VTu-rA-Dla" secondAttribute="baseline" id="kkq-UE-cfs"/>
-                            <constraint firstItem="VTu-rA-Dla" firstAttribute="leading" secondItem="xT5-17-STq" secondAttribute="leading" constant="47" id="wYy-TA-Qaf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uCP-q5-z7G"/>
@@ -6296,7 +6459,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="buttonx4" destination="eAw-V4-CFe" id="GbI-1b-tYN"/>
                         <outlet property="buttonx5" destination="S78-8D-S6s" id="5TF-wc-Tfh"/>
                         <outlet property="date" destination="hOH-JS-d7o" id="Wbz-8Q-bcs"/>
-                        <outlet property="dr" destination="VTu-rA-Dla" id="Qef-Qe-qO6"/>
                         <outlet property="hazlist" destination="19g-Ql-1QO" id="eSN-xx-bQT"/>
                         <outlet property="medhad" destination="H2e-Gc-c6p" id="WER-L9-q1R"/>
                         <outlet property="otherdis" destination="Dj9-TY-yTG" id="nqM-3R-uwp"/>
@@ -6311,7 +6473,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogG-fF-H2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3087" y="-5421"/>
+            <point key="canvasLocation" x="-3023" y="-5109"/>
         </scene>
         <!--Workaccident View Controller-->
         <scene sceneID="izg-6U-mom">
@@ -6342,7 +6504,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Position:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-jX-qjD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Posture:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-jX-qjD">
                                 <rect key="frame" x="36" y="160" width="379" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -6424,7 +6586,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-RL-JgS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Job Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-RL-JgS">
                                 <rect key="frame" x="39" y="374" width="292" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -6454,7 +6616,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you pick up or lift?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVb-7a-2wc">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you pick up or lift Heavy objects?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVb-7a-2wc">
                                 <rect key="frame" x="33" y="741" width="292" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -6556,7 +6718,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-rg-23t">
-                                <rect key="frame" x="180" y="939" width="131" height="33"/>
+                                <rect key="frame" x="180" y="940" width="108" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="nextbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6564,6 +6726,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <connections>
                                     <action selector="saveandcontinue:" destination="Ahx-0g-Ok6" eventType="touchUpInside" id="qRw-ku-ic8"/>
                                     <segue destination="ALH-jv-0dY" kind="push" identifier="Workaccident1" id="xd4-U3-wnv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-sM-Hln">
+                                <rect key="frame" x="315" y="941" width="108" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveandcontinue:" destination="Ahx-0g-Ok6" eventType="touchUpInside" id="nsU-7T-pAv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-qn-hNe">
@@ -6633,12 +6805,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R8e-l5-Vhb">
-                                <rect key="frame" x="296" y="836" width="269" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="65k-ih-iuB">
                                 <rect key="frame" x="296" y="879" width="277" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -6670,7 +6836,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhP-cq-wyl">
-                                <rect key="frame" x="450" y="939" width="77" height="34"/>
+                                <rect key="frame" x="450" y="939" width="90" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="resetbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6679,6 +6845,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="clear:" destination="Ahx-0g-Ok6" eventType="touchUpInside" id="yzw-Gi-Wbz"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-V2-bAD">
+                                <rect key="frame" x="296" y="835" width="277" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Seldom"/>
+                                    <segment title="Sometimes"/>
+                                    <segment title="Often"/>
+                                    <segment title="Regularly"/>
+                                </segments>
+                                <color key="tintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segselected5:" destination="Ahx-0g-Ok6" eventType="valueChanged" id="4V6-ul-3mw"/>
+                                </connections>
+                            </segmentedControl>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seldom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfC-q3-f10">
+                                <rect key="frame" x="621" y="837" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -6694,8 +6881,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="howinjuryocc" destination="plq-bg-drs" id="75O-hH-kYO"/>
                         <outlet property="howmuch" destination="gBz-9v-OUh" id="g2O-hu-uKf"/>
                         <outlet property="howmuchlabel" destination="4rF-jP-DKM" id="gSW-GM-2G3"/>
-                        <outlet property="howoften" destination="R8e-l5-Vhb" id="vlY-Tf-ocN"/>
+                        <outlet property="howoften" destination="wfC-q3-f10" id="KOi-Qr-Y3s"/>
                         <outlet property="howoftenlabel" destination="KoZ-yV-Jea" id="vaP-6S-LhH"/>
+                        <outlet property="howoftensegment" destination="G1h-V2-bAD" id="48l-op-p9p"/>
                         <outlet property="jobclass" destination="ArW-gI-PfT" id="wwl-T0-5CQ"/>
                         <outlet property="jobinjury" destination="cMt-wQ-eL4" id="thP-6s-pyx"/>
                         <outlet property="jobinjuryyes" destination="zz3-2T-GpE" id="SI7-dZ-1TB"/>
@@ -6917,7 +7105,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-YB-47O">
-                                <rect key="frame" x="244" y="707" width="92" height="35"/>
+                                <rect key="frame" x="207" y="707" width="92" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6927,13 +7115,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avG-8c-FQA">
-                                <rect key="frame" x="472" y="708" width="92" height="34"/>
+                                <rect key="frame" x="339" y="708" width="92" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="resetbutton.png">
+                                <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clear:" destination="ALH-jv-0dY" eventType="touchUpInside" id="6Ms-ai-USY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M2-6z-i42">
+                                <rect key="frame" x="455" y="708" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="reviewbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="ALH-jv-0dY" eventType="touchUpInside" id="Qva-Zs-aMV"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oily" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it7-m2-PGU">
@@ -6975,122 +7173,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="BG.png" width="768" height="1024"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
-        <image name="checkBox.png" width="20" height="20"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
         <image name="checkBox.png" width="20" height="20"/>
         <image name="login.png" width="768" height="1024"/>
         <image name="loginad.png" width="768" height="1024"/>
         <image name="logindr.png" width="768" height="1024"/>
         <image name="nextbutton.png" width="200" height="46"/>
-        <image name="nextbutton.png" width="200" height="46"/>
-        <image name="nextbutton.png" width="200" height="46"/>
-        <image name="nextbutton.png" width="200" height="46"/>
-        <image name="nextbutton.png" width="200" height="46"/>
+        <image name="previousbutton.png" width="200" height="46"/>
         <image name="regist.png" width="768" height="1024"/>
         <image name="registerbutton.png" width="200" height="46"/>
         <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="resetbutton.png" width="200" height="46"/>
-        <image name="signinbutton.png" width="200" height="46"/>
-        <image name="signinbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
         <image name="signinbutton.png" width="200" height="46"/>
         <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
-        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="updatebutton.png" width="200" height="46"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

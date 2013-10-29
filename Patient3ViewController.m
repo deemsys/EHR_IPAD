@@ -79,7 +79,7 @@
         if (sqlite3_open(dbpath, &ehrdb6) == SQLITE_OK)
         {
             char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Date TEXT, StreetAddress TEXT,        City TEXT,State TEXST, ZipCode TEXT,Homephone TEXT,            Pager TEXT, MobileNumber TEXT,     DateOfBirth TEXT,            SocialSecurityNumber TEXT, Gender TEXT, MaritalStatus TEXT,            Student TEXT,            EmployerName TEXT,            Occupation  TEXT,            EmployerAddress  TEXT,            Workphone  TEXT,            EmployerCity  TEXT,            Estate  TEXT,            Ezip  TEXT,            SpousesName  TEXT,            SpousesEmp  TEXT,            Spousesph  TEXT,            Name_friend TEXT,Phone_friend  TEXT,            Chiropratic_care  TEXT,            Symptoms  TEXT,            Painscale  TEXT,            Symptom1  TEXT,            Painscale1  TEXT,            Symptom2  TEXT,            Painscale2  TEXT,            Symptom_Accident  TEXT,            Type_Of_Accident  TEXT,            Date_Of_Accident  TEXT,            Accident_Reported  TEXT,            When  TEXT,            Where  TEXT,            Attorney_accident  TEXT,            NameOfAttorney  TEXT,            phone_Number  TEXT,            Fault_accident  TEXT,            Insurance  TEXT,            Insurance_phone  TEXT,            Name_auto  TEXT,  Phone_auto  TEXT,           policy  TEXT,            Name_health  TEXT,            Health_phone  TEXT,            prev_accident  TEXT,            Prev_When  TEXT,            anemia  TEXT,            Muscular  TEXT,            Rheumatic  TEXT,            Allergies  TEXT, Cancer VARCHAR DEFAULT NULL           Polio1  TEXT,            Multiple  TEXT,Scarlet VARCHAR DEFAULT NULL,            HIV  TEXT,            Sinus  TEXT,            Asthma  TEXT,            German  TEXT,            Nervousness  TEXT,            Numbness  TEXT,            Convulsions  TEXT,            Epilepsy  TEXT,          Concussion  TEXT,            Dizziness  TEXT,            Neuritis  TEXT,            Rheumatism  TEXT,            Diabetes  TEXT,            Arthritis  TEXT,            Venereal  TEXT,            Backaches  TEXT, Tuberculosis VARCHAR DEFAULT NULL,           Liver  TEXT,            Kidney  TEXT,            Thyroid  TEXT,            Alcoholism  TEXT,            Hepatitis  TEXT,            Mental  TEXT,            High  TEXT,            Digestive  TEXT,            Heart  TEXT,            other  TEXT, Ifother VARCHAR DEFAULT NULL,           illness  TEXT,            Dates  TEXT,            medications  TEXT,            Drink  TEXT,            Smoke  TEXT,            Drugs  TEXT,            Diet  TEXT,            Exercise  TEXT,            hazardous  TEXT,            hazardousyes  TEXT,            female  TEXT,            dr  TEXT,            patient  TEXT) ";
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS PATIENTINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Date TEXT, StreetAddress TEXT,        City TEXT,State TEXST, ZipCode TEXT,Homephone TEXT,            Pager TEXT, MobileNumber TEXT,     DateOfBirth TEXT,            SocialSecurityNumber TEXT, Gender TEXT, MaritalStatus TEXT,            Student TEXT,            EmployerName TEXT,            Occupation  TEXT,            EmployerAddress  TEXT,            Workphone  TEXT,            EmployerCity  TEXT,            Estate  TEXT,            Ezip  TEXT,            SpousesName  TEXT,            SpousesEmp  TEXT,            Spousesph  TEXT,            Name_friend TEXT,Phone_friend  TEXT,            Chiropratic_care  TEXT,            Symptoms  TEXT,            Painscale  TEXT,            Symptom1  TEXT,            Painscale1  TEXT,            Symptom2  TEXT,            Painscale2  TEXT,            Symptom_Accident  TEXT,            Type_Of_Accident  TEXT,            Date_Of_Accident  TEXT,            Accident_Reported  TEXT,            When  TEXT,            Where  TEXT,            Attorney_accident  TEXT,            NameOfAttorney  TEXT,            phone_Number  TEXT,            Fault_accident  TEXT,            Insurance  TEXT,            Insurance_phone  TEXT,            Name_auto  TEXT,  Phone_auto  TEXT,           policy  TEXT,            Name_health  TEXT,            Health_phone  TEXT,            prev_accident  TEXT,            Prev_When  TEXT,            anemia  TEXT,            Muscular  TEXT,            Rheumatic  TEXT,            Allergies  TEXT, Cancer VARCHAR DEFAULT NULL           Polio1  TEXT,            Multiple  TEXT,Scarlet VARCHAR DEFAULT NULL,            HIV  TEXT,            Sinus  TEXT,            Asthma  TEXT,            German  TEXT,            Nervousness  TEXT,            Numbness  TEXT,            Convulsions  TEXT,            Epilepsy  TEXT,          Concussion  TEXT,            Dizziness  TEXT,            Neuritis  TEXT,            Rheumatism  TEXT,            Diabetes  TEXT,            Arthritis  TEXT,            Venereal  TEXT,            Backaches  TEXT, Tuberculosis VARCHAR DEFAULT NULL,           Liver  TEXT,            Kidney  TEXT,            Thyroid  TEXT,            Alcoholism  TEXT,            Hepatitis  TEXT,            Mental  TEXT,            High  TEXT,            Digestive  TEXT,            Heart  TEXT,            other  TEXT, Ifother VARCHAR DEFAULT NULL,           illness  TEXT,            Dates  TEXT,            medications  TEXT,            Drink  TEXT,            Smoke  TEXT,            Drugs  TEXT,            Diet  TEXT,            Exercise  TEXT,            hazardous  TEXT,            hazardousyes  TEXT,            female  TEXT,                 patient  TEXT) ";
             
             
             
@@ -121,7 +121,6 @@
 -(void)dismissKeyboard
 {
     [date resignFirstResponder];
-    [dr resignFirstResponder];
     [otherdis resignFirstResponder];
     [otheropt resignFirstResponder];
     [surg resignFirstResponder];
@@ -527,23 +526,22 @@
         b=0;
     }
    
-    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0)&&([patsign.text length]!=0)&&([dr.text length]!=0))
+    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0)&&([patsign.text length]!=0))
     {
         c=0;
     if([self validateNames:[surg text]]==1)
     {
      if([self validateDate:[date text]]==1)
      {
-         if([self validateNames:[medhad text]]==1){
+         if([self validateNames:[medhad text]]==1)
+         {
            if([self validateSign:[patsign text] ]==1)
            {
-              if([self validateSign:[dr text]]==1)
-              {
+        
                    [recorddict setValue:surg.text forKey:@"majorillness"];
                    [recorddict setValue:date.text forKey:@"majorillnessdate"];
                    [recorddict setValue:medhad.text forKey:@"medicines"];
                    [recorddict setValue:patsign.text forKey:@"patientsign"];
-                   [recorddict setValue:dr.text forKey:@"doctorsign"];
                   [recorddict setValue:reslabel1.text forKey:@"hazardoussubstances"];
                   [recorddict setValue:reslabel2.text forKey:@"femalepregnant"];
                   if(a==1)
@@ -571,15 +569,7 @@
                       [alert show];
                   }
               }
-              else{
-                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Dr sign."];
-                  
-                  //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                  [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                  [alert show];
-              }
-           }
-             else
+            else
              {
                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Patient's sign."];
                  

@@ -39,6 +39,7 @@
 @synthesize workingatmac;
 @synthesize segliftfrom;
 @synthesize segtypeoflifting;
+@synthesize howoftensegment;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -147,20 +148,19 @@
     {
         pickuporlift.text = @"Yes";
         howmuch.hidden=NO;
-        howoften.hidden=NO;
+        howoftensegment.hidden=NO;
         fromwhere.hidden=NO;
         howmuchlabel.hidden=NO;
         howoftenlabel.hidden=NO;
         fromwherelabel.hidden=NO;
         howmuch.text=@"";
-        howoften.text=@"";
         fromwhere.text=@"";
         
     }
 	else
     {
         pickuporlift.text = @"No";
-        howoften.hidden=YES;
+        howoftensegment.hidden=YES;
         howmuch.hidden=YES;
         fromwhere.hidden=YES;
         howmuchlabel.hidden=YES;
@@ -268,6 +268,27 @@ if (segliftfrom.selectedSegmentIndex==0)
      labworkingatmaching.text=@"Kneel";
     }
 }
+
+-(IBAction)segselected5:(id)sender
+{
+    if(howoftensegment.selectedSegmentIndex==0)
+    {
+        howoften.text=@"Seldom";
+    }
+    else if(howoftensegment.selectedSegmentIndex==1)
+    {
+        howoften.text=@"Sometimes";
+    }
+    else if(howoftensegment.selectedSegmentIndex==2)
+    {
+        howoften.text=@"Often";
+    }
+    else if(howoftensegment.selectedSegmentIndex==3)
+    {
+        howoften.text=@"Regularly";
+    }
+}
+
 -(IBAction)saveandcontinue:(id)sender
 {
     recorddict=[[NSMutableDictionary alloc]init];
@@ -291,8 +312,7 @@ if (segliftfrom.selectedSegmentIndex==0)
     if ([pickuporlift.text isEqual:@"Yes"])
     {
         if (([self validateNames:[fromwhere text]])&&
-            ([self validatealphanumeric:[howmuch text]])&&
-            ([self validatealphanumeric:[howoften text]]))
+            ([self validatealphanumeric:[howmuch text]]))
         {
             d=1;
         }

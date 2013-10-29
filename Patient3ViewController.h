@@ -22,7 +22,6 @@
     IBOutlet UITextField*medhad;
     IBOutlet UITextField*hazlist;
     IBOutlet UITextField*otheropt;
-    IBOutlet UITextField*dr;
     IBOutlet UITextField*patsign;
     IBOutlet UILabel*reslabel1;
     IBOutlet UILabel*reslabel2;

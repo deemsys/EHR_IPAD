@@ -54,6 +54,16 @@ int a;
     return [countryTest1 evaluateWithObject:country1];
     
 }
+-(BOOL)email:(NSString *)country1
+{
+    NSString *countryFormat1 = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    
+    //  [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
+
 
 -(IBAction)checkboxSelected:(UIButton*)sender
 {
@@ -104,7 +114,7 @@ int a;
                         {
                             if([self onlyalphabetvalidate:[by text]]==1)
                             {
-                                if([self mobilenumber:[faxnumber text]]==1)
+                                if([self email:[faxnumber text]]==1)
                                 {
                                     if([self onlyalphabetvalidate:[sincerly text]]==1)
                                     {

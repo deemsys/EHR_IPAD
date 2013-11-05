@@ -28,7 +28,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
-
+-(IBAction)registerkey:(id)sender
+{
+    
+}
+-(IBAction)rolechange:(id)sender
+{
+    if (rolesegment.selectedSegmentIndex==0)
+    {
+        doctid.hidden=FALSE;
+        doctoridtext.hidden=FALSE;
+    }
+    else if (rolesegment.selectedSegmentIndex==1)
+    {
+        doctid.hidden=TRUE;
+        doctoridtext.hidden=TRUE;
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

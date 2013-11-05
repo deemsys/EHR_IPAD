@@ -2754,13 +2754,16 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SqU-1X-xze">
-                                <rect key="frame" x="363" y="534" width="172" height="29"/>
+                                <rect key="frame" x="363" y="531" width="172" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Doctor"/>
                                     <segment title="Patient"/>
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <connections>
+                                    <action selector="rolechange:" destination="nOb-hY-WTt" eventType="valueChanged" id="GOy-AD-Egd"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-7I-ttk">
                                 <rect key="frame" x="327" y="652" width="111" height="41"/>
@@ -2770,11 +2773,19 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerkey:" destination="nOb-hY-WTt" eventType="touchUpInside" id="tYf-Ei-I1D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Registration" id="CK6-mG-lQz"/>
+                    <connections>
+                        <outlet property="doctid" destination="0Rw-hn-bI7" id="GV4-sB-df9"/>
+                        <outlet property="doctoridtext" destination="OZp-Bj-9Si" id="mkn-wQ-Yf1"/>
+                        <outlet property="rolesegment" destination="SqU-1X-xze" id="2Xe-XC-WpJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPU-pQ-sBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -7173,18 +7184,140 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
+        <image name="BG.png" width="768" height="1024"/>
         <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="cancelbutton.png" width="200" height="46"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
+        <image name="checkBox.png" width="20" height="20"/>
         <image name="checkBox.png" width="20" height="20"/>
         <image name="login.png" width="768" height="1024"/>
         <image name="loginad.png" width="768" height="1024"/>
         <image name="logindr.png" width="768" height="1024"/>
         <image name="nextbutton.png" width="200" height="46"/>
+        <image name="nextbutton.png" width="200" height="46"/>
+        <image name="nextbutton.png" width="200" height="46"/>
+        <image name="nextbutton.png" width="200" height="46"/>
+        <image name="nextbutton.png" width="200" height="46"/>
+        <image name="previousbutton.png" width="200" height="46"/>
+        <image name="previousbutton.png" width="200" height="46"/>
+        <image name="previousbutton.png" width="200" height="46"/>
+        <image name="previousbutton.png" width="200" height="46"/>
         <image name="previousbutton.png" width="200" height="46"/>
         <image name="regist.png" width="768" height="1024"/>
         <image name="registerbutton.png" width="200" height="46"/>
         <image name="resetbutton.png" width="200" height="46"/>
+        <image name="resetbutton.png" width="200" height="46"/>
+        <image name="resetbutton.png" width="200" height="46"/>
+        <image name="resetbutton.png" width="200" height="46"/>
+        <image name="resetbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
+        <image name="reviewbutton.png" width="200" height="46"/>
         <image name="reviewbutton.png" width="200" height="46"/>
         <image name="signinbutton.png" width="200" height="46"/>
+        <image name="signinbutton.png" width="200" height="46"/>
+        <image name="signinbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
+        <image name="submitbutton.png" width="200" height="46"/>
         <image name="submitbutton.png" width="200" height="46"/>
         <image name="updatebutton.png" width="200" height="46"/>
     </resources>

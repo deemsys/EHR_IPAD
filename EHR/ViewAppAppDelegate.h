@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class doctorportalViewController;
 
 @interface ViewAppAppDelegate : UIResponder <UIApplicationDelegate>
 

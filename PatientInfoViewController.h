@@ -49,7 +49,13 @@
     
       IBOutlet UIButton*setdate;
         UIDatePicker *datePicker;
-   
+    IBOutlet UILabel * sd1;
+     IBOutlet UILabel * sd2;
+     IBOutlet UILabel * sd3;
+     IBOutlet UILabel * sd4;
+     IBOutlet UILabel * sd5;
+     IBOutlet UILabel * sd6;
+    IBOutlet UILabel * sd7;
         
 }
 -(IBAction)saveandcontinue:(id)sender;

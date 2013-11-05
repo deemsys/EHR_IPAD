@@ -270,11 +270,11 @@
 		0D1554291811698E00BDAAB9 /* Patient Info */ = {
 			isa = PBXGroup;
 			children = (
-				0D15542D181169C800BDAAB9 /* PatientInfoViewController.h */,
 				0D155430181169E400BDAAB9 /* Patient2ViewController.h */,
-				0D155431181169E800BDAAB9 /* Patient2ViewController.m */,
 				0D15542B181169C200BDAAB9 /* Patient3ViewController.m */,
 				0D15542A181169BB00BDAAB9 /* Patient3ViewController.h */,
+				0D155431181169E800BDAAB9 /* Patient2ViewController.m */,
+				0D15542D181169C800BDAAB9 /* PatientInfoViewController.h */,
 				0D15542E181169D100BDAAB9 /* PatientInfoViewController.m */,
 			);
 			name = "Patient Info";

@@ -25,9 +25,43 @@
 @synthesize segmarital;
 - (IBAction) toggleEnabledTextForSwitch1onSomeLabel: (id) sender
 {
-	if (switch1.on) resLabel.text = @"Full Time";
-	else resLabel.text = @"Part Time";
-}
+	if (switch1.on)
+    {
+        resLabel.text = @"Full Time";
+    sd1.hidden=TRUE;
+    sd2.hidden=TRUE;
+    sd3.hidden=TRUE;
+    sd4.hidden=TRUE;
+    sd5.hidden=TRUE;
+    sd6.hidden=TRUE;
+        sd7.hidden=TRUE;
+        empname.hidden=TRUE;
+        empadd.hidden=TRUE;
+        workcity.hidden=TRUE;
+        workzip.hidden=TRUE;
+        occ.hidden=TRUE;
+        workstate.hidden=TRUE;
+        workph.hidden=TRUE;
+    
+    }
+	else
+    {
+        resLabel.text = @"Part Time";
+    sd1.hidden=FALSE;
+    sd2.hidden=FALSE;
+    sd3.hidden=FALSE;
+    sd4.hidden=FALSE;
+    sd5.hidden=FALSE;
+    sd6.hidden=FALSE;
+        sd7.hidden=FALSE;
+        empname.hidden=FALSE;
+        empadd.hidden=FALSE;
+        workcity.hidden=FALSE;
+        workzip.hidden=FALSE;
+        occ.hidden=FALSE;
+        workstate.hidden=FALSE;
+        workph.hidden=FALSE;
+    }}
 - (IBAction) toggleEnabledTextForSwitch2onSomeLabel: (id) sender
 {
 	if (switch2.on) resLabel2.text = @"Yes";
@@ -258,13 +292,13 @@
        ([zip.text length]!=0)&&
        ([pager.text length]!=0)&&
        ([socialsecnum.text length]!=0)&&
-       ([empname.text length]!=0)&&
-       ([occ.text length]!=0)&&
-       ([empadd.text length]!=0)&&
-       ([workph.text length]!=0)&&
-       ([workcity.text length]!=0)&&
-       ([workstate.text length]!=0)&&
-       ([workzip.text length]!=0)&&
+       //([empname.text length]!=0)&&
+       //([occ.text length]!=0)&&
+       //([empadd.text length]!=0)&&
+       //([workph.text length]!=0)&&
+       ///([workcity.text length]!=0)&&
+       //([workstate.text length]!=0)&&
+       //([workzip.text length]!=0)&&
        ([spousename.text length]!=0)&&
        ([spouseemp.text length]!=0)&&
        ([spouseph.text length]!=0)&&
@@ -291,167 +325,169 @@
                                 {
                                     if([self validatessn:[socialsecnum text]]==1)
                                     {
-                                        if([self validateNames:[empname text]]==1)
+                                        
+                                        if([self validateNames:[spousename text]]==1)
                                         {
-                                            if([self validateNames:[occ text]]==1)
+                                            if([self validateNames:[spouseemp text]]==1)
                                             {
-                                                if([self validateUsername:[empadd text]]==1)
+                                                if([self validateMobile:[spouseph text]]==1)
                                                 {
-                                                    if([self validateMobile:[workph text]]==1)
+                                                    if([self validateMobile:[relativeph text]]==1)
                                                     {
-                                                        if([self validateNames:[workcity text]]==1)
+                                                        if ([self validateDate:[todaydate text]]==1)
                                                         {
-                                                            if([self validateNames:[workstate text]]==1)
+                                                            if([self validatePager:[pager text]]==1)
                                                             {
-                                                                if([self validateZip:[workzip text]]==1)
+                                                                if ([self validateNames:[relativename text]]==1)
                                                                 {
-                                                                    if([self validateNames:[spousename text]]==1)
+                                                                    [recorddict setValue:name.text forKey:@"name"];
+                                                                    [recorddict setValue:streetaddress.text forKey:@"streetaddress"];
+                                                                    [recorddict setValue:homeph.text forKey:@"homephone"];
+                                                                    [recorddict setValue:cellph.text forKey:@"cellphone"];
+                                                                    [recorddict setValue:city.text forKey:@"city"];
+                                                                    [recorddict setValue:state.text forKey:@"state"];
+                                                                    [recorddict setValue:zip.text forKey:@"zipcode"];
+                                                                    [recorddict setValue:socialsecnum.text forKey:@"ssn"];
+                                                                    [recorddict setValue:spousename.text forKey:@"spousename"];
+                                                                    [recorddict setValue:spouseemp.text forKey:@"spouseemp"];
+                                                                    [recorddict setValue:spouseph.text forKey:@"spousephone"];
+                                                                    [recorddict setValue:relativeph.text forKey:@"relativephone"];
+                                                                    [recorddict setValue:relativename.text forKey:@"relativename"];
+                                                                    [recorddict setValue:todaydate.text forKey:@"todaydate"];
+                                                                    [recorddict setValue:pager.text forKey:@"pager"];
+                                                                    [recorddict setValue:fromd.text forKey:@"DateOfBirth"];
+                                                                    
+                                                                    [recorddict setValue:resLabel.text forKey:@"Student"];
+                                                                    [recorddict setValue:resLabel2.text forKey:@"hadchiropractic"];
+                                                                    [recorddict setValue:seg.text forKey:@"sex"];
+                                                                    [recorddict setValue:marital.text forKey:@"Maritalstatus"];
+                                                                    if([resLabel.text isEqual:@"Full Time"])
                                                                     {
-                                                                        if([self validateNames:[spouseemp text]]==1)
+                                                                       c=1;
+
+                                                                    }
+                                                                    else if([resLabel.text isEqual:@"Part Time"])
+                                                                    {
+                                                                        if([self validateNames:[empname text]]==1)
                                                                         {
-                                                                            if([self validateMobile:[spouseph text]]==1)
+                                                                            
+                                                                            if([self validateNames:[occ text]]==1)
                                                                             {
-                                                                                if([self validateMobile:[relativeph text]]==1)
+                                                                                if([self validateUsername:[empadd text]]==1)
+                                                                                    
                                                                                 {
-                                                                                    if ([self validateDate:[todaydate text]]==1)
+                                                                                    if([self validateMobile:[workph text]]==1)
                                                                                     {
-                                                                                        if([self validatePager:[pager text]]==1)
+                                                                                   if([self validateNames:[workcity text]]==1)
                                                                                         {
-                                                              if ([self validateNames:[relativename text]]==1)
-                                                              {c=1;
-                                                                                            [recorddict setValue:name.text forKey:@"name"];
-                                                                                            [recorddict setValue:streetaddress.text forKey:@"streetaddress"];
-                                                                                            [recorddict setValue:homeph.text forKey:@"homephone"];
-                                                                                            [recorddict setValue:cellph.text forKey:@"cellphone"];
-                                                                                            [recorddict setValue:city.text forKey:@"city"];
-                                                                                            [recorddict setValue:state.text forKey:@"state"];
-                                                                                            [recorddict setValue:zip.text forKey:@"zipcode"];
-                                                                                            [recorddict setValue:socialsecnum.text forKey:@"ssn"];
-                                                                                            [recorddict setValue:empname.text forKey:@"empname"];
-                                                                                            [recorddict setValue:occ.text forKey:@"occupation"];
-                                                                                            [recorddict setValue:empadd.text forKey:@"empaddress"];
-                                                                                            [recorddict setValue:workph.text forKey:@"workphone"];
-                                                                                            [recorddict setValue:workcity.text forKey:@"empcity"];
-                                                                                            [recorddict setValue:workstate.text forKey:@"workstate"];
-                                                                                            [recorddict setValue:workzip.text forKey:@"workzipcode"];
-                                                                                            [recorddict setValue:spousename.text forKey:@"spousename"];
-                                                                                            [recorddict setValue:spouseemp.text forKey:@"spouseemp"];
-                                                                                            [recorddict setValue:spouseph.text forKey:@"spousephone"];
-                                                                                            [recorddict setValue:relativeph.text forKey:@"relativephone"];
-                                                                  [recorddict setValue:relativename.text forKey:@"relativename"];
-                                                                                            [recorddict setValue:todaydate.text forKey:@"todaydate"];
-                                                                                            [recorddict setValue:pager.text forKey:@"pager"];
-                                                                                            [recorddict setValue:fromd.text forKey:@"DateOfBirth"];
                                                                                             
-                                                                                            [recorddict setValue:resLabel.text forKey:@"Student"];
-                                                                                            [recorddict setValue:resLabel2.text forKey:@"hadchiropractic"];
-                                                                                            [recorddict setValue:seg.text forKey:@"sex"];
-                                                                                            [recorddict setValue:marital.text forKey:@"Maritalstatus"];
-                                                              }
-                                                              else{
-                                                                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Relative Name."];
-                                                                  
-                                                                  //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                                  [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                                                                  [alert show];
-                                                                  
-                                                                  
-                                                              }
-                                                                  
+                                                                                            if([self validateNames:[workstate text]]==1)
+                                                                                                
+                                                                                            {
+                                                                                                if([self validateZip:[workzip text]]==1)
+                                                                                                {
+                                                                                                    c=1;
+                                                                                                    [recorddict setValue:empname.text forKey:@"empname"];
+                                                                                                    [recorddict setValue:occ.text forKey:@"occupation"];
+                                                                                                    [recorddict setValue:empadd.text forKey:@"empaddress"];
+                                                                                                    [recorddict setValue:workph.text forKey:@"workphone"];
+                                                                                                    [recorddict setValue:workcity.text forKey:@"empcity"];
+                                                                                                    [recorddict setValue:workstate.text forKey:@"workstate"];
+                                                                                                    [recorddict setValue:workzip.text forKey:@"workzipcode"];
+
+                                                                                                    
+                                                                                                    
+                                                                                                }
+                                                                                                else{
+                                                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Work Zipcode."];
+                                                                                                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                                                                                    [alert show];
+                                                                                                }
+                                                                                                
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid WorkState."];                                                                [alert setDestructiveButtonWithTitle:@"x" block:nil];                                                                [alert show];                                                 
+                                                                                            }
                                                                                         }
-                                                                                        else
-                                                                                        {
-                                                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Pager Number."];
+                                                                                        else   {
                                                                                             
-                                                                                            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                                                            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Workcity."];                                                            [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                                             [alert show];
+                                                                                            
                                                                                         }
                                                                                     }
                                                                                     else
                                                                                     {
-                                                                                        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
-                                                                                        
-                                                                                        //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                                                        [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                                                                        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid WorkPhone."];                                                        [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                                         [alert show];
                                                                                     }
-                                                                                    
                                                                                 }
                                                                                 else
                                                                                 {
-                                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Relative PhoneNumber."];
-                                                                                    
+                                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Employee Address."];
                                                                                     //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                                     [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                                     [alert show];
-                                                                                    
                                                                                 }
                                                                             }
+                                                                            
                                                                             else
                                                                             {
-                                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Spouse Phone Number."];
-                                                                                
+                                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Occupation."];
                                                                                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                                 [alert show];
-                                                                                
                                                                             }
+                                                                            
                                                                         }
                                                                         else
                                                                         {
-                                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Spouse Employeer ."];
-                                                                            
+                                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Employee Name."];
                                                                             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                             [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                             [alert show];
-                                                                            
                                                                         }
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid SpouseName."];
+  
                                                                         
-                                                                        //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                                                                        [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                                                                        [alert show];
+                                                                        
                                                                         
                                                                     }
+                                                                    
                                                                 }
-                                                                else
-                                                                {
-                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Work Zipcode."];
+                                                                else{
+                                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Relative Name."];
                                                                     
                                                                     //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                     [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                     [alert show];
+                                                                    
                                                                     
                                                                 }
                                                                 
                                                             }
                                                             else
                                                             {
-                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid WorkState."];
+                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Pager Number."];
                                                                 
                                                                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                 [alert show];
-                                                                
                                                             }
                                                         }
                                                         else
                                                         {
-                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Workcity."];
+                                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
                                                             
                                                             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                             [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                             [alert show];
-                                                            
                                                         }
+                                                        
                                                     }
                                                     else
                                                     {
-                                                        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid WorkPhone."];
+                                                        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Relative PhoneNumber."];
                                                         
                                                         //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                         [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -461,7 +497,7 @@
                                                 }
                                                 else
                                                 {
-                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Employee Address."];
+                                                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Spouse Phone Number."];
                                                     
                                                     //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                     [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -471,7 +507,7 @@
                                             }
                                             else
                                             {
-                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Occupation."];
+                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Spouse Employeer ."];
                                                 
                                                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -481,13 +517,14 @@
                                         }
                                         else
                                         {
-                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Employee Name."];
+                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid SpouseName."];
                                             
                                             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                             [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                             [alert show];
                                             
                                         }
+                                        
                                     }
                                     else
                                     {

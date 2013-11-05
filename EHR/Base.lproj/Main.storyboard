@@ -247,6 +247,7 @@ services if a third party payor reimburses for said charges.
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="acX-fx-FwB" eventType="touchUpInside" id="vyn-JI-9wi"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="y6d-20-9u2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-3Z-JbK">
@@ -393,6 +394,7 @@ Sheffield Village, Ohio 44035
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="jcD-tC-yqD" eventType="touchUpInside" id="cFh-7W-V15"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="oHz-IE-RZS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-9z-mVb">
@@ -643,6 +645,7 @@ Sheffield Village, Ohio 44035
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="Ybc-Ea-Zlb" eventType="touchUpInside" id="gea-j2-KDI"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="UTs-ZK-kMv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-P3-bsv">
@@ -842,6 +845,7 @@ Sheffield Village, Ohio 44035
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="Aya-ra-V0J" eventType="touchUpInside" id="086-Yq-wZw"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="fnW-wN-M6p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-0y-h83">
@@ -1627,6 +1631,7 @@ Sheffield Village, Ohio 44035
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="bIY-qE-OMZ" eventType="touchUpInside" id="8Yq-Ck-sJ0"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="LYU-Cq-5Ed"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJA-FJ-3ev">
@@ -2068,6 +2073,7 @@ Claimant agrees that each and every provision of this Agreement is reasonable ne
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="Nd2-ME-ixY" eventType="touchUpInside" id="dmS-CX-VIs"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="MbO-Cw-3yr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-cZ-5dT">
@@ -2205,6 +2211,7 @@ I authorize this office to release any information regarding my treatment, exami
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="mO8-in-qlY" eventType="touchUpInside" id="Xni-6y-cio"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="mIJ-Cx-l8C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsM-vN-RIY">
@@ -2378,6 +2385,7 @@ I authorize this office to release any information regarding my treatment, exami
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="0Yt-lY-cOf" eventType="touchUpInside" id="Xa5-RN-iNq"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="pyg-ON-wQZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYA-OX-YgO">
@@ -2591,6 +2599,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="vIz-6D-ZDz" eventType="touchUpInside" id="rAf-c7-5aG"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="wxG-3t-APo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-wM-sXa">
@@ -3205,6 +3214,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="CLZ-Un-4Hq" eventType="touchUpInside" id="0VW-O1-kHA"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="HnO-gb-qKP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyK-Go-qDk">
@@ -3498,6 +3508,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="FdJ-1R-6Wt" eventType="touchUpInside" id="r3g-fp-YFN"/>
+                                    <segue destination="Tbl-0P-MpI" kind="push" id="H3I-ri-qXR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBF-Ot-oRd">
@@ -3572,6 +3583,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="8e5-90-kQx" eventType="touchUpInside" id="RBO-SR-XZW"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="iV8-jJ-cVP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmA-ul-kty">
@@ -4580,6 +4592,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="Ovc-VP-zrH" eventType="touchUpInside" id="Llc-7N-plZ"/>
+                                    <segue destination="Tbl-0P-MpI" kind="push" id="Ilw-5k-ntd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsC-ky-mnw">
@@ -4723,19 +4736,19 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXr-jJ-RCi">
-                                <rect key="frame" x="525" y="353" width="88" height="31"/>
+                                <rect key="frame" x="525" y="352" width="88" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-4d-vbT">
-                                <rect key="frame" x="342" y="903" width="94" height="35"/>
+                                <rect key="frame" x="355" y="712" width="94" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-N8-Ctp">
-                                <rect key="frame" x="444" y="907" width="51" height="31"/>
+                                <rect key="frame" x="441" y="712" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="fx5-s3-qW1" eventType="valueChanged" id="nca-xT-wwA"/>
@@ -4748,31 +4761,31 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ijl-gE-YHd">
-                                <rect key="frame" x="182" y="511" width="214" height="30"/>
+                                <rect key="frame" x="182" y="762" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Occupation" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-Gn-Kxk">
-                                <rect key="frame" x="525" y="511" width="214" height="30"/>
+                                <rect key="frame" x="515" y="767" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Work Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RCA-2B-eRu">
-                                <rect key="frame" x="525" y="607" width="214" height="30"/>
+                                <rect key="frame" x="518" y="859" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-31-tf2">
-                                <rect key="frame" x="182" y="555" width="214" height="30"/>
+                                <rect key="frame" x="182" y="813" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spouse's Employeer" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ose-8W-A4y">
-                                <rect key="frame" x="342" y="761" width="287" height="30"/>
+                                <rect key="frame" x="341" y="545" width="287" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -4784,43 +4797,43 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nearest Friend Phone Number" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zHb-7K-bRm">
-                                <rect key="frame" x="516" y="858" width="210" height="30"/>
+                                <rect key="frame" x="518" y="648" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nearest Friend Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="esd-g3-giD">
-                                <rect key="frame" x="342" y="858" width="166" height="30"/>
+                                <rect key="frame" x="341" y="648" width="166" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer City" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PqH-vz-cRi">
-                                <rect key="frame" x="182" y="607" width="214" height="30"/>
+                                <rect key="frame" x="182" y="859" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spouse's/Significant Others Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xls-Ht-uvY">
-                                <rect key="frame" x="341" y="712" width="287" height="30"/>
+                                <rect key="frame" x="341" y="506" width="287" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spouse Work Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="niy-nz-6p3">
-                                <rect key="frame" x="341" y="808" width="287" height="30"/>
+                                <rect key="frame" x="342" y="595" width="287" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-1Q-nsn">
-                                <rect key="frame" x="525" y="555" width="214" height="30"/>
+                                <rect key="frame" x="516" y="813" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12345" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dvc-Fp-iRi">
-                                <rect key="frame" x="182" y="650" width="214" height="30"/>
+                                <rect key="frame" x="182" y="908" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -4949,79 +4962,79 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Address: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx3-t5-KGo">
-                                <rect key="frame" x="32" y="549" width="158" height="30"/>
+                                <rect key="frame" x="32" y="813" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spouse’s Work Phone: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5c-VL-VVP">
-                                <rect key="frame" x="32" y="800" width="208" height="32"/>
+                                <rect key="frame" x="35" y="595" width="208" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spouse’s/ Significant Other’s Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGZ-Rh-RWc">
-                                <rect key="frame" x="32" y="712" width="279" height="30"/>
+                                <rect key="frame" x="30" y="506" width="279" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer City:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73t-q2-02M">
-                                <rect key="frame" x="32" y="599" width="118" height="34"/>
+                                <rect key="frame" x="35" y="858" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-2M-P23">
-                                <rect key="frame" x="32" y="506" width="146" height="30"/>
+                                <rect key="frame" x="35" y="762" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-3V-51T">
-                                <rect key="frame" x="406" y="514" width="102" height="21"/>
+                                <rect key="frame" x="404" y="770" width="102" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpb-AS-rvN">
-                                <rect key="frame" x="406" y="601" width="115" height="30"/>
+                                <rect key="frame" x="404" y="859" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name and Phone # of Nearest " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0T-vC-sft">
-                                <rect key="frame" x="31" y="840" width="516" height="48"/>
+                                <rect key="frame" x="35" y="659" width="516" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Friend/ Relative Not Living With You: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDz-g1-Bmw">
-                                <rect key="frame" x="25" y="865" width="516" height="48"/>
+                                <rect key="frame" x="32" y="635" width="516" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you ever had chiropractic care? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE2-Oo-ZKw">
-                                <rect key="frame" x="31" y="903" width="327" height="28"/>
+                                <rect key="frame" x="35" y="715" width="327" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spouse’s Employer: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIS-e1-kEa">
-                                <rect key="frame" x="32" y="767" width="286" height="17"/>
+                                <rect key="frame" x="35" y="562" width="286" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN4-Z1-R04">
-                                <rect key="frame" x="32" y="650" width="102" height="30"/>
+                                <rect key="frame" x="35" y="908" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-2f-C04">
-                                <rect key="frame" x="407" y="559" width="118" height="21"/>
+                                <rect key="frame" x="404" y="817" width="118" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -5118,6 +5131,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="relativeph" destination="zHb-7K-bRm" id="Ygs-Uc-iyo"/>
                         <outlet property="resLabel" destination="FXr-jJ-RCi" id="IDU-NH-VBT"/>
                         <outlet property="resLabel2" destination="ikX-4d-vbT" id="FEa-aI-cdM"/>
+                        <outlet property="sd1" destination="KjR-2M-P23" id="qHL-6o-d7w"/>
+                        <outlet property="sd2" destination="Wx3-t5-KGo" id="EpW-5k-zE5"/>
+                        <outlet property="sd3" destination="73t-q2-02M" id="kIf-yB-lgp"/>
+                        <outlet property="sd4" destination="fgG-3V-51T" id="bIi-lo-JDp"/>
+                        <outlet property="sd5" destination="ZiZ-2f-C04" id="7pS-ek-5u4"/>
+                        <outlet property="sd6" destination="Wpb-AS-rvN" id="c6X-3V-GO1"/>
+                        <outlet property="sd7" destination="YN4-Z1-R04" id="ivg-DS-YhU"/>
                         <outlet property="seg" destination="qfY-mD-88e" id="gMI-2V-Sl1"/>
                         <outlet property="seggender" destination="BG8-Ky-5E1" id="gje-Em-KJr"/>
                         <outlet property="segmarital" destination="l7d-Se-s3O" id="uK4-jp-zmd"/>
@@ -6244,6 +6264,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="g7d-uW-Rgl" eventType="touchUpInside" id="Idt-Zd-vdb"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="fkB-Tm-dKb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-vg-TuN">
@@ -7326,4 +7347,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="dmC-XF-F1Q"/>
+        <segue reference="mIJ-Cx-l8C"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -66,6 +66,10 @@
 @synthesize recorddict;
 
 
+-(IBAction)back:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 -(IBAction)shoulderseatbeltsegmentchange:(id)sender
 {

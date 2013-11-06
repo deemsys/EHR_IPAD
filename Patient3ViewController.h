@@ -131,7 +131,7 @@ int a,b,c;
 -(IBAction)checkboxSelected:(UIButton*)sender;
 -(IBAction)submit:(id)sender;
 -(IBAction)clear:(id)sender;
-
+-(IBAction)back:(id)sender;
 
 
 @end

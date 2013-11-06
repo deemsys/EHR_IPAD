@@ -52,6 +52,7 @@
 -(IBAction)symptomsappearedsegmentchange:(id)sender;
 -(IBAction)afteraccidentwentsegmentchange:(id)sender;
 -(IBAction)hospitalgoingsegmentchange:(id)sender;
+-(IBAction)back:(id)sender;
 
 @property(nonatomic,retain)NSMutableDictionary * recorddict;
 @property(nonatomic,retain) UISwitch * anyonecitedswitch;

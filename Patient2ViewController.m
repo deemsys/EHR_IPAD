@@ -32,6 +32,11 @@
 @synthesize seg;
 @synthesize segtype;
 
+-(IBAction)back:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (IBAction) toggleEnabledTextForSwitch1onSomeLabel: (id) sender
 {
 	if (switch1.on) resLabel1.text = @"Yes";

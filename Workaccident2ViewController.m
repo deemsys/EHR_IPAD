@@ -30,6 +30,11 @@
 @synthesize seg;
 @synthesize segothertext;
 
+-(IBAction)back:(id)sender
+{
+    [[self navigationController] popViewControllerAnimated:YES];
+}
+
 -(BOOL)validateNames:(NSString *)country1
 {
     NSString *countryFormat1 =@"(?:[A-Za-z]+[A-Za-z]*)";

@@ -85,4 +85,5 @@ NSMutableDictionary *recorddict;
 - (IBAction)changefromdate:(id)sender;
 -(IBAction)segselected:(id)sender;
 -(IBAction)clear:(id)sender;
+-(IBAction)back:(id)sender;
 @end

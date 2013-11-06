@@ -66,6 +66,10 @@ int a,b,c,d;
     return [countryTest1 evaluateWithObject:country1];
     
 }
+-(IBAction)back:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 -(IBAction)submit:(id)sender;
 {

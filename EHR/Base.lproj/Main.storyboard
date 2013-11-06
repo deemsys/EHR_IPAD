@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="63" width="768" height="966"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-ey-AES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-ey-AES">
                                 <rect key="frame" x="215" y="121" width="339" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Auto Accident">
@@ -30,7 +30,7 @@
                                     <segue destination="Iod-xn-Ifn" kind="push" identifier="autoacc1" id="QcP-BV-9zq"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9w-ht-xtU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9w-ht-xtU">
                                 <rect key="frame" x="314" y="404" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Consent to treat a minor">
@@ -130,7 +130,7 @@
                                     <segue destination="fx5-s3-qW1" kind="push" id="IMv-pd-ggh"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-C2-vUh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-C2-vUh">
                                 <rect key="frame" x="311" y="165" width="147" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Work Accident">
@@ -615,6 +615,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-Lo-g3t">
                                 <rect key="frame" x="451" y="224" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298921664989" green="0.25536125484653388" blue="0.47191884566326525" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="insuranceswitchchange:" destination="Ybc-Ea-Zlb" eventType="valueChanged" id="ANr-Ov-goI"/>
                                 </connections>
@@ -1257,6 +1258,7 @@ Sheffield Village, Ohio 44035
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="Lr5-rO-Ist" eventType="touchUpInside" id="g4C-le-Zk5"/>
                                     <action selector="saveandcontinue:" destination="Lr5-rO-Ist" eventType="touchUpInside" id="O1b-sv-yYw"/>
                                 </connections>
                             </button>
@@ -1273,6 +1275,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viY-7K-aWQ">
                                 <rect key="frame" x="375" y="143" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="airbagdeployedswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="Gwo-Sv-3mS"/>
                                 </connections>
@@ -1280,6 +1283,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="092-WD-8tg">
                                 <rect key="frame" x="375" y="354" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="braceyourselfswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="WFG-c7-Ss7"/>
                                 </connections>
@@ -1287,6 +1291,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Z7-3o-ORq">
                                 <rect key="frame" x="375" y="396" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="furtherinjuryswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="giW-9h-TnC"/>
                                 </connections>
@@ -1294,6 +1299,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oH-QM-EQT">
                                 <rect key="frame" x="573" y="577" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="glassesstillswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="W8x-jQ-t9G"/>
                                 </connections>
@@ -1301,6 +1307,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-jS-U0C">
                                 <rect key="frame" x="573" y="543" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="wearingglassswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="8O4-te-rdV"/>
                                 </connections>
@@ -1308,6 +1315,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCQ-of-KhS">
                                 <rect key="frame" x="573" y="736" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="patientbodystrikeswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="V1O-Nh-UOO"/>
                                 </connections>
@@ -1315,6 +1323,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbX-J2-H5E">
                                 <rect key="frame" x="375" y="610" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="unconsiousswitchchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="Z1G-ko-XKB"/>
                                 </connections>
@@ -1327,7 +1336,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Not Worn"/>
                                     <segment title="Dont Know"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="shoulderseatbeltsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="HPQ-jn-LWP"/>
                                 </connections>
@@ -1339,7 +1348,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Struck"/>
                                     <segment title="Not Struck"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="wereyousegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="fQ4-L5-k49"/>
                                 </connections>
@@ -1354,7 +1363,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Unknown"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="bodypositionsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="DwI-Of-tLX"/>
                                 </connections>
@@ -1371,7 +1380,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Unknown"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="headpositionsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="br6-Vi-wHC"/>
                                 </connections>
@@ -1388,7 +1397,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Slammed"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="patientbodysegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="Yqu-gM-R5a"/>
                                 </connections>
@@ -1400,7 +1409,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="One"/>
                                     <segment title="Two"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="handsonwheelsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="vjX-1k-YVq"/>
                                 </connections>
@@ -1412,7 +1421,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Aware"/>
                                     <segment title="Surprised"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="awareofcrashsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="b9q-1P-SzW"/>
                                 </connections>
@@ -1424,7 +1433,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Braced with Arms"/>
                                     <segment title="Braced with Legs"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="braceoptionsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="ckc-32-jkS"/>
                                 </connections>
@@ -1438,7 +1447,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Major"/>
                                     <segment title="Totalled"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10643858305193496" green="0.099954362533250296" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="damagecarsegmentchange:" destination="Lr5-rO-Ist" eventType="valueChanged" id="7kk-jk-WQR"/>
                                 </connections>
@@ -1614,7 +1623,7 @@ Sheffield Village, Ohio 44035
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rp-SO-hSU">
-                                <rect key="frame" x="224" y="877" width="118" height="44"/>
+                                <rect key="frame" x="277" y="877" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1624,7 +1633,7 @@ Sheffield Village, Ohio 44035
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMt-2w-Z3j">
-                                <rect key="frame" x="355" y="877" width="118" height="44"/>
+                                <rect key="frame" x="410" y="877" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1635,7 +1644,7 @@ Sheffield Village, Ohio 44035
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJA-FJ-3ev">
-                                <rect key="frame" x="495" y="877" width="102" height="44"/>
+                                <rect key="frame" x="548" y="877" width="102" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1695,6 +1704,7 @@ Sheffield Village, Ohio 44035
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efd-Hw-vcf">
                                 <rect key="frame" x="306" y="119" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="anyonecitedswichchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="5Za-UU-R7E"/>
                                 </connections>
@@ -1706,7 +1716,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="You"/>
                                     <segment title="Other Driver"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29411765933036804" blue="0.058823533356189728" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.11426539855057354" green="0.10773061105258354" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="whocitedsegmentchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="gTb-uA-i9y"/>
                                 </connections>
@@ -1719,7 +1729,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="After Hours"/>
                                     <segment title="After Days"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.11426539855057354" green="0.10773061105258354" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="symptomsappearedsegmentchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="5Z3-ci-ayf"/>
                                 </connections>
@@ -1731,7 +1741,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Ambulance"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.11426539855057354" green="0.10773061105258354" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="hospitalgoingsegmentchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="Uqn-eh-bhT"/>
                                 </connections>
@@ -1779,7 +1789,7 @@ Sheffield Village, Ohio 44035
                                     <segment title="Neckpain"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.11426539855057354" green="0.10773061105258354" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="afteraccidenthadsegmentchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="Xdc-D5-Cdp"/>
                                 </connections>
@@ -1795,11 +1805,21 @@ Sheffield Village, Ohio 44035
                                     <segment title="Physician"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.11426539855057354" green="0.10773061105258354" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="afteraccidentwentsegmentchange:" destination="bIY-qE-OMZ" eventType="valueChanged" id="nSh-9O-FTa"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daN-ah-0kg">
+                                <rect key="frame" x="154" y="877" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="bIY-qE-OMZ" eventType="touchUpInside" id="Ll0-vW-g9X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3904,19 +3924,10 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <action selector="clearall:" destination="Iod-xn-Ifn" eventType="touchUpInside" id="1pH-IL-SCe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agh-QZ-QLN">
-                                <rect key="frame" x="346" y="950" width="95" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="previousbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearall:" destination="Iod-xn-Ifn" eventType="touchUpInside" id="4gt-dd-iAn"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-8T-foL">
                                 <rect key="frame" x="520" y="287" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="Iod-xn-Ifn" eventType="valueChanged" id="15q-94-Oi7"/>
                                 </connections>
@@ -3924,6 +3935,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIF-Xm-H1z">
                                 <rect key="frame" x="520" y="510" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="Iod-xn-Ifn" eventType="valueChanged" id="UKi-hn-bxW"/>
                                 </connections>
@@ -3931,6 +3943,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-3D-zzN">
                                 <rect key="frame" x="520" y="549" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch3onSomeLabel:" destination="Iod-xn-Ifn" eventType="valueChanged" id="S0l-mc-o7O"/>
                                 </connections>
@@ -3938,6 +3951,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLr-zQ-Yz3">
                                 <rect key="frame" x="520" y="588" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch4onSomeLabel:" destination="Iod-xn-Ifn" eventType="valueChanged" id="vgf-I4-Cpe"/>
                                 </connections>
@@ -3950,7 +3964,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Other Driver's Insurance Company"/>
                                     <segment title="Body Shop"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="estimatechange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="jip-WL-yLI"/>
                                 </connections>
@@ -3964,7 +3978,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Back Seat"/>
                                     <segment title="On the Job"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="wereoyuthechange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="hT5-9E-Cna"/>
                                 </connections>
@@ -3981,7 +3995,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Left Side"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="vehiclehitchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="cXw-Bw-XCg"/>
                                 </connections>
@@ -3994,7 +4008,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Gaining Speed"/>
                                     <segment title="Steady Rate of Speed"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="wasscarchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="JCM-o7-JAe"/>
                                 </connections>
@@ -4010,7 +4024,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Ice"/>
                                     <segment title="Others"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="roadconditionchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="ObW-27-qiS"/>
                                 </connections>
@@ -4023,7 +4037,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Down"/>
                                     <segment title="Don't Know"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="headrestraintchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="EQq-gV-NvT"/>
                                 </connections>
@@ -4036,7 +4050,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Was Not Altered"/>
                                     <segment title="Don't Know"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="seatbeforechange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="ohY-dg-XEn"/>
                                 </connections>
@@ -4048,7 +4062,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Broken"/>
                                     <segment title="Not Broken"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="seatafterchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="SVW-MQ-BuJ"/>
                                 </connections>
@@ -4061,7 +4075,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Not Worn"/>
                                     <segment title="Don't Know"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="lapseatbeltchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="mv3-8s-mvP"/>
                                 </connections>
@@ -4076,7 +4090,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="Dark"/>
                                     <segment title="UnKnown"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.084250115761817096" green="0.12270969274490484" blue="0.22939708828926086" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="timeofdaysegmentchange:" destination="Iod-xn-Ifn" eventType="valueChanged" id="Rdg-27-ZQq"/>
                                 </connections>
@@ -4508,6 +4522,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="012-3V-xVh">
                                 <rect key="frame" x="411" y="356" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="manipulationcoveredswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="kCH-Bm-5Te"/>
                                 </connections>
@@ -4515,6 +4530,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Li-S6-2VT">
                                 <rect key="frame" x="411" y="561" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="networkbenefitsswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="lMf-jX-QjC"/>
                                 </connections>
@@ -4522,6 +4538,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-KB-ib3">
                                 <rect key="frame" x="411" y="628" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="xraydeductswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="jGl-qy-sof"/>
                                 </connections>
@@ -4529,6 +4546,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFy-qg-3K7">
                                 <rect key="frame" x="514" y="662" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="honoredswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="56x-Bn-Cgz"/>
                                 </connections>
@@ -4536,6 +4554,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4de-Zi-evp">
                                 <rect key="frame" x="411" y="391" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="therapycoveredswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="BDl-Uu-lsK"/>
                                 </connections>
@@ -4543,6 +4562,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoN-CB-rfv">
                                 <rect key="frame" x="411" y="426" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="xraycoveredswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="Ka6-nB-5Mh"/>
                                 </connections>
@@ -4550,6 +4570,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-6S-HLH">
                                 <rect key="frame" x="411" y="461" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="subjectdeductibleswitchswitchchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="xsh-8Q-fID"/>
                                 </connections>
@@ -4557,6 +4578,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fB6-Pf-oe7">
                                 <rect key="frame" x="514" y="493" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="benefitshonoredswitchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="aSE-eH-Hfh"/>
                                 </connections>
@@ -4569,7 +4591,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                     <segment title="PT"/>
                                     <segment title="OV"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="therapiessegmentchange:" destination="Ovc-VP-zrH" eventType="valueChanged" id="2za-H0-qdD"/>
                                 </connections>
@@ -4657,7 +4679,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
             </objects>
             <point key="canvasLocation" x="-5955" y="-4611"/>
         </scene>
-        <!--Patient Info View Controller-->
+        <!--Patient Info View Controller - Personal Information-->
         <scene sceneID="cms-Xa-4kE">
             <objects>
                 <viewController id="fx5-s3-qW1" customClass="PatientInfoViewController" sceneMemberID="viewController">
@@ -4731,6 +4753,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6F-Q2-E4f">
                                 <rect key="frame" x="637" y="353" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="fx5-s3-qW1" eventType="valueChanged" id="rTo-W6-Ml6"/>
                                 </connections>
@@ -4750,35 +4773,36 @@ Signature below is only acknowledgement that you have received this Notice of ou
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-N8-Ctp">
                                 <rect key="frame" x="441" y="712" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="fx5-s3-qW1" eventType="valueChanged" id="nca-xT-wwA"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marital  Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EON-rJ-yCb">
-                                <rect key="frame" x="406" y="417" width="130" height="32"/>
+                                <rect key="frame" x="403" y="452" width="130" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ijl-gE-YHd">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ijl-gE-YHd">
                                 <rect key="frame" x="182" y="762" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Occupation" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-Gn-Kxk">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Occupation" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-Gn-Kxk">
                                 <rect key="frame" x="515" y="767" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Work Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RCA-2B-eRu">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Work Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RCA-2B-eRu">
                                 <rect key="frame" x="518" y="859" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-31-tf2">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-31-tf2">
                                 <rect key="frame" x="182" y="813" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -4808,7 +4832,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer City" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PqH-vz-cRi">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Employer City" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PqH-vz-cRi">
                                 <rect key="frame" x="182" y="859" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -4826,13 +4850,13 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-1Q-nsn">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-1Q-nsn">
                                 <rect key="frame" x="516" y="813" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12345" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dvc-Fp-iRi">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12345" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dvc-Fp-iRi">
                                 <rect key="frame" x="182" y="908" width="214" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -4855,7 +4879,7 @@ Signature below is only acknowledgement that you have received this Notice of ou
                                 </connections>
                             </button>
                             <datePicker tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="THT-95-EJk">
-                                <rect key="frame" x="207" y="324" width="277" height="216"/>
+                                <rect key="frame" x="207" y="324" width="181" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <date key="date" timeIntervalSinceReferenceDate="402861410.11931598">
@@ -4895,16 +4919,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <connections>
                                     <action selector="saveandcontinue:" destination="fx5-s3-qW1" eventType="touchUpInside" id="XFK-fR-r86"/>
                                     <segue destination="n1r-fg-hQc" kind="push" identifier="Patientdetail1" id="vP9-FH-xrh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-If-OG2">
-                                <rect key="frame" x="355" y="946" width="118" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="previousbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveandcontinue:" destination="fx5-s3-qW1" eventType="touchUpInside" id="SsF-wy-1RG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wat-9F-RGc">
@@ -4956,12 +4970,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-QR-Pdk">
-                                <rect key="frame" x="32" y="421" width="68" height="21"/>
+                                <rect key="frame" x="32" y="453" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Address: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx3-t5-KGo">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Address: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx3-t5-KGo">
                                 <rect key="frame" x="32" y="813" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -4979,25 +4993,25 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer City:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73t-q2-02M">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer City:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73t-q2-02M">
                                 <rect key="frame" x="35" y="858" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-2M-P23">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employer Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-2M-P23">
                                 <rect key="frame" x="35" y="762" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-3V-51T">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-3V-51T">
                                 <rect key="frame" x="404" y="770" width="102" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpb-AS-rvN">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpb-AS-rvN">
                                 <rect key="frame" x="404" y="859" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -5027,13 +5041,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN4-Z1-R04">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN4-Z1-R04">
                                 <rect key="frame" x="35" y="908" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-2f-C04">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-2f-C04">
                                 <rect key="frame" x="404" y="817" width="118" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -5070,7 +5084,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
-                                <color key="tintColor" red="0.2383961678" green="0.2223617702" blue="0.090358883619999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.15367042731270816" green="0.17789019477760118" blue="0.42338966836734693" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected:" destination="fx5-s3-qW1" eventType="valueChanged" id="RH2-ew-JdJ"/>
                                 </connections>
@@ -5089,14 +5103,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l7d-Se-s3O">
-                                <rect key="frame" x="525" y="450" width="202" height="29"/>
+                                <rect key="frame" x="525" y="453" width="202" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Single"/>
                                     <segment title="Married"/>
                                     <segment title="Divorced"/>
                                 </segments>
-                                <color key="tintColor" red="0.25460688939999998" green="0.28113042090000001" blue="0.072285118719999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.21817203486875736" green="0.32234221340611419" blue="0.52000956632653061" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segmaritalselected:" destination="fx5-s3-qW1" eventType="valueChanged" id="kfD-rz-lWE"/>
                                 </connections>
@@ -5114,7 +5128,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e6V-cu-8bi"/>
+                    <navigationItem key="navigationItem" title="Personal Information" id="zhW-9L-9Qh"/>
                     <connections>
                         <outlet property="cellph" destination="vcE-Dk-tke" id="mSA-Xf-Pcg"/>
                         <outlet property="city" destination="oad-sC-Ga8" id="yIg-1d-wpt"/>
@@ -5159,9 +5173,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzi-Pw-VeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5044" y="-5416"/>
+            <point key="canvasLocation" x="-5050" y="-5418"/>
         </scene>
-        <!--Patient2 View Controller-->
+        <!--Patient2 View Controller - Present Complaint-->
         <scene sceneID="FW0-gV-jr1">
             <objects>
                 <viewController id="n1r-fg-hQc" customClass="Patient2ViewController" sceneMemberID="viewController">
@@ -5345,6 +5359,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="46L-Q1-QLm">
                                 <rect key="frame" x="531" y="324" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="n1r-fg-hQc" eventType="valueChanged" id="Zjy-xo-5mP"/>
                                 </connections>
@@ -5376,6 +5391,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-S0-DDE">
                                 <rect key="frame" x="531" y="457" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="n1r-fg-hQc" eventType="valueChanged" id="iIY-pe-q95"/>
                                 </connections>
@@ -5383,6 +5399,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-vm-66i">
                                 <rect key="frame" x="531" y="570" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch3onSomeLabel:" destination="n1r-fg-hQc" eventType="valueChanged" id="AgX-gj-osX"/>
                                 </connections>
@@ -5390,6 +5407,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XnA-s8-fyv">
                                 <rect key="frame" x="531" y="884" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch4onSomeLabel:" destination="n1r-fg-hQc" eventType="valueChanged" id="fdx-IJ-wv9"/>
                                 </connections>
@@ -5472,6 +5490,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="n1r-fg-hQc" eventType="touchUpInside" id="diV-3W-TQZ"/>
                                     <action selector="savecontinuebtn:" destination="n1r-fg-hQc" eventType="touchUpInside" id="N7W-2B-Lfg"/>
                                 </connections>
                             </button>
@@ -5482,7 +5501,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms0-Wo-vCA">
-                                <rect key="frame" x="388" y="412" width="121" height="38"/>
+                                <rect key="frame" x="388" y="412" width="169" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -5492,7 +5511,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bsD-dU-RfP">
-                                <rect key="frame" x="445" y="401" width="303" height="216"/>
+                                <rect key="frame" x="438" y="401" width="303" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="402925329.35903299">
                                     <!--2013-10-08 11:42:09 +0000-->
@@ -5548,7 +5567,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Work"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.25460688939999998" green="0.28113042090000001" blue="0.072285118719999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.24302895011399339" green="0.35793332298038971" blue="0.68893494897959184" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segselected:" destination="n1r-fg-hQc" eventType="valueChanged" id="Oud-J9-XUB"/>
                                 </connections>
@@ -5572,7 +5591,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BbM-fK-Z8R"/>
+                    <navigationItem key="navigationItem" title="Present Complaint" id="wXd-nk-eyH"/>
                     <connections>
                         <outlet property="attorneyph" destination="1es-aL-Gfw" id="N2e-Ml-rkB"/>
                         <outlet property="autoname" destination="NYc-Fy-8fC" id="gBD-Tf-qLJ"/>
@@ -5613,9 +5632,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fP-li-YBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4092" y="-5396"/>
+            <point key="canvasLocation" x="-4008" y="-5304"/>
         </scene>
-        <!--Patient3 View Controller-->
+        <!--Patient3 View Controller - Medical/Social/Work History-->
         <scene sceneID="CTk-37-w7c">
             <objects>
                 <viewController id="g7d-uW-Rgl" customClass="Patient3ViewController" sceneMemberID="viewController">
@@ -5627,7 +5646,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-Qh-24U">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-Qh-24U">
                                 <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -6247,7 +6266,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-mC-SQJ">
-                                <rect key="frame" x="224" y="943" width="90" height="33"/>
+                                <rect key="frame" x="244" y="943" width="90" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6257,7 +6276,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1r-QF-nwe">
-                                <rect key="frame" x="329" y="943" width="90" height="33"/>
+                                <rect key="frame" x="353" y="943" width="90" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="cancelbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6268,7 +6287,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-vg-TuN">
-                                <rect key="frame" x="445" y="943" width="81" height="32"/>
+                                <rect key="frame" x="457" y="943" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="reviewbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -6316,6 +6335,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" tag="56" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWJ-4f-ALj">
                                 <rect key="frame" x="524" y="824" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="g7d-uW-Rgl" eventType="valueChanged" id="g1i-UH-Lhg"/>
                                 </connections>
@@ -6323,6 +6343,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-W3-ED7">
                                 <rect key="frame" x="466" y="794" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.21760298920000001" green="0.25536125479999999" blue="0.47191884569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="g7d-uW-Rgl" eventType="valueChanged" id="CGu-8U-0QF"/>
                                 </connections>
@@ -6439,6 +6460,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KME-aI-nys">
+                                <rect key="frame" x="136" y="945" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="g7d-uW-Rgl" eventType="touchUpInside" id="NiZ-Jd-KUb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -6448,7 +6479,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstAttribute="trailing" secondItem="Zec-v8-qdF" secondAttribute="trailing" constant="65" id="hAR-w6-f9A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uCP-q5-z7G"/>
+                    <navigationItem key="navigationItem" title="Medical/Social/Work History" id="4cb-DW-fss"/>
                     <connections>
                         <outlet property="button1" destination="pP6-vE-yuh" id="a5L-Pc-IZm"/>
                         <outlet property="button10" destination="QX6-zc-alG" id="Vt7-F5-wJj"/>
@@ -6507,7 +6538,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-3023" y="-5109"/>
         </scene>
-        <!--Workaccident View Controller-->
+        <!--Workaccident View Controller - Work Accident-->
         <scene sceneID="izg-6U-mom">
             <objects>
                 <viewController id="Ahx-0g-Ok6" customClass="WorkaccidentViewController" sceneMemberID="viewController">
@@ -6760,16 +6791,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="ALH-jv-0dY" kind="push" identifier="Workaccident1" id="xd4-U3-wnv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-sM-Hln">
-                                <rect key="frame" x="315" y="941" width="108" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="previousbutton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveandcontinue:" destination="Ahx-0g-Ok6" eventType="touchUpInside" id="nsU-7T-pAv"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-qn-hNe">
                                 <rect key="frame" x="426" y="416" width="308" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -6901,7 +6922,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1LD-g9-lMn"/>
+                    <navigationItem key="navigationItem" title="Work Accident" id="1LD-g9-lMn"/>
                     <connections>
                         <outlet property="carryanything" destination="aSB-b1-Xvm" id="BUA-Bg-zYJ"/>
                         <outlet property="carrything" destination="CB8-yw-JWQ" id="yAr-uj-5yT"/>
@@ -6943,7 +6964,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-7903" y="-3393"/>
         </scene>
-        <!--Workaccident2 View Controller-->
+        <!--Workaccident2 View Controller - Work Accident-->
         <scene sceneID="prq-6K-cL1">
             <objects>
                 <viewController id="ALH-jv-0dY" customClass="Workaccident2ViewController" sceneMemberID="viewController">
@@ -7023,12 +7044,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-C5-PdA">
                                 <rect key="frame" x="361" y="127" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch1onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="MiB-Ov-Ejc"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKj-Y2-dfE">
-                                <rect key="frame" x="300" y="126" width="59" height="40"/>
+                                <rect key="frame" x="307" y="123" width="59" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -7048,7 +7070,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segment title="Slippery"/>
                                     <segment title="Other"/>
                                 </segments>
-                                <color key="tintColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.21568629145622253" green="0.39607846736907959" blue="0.67058825492858887" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="segselected:" destination="ALH-jv-0dY" eventType="valueChanged" id="wFh-eK-KXZ"/>
                                 </connections>
@@ -7062,6 +7084,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJH-kM-Fvt">
                                 <rect key="frame" x="412" y="231" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch2onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="kHM-fa-GZh"/>
                                 </connections>
@@ -7081,6 +7104,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RO8-QY-GEy">
                                 <rect key="frame" x="412" y="388" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch4onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="VxC-Sh-XeX"/>
                                 </connections>
@@ -7088,6 +7112,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAr-f4-eb9">
                                 <rect key="frame" x="585" y="447" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch5onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="htN-of-Ydh"/>
                                 </connections>
@@ -7107,6 +7132,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta4-CG-dzm">
                                 <rect key="frame" x="585" y="502" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch6onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="PDO-br-Z9D"/>
                                 </connections>
@@ -7126,6 +7152,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHq-Kb-sQg">
                                 <rect key="frame" x="412" y="286" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.14542552122492899" green="0.32685271709291569" blue="0.60622608418367352" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleEnabledTextForSwitch3onSomeLabel:" destination="ALH-jv-0dY" eventType="valueChanged" id="q3G-XK-Y9X"/>
                                 </connections>
@@ -7137,7 +7164,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-YB-47O">
-                                <rect key="frame" x="207" y="707" width="92" height="35"/>
+                                <rect key="frame" x="225" y="708" width="92" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="submitbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -7154,6 +7181,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="clear:" destination="ALH-jv-0dY" eventType="touchUpInside" id="6Ms-ai-USY"/>
+                                    <segue destination="6rh-yg-v9g" kind="push" id="ahY-e7-hjy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M2-6z-i42">
@@ -7172,10 +7200,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUP-f5-gL9">
+                                <rect key="frame" x="106" y="708" width="110" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="previousbutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="ALH-jv-0dY" eventType="touchUpInside" id="HMr-6O-QeH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2cx-iW-lwI"/>
+                    <navigationItem key="navigationItem" title="Work Accident" id="2cx-iW-lwI"/>
                     <connections>
                         <outlet property="changesmadeinjob" destination="TK5-XT-sxr" id="x56-c5-T0p"/>
                         <outlet property="givespecificsyes" destination="qNp-XL-pgQ" id="8NI-9O-oUH"/>
@@ -7348,7 +7386,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dmC-XF-F1Q"/>
-        <segue reference="mIJ-Cx-l8C"/>
+        <segue reference="fkB-Tm-dKb"/>
+        <segue reference="H3I-ri-qXR"/>
     </inferredMetricsTieBreakers>
 </document>

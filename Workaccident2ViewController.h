@@ -55,4 +55,5 @@
 -(IBAction)submit:(id)sender;
 -(IBAction)clear:(id)sender;
 -(IBAction)segselected:(id)sender;
+-(IBAction)back:(id)sender;
 @end

@@ -94,6 +94,7 @@
 -(IBAction)unconsiousswitchchange:(id)sender;
 -(IBAction)damagecarsegmentchange:(id)sender;
 -(IBAction)patientbodystrikeswitchchange:(id)sender;
+-(IBAction)back:(id)sender;
 
 @property(nonatomic,retain)NSMutableDictionary * recorddict;
 @property(nonatomic,retain) UISegmentedControl * shoulderseatbeltsegment;

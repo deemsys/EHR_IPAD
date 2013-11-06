@@ -21,6 +21,10 @@
 @synthesize otherdis;
 @synthesize otheropt;
 
+-(IBAction)back:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

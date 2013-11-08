@@ -360,7 +360,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
    if(c==1)
    {
        c=0;
-       sqlite3_stmt    *statement;
+      /* sqlite3_stmt    *statement;
        
        const char *dbpath = [databasePath UTF8String];
        
@@ -403,7 +403,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
            sqlite3_finalize(statement);
            sqlite3_close(ehrdb7);
        }
-
+*/
        NSLog(@"success!!!recorddict %@",recorddict);
    }
 }
@@ -559,7 +559,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
 - (void)viewDidLoad
 {
     recorddict=[[NSMutableDictionary alloc]init];
-    NSString *docsDir;
+/*    NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -604,7 +604,7 @@ if (([manipulationcoveredswitchlabel.text isEqual:@"Yes"]) &&a==1)
             [alert show];
             
         }
-    }
+    }*/
 
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

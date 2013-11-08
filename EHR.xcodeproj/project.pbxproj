@@ -54,6 +54,7 @@
 		0D67999B1818EF7200BDC1FC /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D67999A1818EF7200BDC1FC /* login.png */; };
 		0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D67999E1819008800BDC1FC /* adminloginViewController.m */; };
 		0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6799A2181900B100BDC1FC /* doctorloginViewController.m */; };
+		0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D820F1D182CDDE400BA3A5B /* testingViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9C35E1180C850F00134BB6 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DE180C850F00134BB6 /* reset.png */; };
 		0D9C35E2180C850F00134BB6 /* saveandcontinue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DF180C850F00134BB6 /* saveandcontinue.png */; };
@@ -65,6 +66,9 @@
 		0DA2497B180E6F3100C9A9C6 /* checkBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA24977180E6F3100C9A9C6 /* checkBox@2x.png */; };
 		0DA2497C180E6F3100C9A9C6 /* checkBoxMarked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA24978180E6F3100C9A9C6 /* checkBoxMarked.png */; };
 		0DA2497D180E6F3100C9A9C6 /* checkBoxMarked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */; };
+		0DA5775A182BE1090043A9B3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA57759182BE1090043A9B3 /* SWRevealViewController.m */; };
+		0DA57760182BE74D0043A9B3 /* sidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5775F182BE74D0043A9B3 /* sidebarViewController.m */; };
+		0DA57762182BED270043A9B3 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA57761182BED270043A9B3 /* menu.png */; };
 		0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */; };
 		0DC11B0018003E1D00195C56 /* Default-Portrait~ipadx2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */; };
 		0DCD15DA17FD4F5200748DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D917FD4F5200748DD7 /* UIKit.framework */; };
@@ -175,6 +179,8 @@
 		0D67999E1819008800BDC1FC /* adminloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adminloginViewController.m; sourceTree = "<group>"; };
 		0D6799A1181900B100BDC1FC /* doctorloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorloginViewController.h; sourceTree = "<group>"; };
 		0D6799A2181900B100BDC1FC /* doctorloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorloginViewController.m; sourceTree = "<group>"; };
+		0D820F1C182CDDE400BA3A5B /* testingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testingViewController.h; sourceTree = "<group>"; };
+		0D820F1D182CDDE400BA3A5B /* testingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testingViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
 		0D9C35DE180C850F00134BB6 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
@@ -190,6 +196,11 @@
 		0DA24977180E6F3100C9A9C6 /* checkBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkBox@2x.png"; sourceTree = "<group>"; };
 		0DA24978180E6F3100C9A9C6 /* checkBoxMarked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBoxMarked.png; sourceTree = "<group>"; };
 		0DA24979180E6F3100C9A9C6 /* checkBoxMarked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkBoxMarked@2x.png"; sourceTree = "<group>"; };
+		0DA57758182BE1040043A9B3 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0DA57759182BE1090043A9B3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0DA5775E182BE74D0043A9B3 /* sidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidebarViewController.h; path = ../sidebarViewController.h; sourceTree = "<group>"; };
+		0DA5775F182BE74D0043A9B3 /* sidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sidebarViewController.m; path = ../sidebarViewController.m; sourceTree = "<group>"; };
+		0DA57761182BED270043A9B3 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../menu.png; sourceTree = "<group>"; };
 		0DC11AFD18003E1D00195C56 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		0DC11AFE18003E1D00195C56 /* Default-Portrait~ipadx2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipadx2x.png"; sourceTree = "<group>"; };
 		0DCD15D217FD4F5200748DD7 /* EHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				0D2EAB8118041B94004F5859 /* WelcomeViewController.h */,
+				0DA57758182BE1040043A9B3 /* SWRevealViewController.h */,
+				0DA57759182BE1090043A9B3 /* SWRevealViewController.m */,
 				0D2EAB8218041B94004F5859 /* WelcomeViewController.m */,
 			);
 			name = Welcome;
@@ -522,6 +535,8 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D820F1C182CDDE400BA3A5B /* testingViewController.h */,
+				0D820F1D182CDDE400BA3A5B /* testingViewController.m */,
 				0DE6A57C181BA1DA00A09BA7 /* soapnotes */,
 				0DE6A57B181BA1BF00A09BA7 /* Radiologicalreport */,
 				0DE6A57A181BA1B600A09BA7 /* InitialExam */,
@@ -583,7 +598,10 @@
 		0DCD15DB17FD4F5200748DD7 /* EHR */ = {
 			isa = PBXGroup;
 			children = (
+				0DA57761182BED270043A9B3 /* menu.png */,
+				0DA5775E182BE74D0043A9B3 /* sidebarViewController.h */,
 				0DCD15E417FD4F5200748DD7 /* ViewAppAppDelegate.h */,
+				0DA5775F182BE74D0043A9B3 /* sidebarViewController.m */,
 				0DCD15E517FD4F5200748DD7 /* ViewAppAppDelegate.m */,
 				0DCD15E717FD4F5200748DD7 /* Main.storyboard */,
 				0DCD15EA17FD4F5200748DD7 /* ViewAppViewController.h */,
@@ -789,6 +807,7 @@
 				0D2EAB6518034245004F5859 /* register.png in Resources */,
 				0D2EAB6A1803D359004F5859 /* select1.png in Resources */,
 				0D2EAB5718033380004F5859 /* all-blocks.png in Resources */,
+				0DA57762182BED270043A9B3 /* menu.png in Resources */,
 				0D2EAB5E18033B1A004F5859 /* signin.png in Resources */,
 				0D0EE992181E7ACB00FEED75 /* reviewbutton.png in Resources */,
 				0D2EAB5B18033A77004F5859 /* Select.png in Resources */,
@@ -817,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE6A588181BA24800A09BA7 /* physicalexamViewController.m in Sources */,
+				0DA57760182BE74D0043A9B3 /* sidebarViewController.m in Sources */,
 				0DE6A582181BA22500A09BA7 /* radiologicalViewController.m in Sources */,
 				0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */,
 				0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */,
@@ -847,8 +867,10 @@
 				0DA24975180E64F200C9A9C6 /* staffautocheckViewController.m in Sources */,
 				0DA24971180DC8F300C9A9C6 /* screendisclosureViewController.m in Sources */,
 				0DE6A57F181BA20A00A09BA7 /* soapViewController.m in Sources */,
+				0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,
 				0DE6A58E181BA26C00A09BA7 /* adminportalViewController.m in Sources */,
+				0DA5775A182BE1090043A9B3 /* SWRevealViewController.m in Sources */,
 				0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */,
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
 				0DE6A58B181BA25B00A09BA7 /* doctorportalViewController.m in Sources */,

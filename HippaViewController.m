@@ -68,7 +68,7 @@ int a;
                         [recorddict setValue:sign.text forKey:@"sign"];
                         [recorddict setValue:witness.text forKey:@"witness"];
                         [recorddict setValue:date.text forKey:@"date"];
-                        sqlite3_stmt    *statement;
+                      /*  sqlite3_stmt    *statement;
                         
                         const char *dbpath = [databasePath UTF8String];
                         
@@ -108,7 +108,7 @@ int a;
                             sqlite3_finalize(statement);
                             sqlite3_close(ehrdbase1);
                         }
-
+*/
 
                     }
                     else
@@ -183,7 +183,7 @@ int a;
 }
 - (void)viewDidLoad
 {
-    NSString *docsDir;
+  /*  NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -229,7 +229,7 @@ int a;
             
         }
     }
-
+*/
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self

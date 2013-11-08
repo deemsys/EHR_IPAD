@@ -198,38 +198,7 @@ if(seg.selectedSegmentIndex==0)
     syml3.text = [NSString stringWithFormat:@"%d", SliderValue];
 }
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    
-    //NSLog(@"identifier %@",identifier);
-    if([identifier isEqual:@"Patientdetail2"])
-    {
-        if ((c==1)&&(a==1))
-        {
-            return YES;
-        }
-        else
-        {
-            
-            return NO;
-        }
-    }
-    else
-        return NO;
-}
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    if ([segue.identifier isEqualToString:@"Patientdetail2"])
-    {
-     
-        Patient3ViewController *destViewController = [segue destinationViewController];
-        destViewController.recorddict=recorddict;
-        NSLog(@"recorddict in Patient2VC first %@",recorddict);
-    }
-    
-    
-}
+
 -(IBAction)clear:(id)sender
 {
     syml1.text=0;
@@ -272,6 +241,7 @@ if(seg.selectedSegmentIndex==0)
         ([helph.text length]!=0)
        )
     {c=0;
+        
         if ([self validateNames:[sym1 text]]==1)
         {
            if([self validateNames:[medwhere text]]==1)
@@ -309,7 +279,7 @@ if(seg.selectedSegmentIndex==0)
                                                [recorddict setValue:resLabel2.text forKey:@"accreported"];
                                                [recorddict setValue:resLabel3.text forKey:@"retainedattorney"];
                                                [recorddict setValue:resLabel4.text forKey:@"prevautoorwork"];
-                                               [recorddict setValue:segtype.text forKey:@"TypeOfaccident"];
+                                               [recorddict setValue:segtype.text forKey:@"Typeofaccident"];
                                                [recorddict setValue:medwhere.text forKey:@"MedicalLocation"];
                                                  [recorddict setValue:medwhen.text forKey:@"Medicaltime"];
                                                  [recorddict setValue:nameofattorney.text forKey:@"nameofattorney"];
@@ -323,6 +293,16 @@ if(seg.selectedSegmentIndex==0)
                                                  [recorddict setValue:helname.text forKey:@"healthname"];
                                                  [recorddict setValue:helph.text forKey:@"healthphone"];
                                                [recorddict setValue:fromd.text forKey:@"Dateofaccident"];
+                                               if([[recorddict objectForKey:@"Typeofaccident"] isEqual:@"Auto"])
+                                               {
+                                                   [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"typeofacc"];
+                                               }
+                                               else if([[recorddict objectForKey:@"Typeofaccident"] isEqual:@"Work"])
+                                               {
+                                                   
+                                                   [[NSUserDefaults standardUserDefaults]setInteger:2 forKey:@"typeofacc"];
+                                               }
+
                                                if(a==1){
                                                    [recorddict setValue:optwhen.text forKey:@"prevauto"];
                                                   

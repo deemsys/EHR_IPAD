@@ -62,7 +62,7 @@ int a;
                     [recorddict setValue:sign.text forKey:@"patientsign"];
                     [recorddict setValue:date.text forKey:@"date"];
                     [recorddict setValue:name.text forKey:@"witnessname"];
-                    sqlite3_stmt    *statement;
+                 /*   sqlite3_stmt    *statement;
                     
                     const char *dbpath = [databasePath UTF8String];
                     
@@ -94,7 +94,7 @@ int a;
                         }
                         sqlite3_finalize(statement);
                         sqlite3_close(ehrdb);
-                    }
+                    }*/
                 }
                 else
                 {
@@ -166,7 +166,7 @@ int a;
 
 - (void)viewDidLoad
 {
-    NSString *docsDir;
+ /*   NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -211,7 +211,7 @@ int a;
             [alert show];
             
         }
-    }
+    }*/
    // recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]

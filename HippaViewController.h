@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "/usr/include/sqlite3.h"
+//#import "/usr/include/sqlite3.h"
 
 
 
@@ -21,7 +21,7 @@
     IBOutlet UITextField * witness;
     IBOutlet UITextField * date;
     NSString *databasePath;
-    sqlite3 * ehrdbase1;
+   // sqlite3 * ehrdbase1;
 }
 
 -(IBAction)submit:(id)sender;

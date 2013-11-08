@@ -75,6 +75,7 @@
     else if (seggender.selectedSegmentIndex==1)
         seg.text=@"Female";
 }
+
 -(IBAction)segmaritalselected:(id)sender
 {
    if(segmarital.selectedSegmentIndex==0)
@@ -92,15 +93,40 @@
 }
 - (IBAction)changefromdate:(id)sender
 {
+    int date;
     //datePicker1.minimumDate=datePicker.date;
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
 	df.dateStyle = NSDateFormatterMediumStyle;
 	fromd.text = [NSString stringWithFormat:@"%@",
                   [df stringFromDate:datePicker.date]];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents *dateComponentsNow = [calendar components:unitFlags fromDate:[NSDate date]];
+    NSDateComponents *dateComponentsBirth = [calendar components:unitFlags fromDate:datePicker.date];
+  //  NSLog(@"day %ld month %ld year %ld",(long)[dateComponentsBirth day],(long)[dateComponentsBirth month],(long)[dateComponentsBirth year]);
+  //   NSLog(@"nowday %ld month %ld year %ld",(long)[dateComponentsNow day],(long)[dateComponentsNow month],(long)[dateComponentsNow year]);
+    
+    if (([dateComponentsNow month] < [dateComponentsBirth month]) ||
+        (([dateComponentsNow month] == [dateComponentsBirth month]) && ([dateComponentsNow day] < [dateComponentsBirth day])))
+    {
+      date=  [dateComponentsNow year] - [dateComponentsBirth year] - 1;
+    }
+    else
+    {
+       date= [dateComponentsNow year] - [dateComponentsBirth year];
+    }
+    NSLog(@"date from picker %d ",-(date));
+    date=-(date);
+   
+    NSUserDefaults *ageofperson=[NSUserDefaults standardUserDefaults] ;
+                                  [ageofperson setInteger:date forKey:@"age"];
+    [ageofperson synchronize];
+    
 	[df release];
     
     
 }
+ 
 -(IBAction)setFromDate
 {
      if(datePicker.hidden==YES)
@@ -158,14 +184,15 @@
 
 }
 */
--(BOOL)validatePager:(NSString*)mobilenumber{
-    NSString *mobileFormat1 =  @"[A-Z0-9a-z._%+-]+";
+-(BOOL)validateEmail:(NSString*)candidate{
+    NSString *emailFormat1 = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     
-    [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
-    NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
-    return [mobileTest1 evaluateWithObject:mobilenumber];
+    
+    NSPredicate *emailTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailFormat1];
+    return [emailTest1 evaluateWithObject:candidate];
     
 }
+
 -(BOOL)validateMobile:(NSString*)mobilenumber{
     NSString *mobileFormat1 =  @"[0-9]{10}?";
     
@@ -336,7 +363,7 @@
                                                     {
                                                         if ([self validateDate:[todaydate text]]==1)
                                                         {
-                                                            if([self validatePager:[pager text]]==1)
+                                                            if([self validateEmail:[pager text]]==1)
                                                             {
                                                                 if ([self validateNames:[relativename text]]==1)
                                                                 {
@@ -468,7 +495,7 @@
                                                             }
                                                             else
                                                             {
-                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Pager Number."];
+                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Email id."];
                                                                 
                                                                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                                                                 [alert setDestructiveButtonWithTitle:@"x" block:nil];

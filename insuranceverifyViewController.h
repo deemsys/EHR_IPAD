@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "/usr/include/sqlite3.h"
+//#import "/usr/include/sqlite3.h"
 
 @interface insuranceverifyViewController : UIViewController
 {
@@ -52,7 +52,7 @@
     IBOutlet UITextField *ov;
     int a,b,c,d;
     NSString * databasePath;
-    sqlite3 * ehrdb7;
+   // sqlite3 * ehrdb7;
     
 
 

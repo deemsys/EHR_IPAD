@@ -137,7 +137,7 @@ int a;
 
 - (void)viewDidLoad
 {
-    NSString *docsDir;
+  /*  NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -183,7 +183,7 @@ int a;
             
         }
     }
-
+*/
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self

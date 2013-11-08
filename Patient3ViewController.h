@@ -10,11 +10,11 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-#import "/usr/include/sqlite3.h"
+//#import "/usr/include/sqlite3.h"
 
 @interface Patient3ViewController : UIViewController
 {
-    sqlite3*ehrdb6;
+   // sqlite3*ehrdb6;
     NSString*databasePath;
     NSMutableDictionary *recorddict;
     IBOutlet UITextField*otherdis;
@@ -106,7 +106,7 @@
     IBOutlet UITextField*Drink,*smoke,*Drugs,*Diet,*Excercise;
     NSMutableArray*diseases;
     NSMutableArray*selecteddisease;
-   
+   IBOutlet UILabel*patientsign;
     NSMutableArray *circle;
     IBOutlet UITextField*date;
 int a,b,c;

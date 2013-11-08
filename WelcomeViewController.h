@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface WelcomeViewController : UIViewController
-
+{
+    IBOutlet UIButton*consentminor;
+    int age1,typeofaccident;
+    IBOutlet UIButton *autoaccident;
+    IBOutlet UIButton *workaccident;
+    
+    
+}
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

@@ -79,7 +79,7 @@ int a;
     if (a==1)
     {
         NSLog(@"recorddict in ROMRA %@",recorddict);
-        sqlite3_stmt    *statement;
+     /*   sqlite3_stmt    *statement;
         
         const char *dbpath = [databasePath UTF8String];
         
@@ -111,7 +111,7 @@ int a;
             }
             sqlite3_finalize(statement);
             sqlite3_close(ehrdb5);
-        }
+        }*/
 
     }
     
@@ -139,7 +139,7 @@ int a;
 
 - (void)viewDidLoad
 {
-    NSString *docsDir;
+   /* NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -184,9 +184,9 @@ int a;
             [alert show];
             
         }
-    }
+    }*/
 
-   //  recorddict=[[NSMutableDictionary alloc]init];
+// recorddict=[[NSMutableDictionary alloc]init];
     [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self

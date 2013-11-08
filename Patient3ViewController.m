@@ -7,7 +7,8 @@
 //
 
 #import "Patient3ViewController.h"
-
+#import "WorkaccidentViewController.h"
+#import "AutoAccidentViewController1.h"
 @interface Patient3ViewController ()
 
 @end
@@ -63,7 +64,7 @@
 - (void)viewDidLoad
 {
     otherdis.hidden=YES;
-    NSString *docsDir;
+  /*  NSString *docsDir;
     NSArray *dirPaths;
     
     // Get the documents directory
@@ -105,9 +106,10 @@
             [alert show];
         }
     }
-    
+    */
 
     [super viewDidLoad];
+    patientsign.text=[recorddict objectForKey:@"name"];
     //recorddict=[[NSMutableDictionary alloc]init];
     selecteddisease=[[NSMutableArray alloc]init];
     temp=[[NSMutableDictionary alloc]init];
@@ -530,7 +532,7 @@
         b=0;
     }
    
-    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0)&&([patsign.text length]!=0))
+    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0))
     {
         c=0;
     if([self validateNames:[surg text]]==1)
@@ -539,14 +541,12 @@
      {
          if([self validateNames:[medhad text]]==1)
          {
-           if([self validateSign:[patsign text] ]==1)
-           {
+           
         
                    [recorddict setValue:surg.text forKey:@"majorillness"];
                    [recorddict setValue:date.text forKey:@"majorillnessdate"];
                    [recorddict setValue:medhad.text forKey:@"medicines"];
-                   [recorddict setValue:patsign.text forKey:@"patientsign"];
-                  [recorddict setValue:reslabel1.text forKey:@"hazardoussubstances"];
+                                    [recorddict setValue:reslabel1.text forKey:@"hazardoussubstances"];
                   [recorddict setValue:reslabel2.text forKey:@"femalepregnant"];
                   if(a==1)
                   {
@@ -572,15 +572,8 @@
                       [alert setDestructiveButtonWithTitle:@"x" block:nil];
                       [alert show];
                   }
-              }
-            else
-             {
-                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Patient's sign."];
-                 
-                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
-                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
-                 [alert show];
-             }
+             
+           
          }
          else{
              BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Medicines."];
@@ -619,12 +612,42 @@
     if((a==1)&&(b==1)&&(c==1))
     {
         NSLog(@"submit full recorddict values %@",recorddict);
-        [self savedata1];
-    }
+           }
         
     }
 
-
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    
+    //NSLog(@"identifier %@",identifier);
+    if([identifier isEqual:@"Patientdetail2"])
+    {
+        if ((c==1)&&(a==1))
+        {
+            return YES;
+        }
+        else
+        {
+            
+            return NO;
+        }
+    }
+    else
+        return NO;
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"Patientdetail2"])
+    {
+        
+        Patient3ViewController *destViewController = [segue destinationViewController];
+        destViewController.recorddict=recorddict;
+        NSLog(@"recorddict in Patient2VC first %@",recorddict);
+    }
+    
+    
+}
 -(IBAction)clear:(id)sender
 {
       for (UIView *subview in [self.view subviews])
@@ -633,7 +656,7 @@
   
   
 }
--(void)savedata1
+/*-(void)savedata1
 {
     
     sqlite3_stmt    *statement;
@@ -728,4 +751,5 @@
         sqlite3_close(ehrdb6);
     }
 }
+ */
 @end

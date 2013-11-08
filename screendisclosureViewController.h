@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "/usr/include/sqlite3.h"
+//#import "/usr/include/sqlite3.h"
 
 @interface screendisclosureViewController : UIViewController
 {
@@ -15,7 +15,7 @@
     IBOutlet UITextField * name;
     NSMutableDictionary * recorddict;
     NSString * databasePath;
-    sqlite3 * ehrdb5;
+  //  sqlite3 * ehrdb5;
 
 }
 

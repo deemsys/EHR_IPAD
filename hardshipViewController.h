@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "/usr/include/sqlite3.h"
+//#import "/usr/include/sqlite3.h"
 @interface hardshipViewController : UIViewController
 {
     IBOutlet UITextField * date;
@@ -16,7 +16,7 @@
     IBOutlet UITextField * witness;
     NSMutableDictionary * recorddict;
     NSString *databasePath;
-    sqlite3 * ehrdbase;
+  //  sqlite3 * ehrdbase;
     
 }
 

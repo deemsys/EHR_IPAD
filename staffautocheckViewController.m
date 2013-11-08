@@ -114,6 +114,67 @@ int a;
     }
     else
         report.text=NULL;
+    if(button8.selected)
+    {
+      hiv.text=@"Health insurance Verification";
+        [selectforms addObject:@"Health insurance Verification"];
+    }
+    else
+        hiv.text=NULL;
+    if(button9.selected)
+        {
+          releaseofmed.text=@"Release Of Medical Records Authorization";
+            [selectforms addObject:@"Release Of Medical Records Authorization"];
+        }
+        else
+            releaseofmed.text=NULL;
+    if(button10.selected)
+    {
+       hippa.text=@"HIPPA Notice Of Privacy Practices";
+        [selectforms addObject:@"HIPPA Notice Of Privacy Practices"];
+         
+    }
+    else
+        hippa.text=NULL;
+    if(button12.selected)
+    {
+        notice.text=@"Notice And Request To Not Bill Private Health Insurance ";
+        [selectforms addObject:@"Notice And Request To Not Bill Private Health Insurance "];
+    }
+    else
+        notice.text=NULL;
+    if(button11.selected)
+    {
+        hardship.text=@"Hardship Agreement";
+        [selectforms addObject:@"Hardship Agreement"];
+
+    }
+    else
+        hardship.text=NULL;
+    if(button13.selected)
+    {
+      consenttotreat.text=@"Authorization And Consent To Treat";
+        [selectforms addObject:@"Authorization And Consent To Treat"];
+    }
+    else
+        consenttotreat.text=NULL;
+    if(button14.selected)
+    {
+      radiologic.text=@"Radiologic Report";
+        [selectforms addObject:@"Radiologic Report"];
+
+    }
+    else
+        radiologic.text=NULL;
+        if(button15.selected)
+        {
+            physicalexam.text=@"Physical Exam";
+            [selectforms addObject:@"Physical Exam"];
+
+        }
+        else
+            physicalexam.text=NULL;
+            
     [recorddict setObject:selectforms forKey:@"selectforms"];
     if(([patientname.text length]!=0)&&
        ([insuramceattroney.text length]!=0)&&
@@ -254,11 +315,7 @@ int a;
     {
         NSLog(@"recorddict in Staff Auto Checklist %@",recorddict);
     }
-    else
-    {
-        NULL;
-    }
-
+    
 
 }
 -(IBAction)reset:(id)sender

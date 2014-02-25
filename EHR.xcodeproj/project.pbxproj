@@ -21,6 +21,9 @@
 		0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC08180EDF1800E38505 /* HippaViewController.m */; };
 		0D1FBC0D180EDF3500E38505 /* aobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC0C180EDF3500E38505 /* aobViewController.m */; };
 		0D1FBC11180FAC6D00E38505 /* perryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC10180FAC6D00E38505 /* perryViewController.m */; };
+		0D20316218B8DA0600033508 /* duties2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316118B8DA0600033508 /* duties2ViewController.m */; };
+		0D20316618B9221F00033508 /* cervicalexam2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316518B9221F00033508 /* cervicalexam2ViewController.m */; };
+		0D20316918B9223300033508 /* cervicalexamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316818B9223300033508 /* cervicalexamViewController.m */; };
 		0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBBFF180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m */; };
 		0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBC03180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m */; };
 		0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBC07180DC22200D7B1D0 /* ROMRAViewController.m */; };
@@ -46,6 +49,11 @@
 		0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9B18051F21004F5859 /* alert-red-button.png */; };
 		0D3667C71816B3AD0069FF78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
 		0D3667CA1816B7950069FF78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
+		0D5DFE4718B8792500885BDB /* dcfee1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE3E18B8792500885BDB /* dcfee1ViewController.m */; };
+		0D5DFE4818B8792500885BDB /* dcfee2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE4018B8792500885BDB /* dcfee2ViewController.m */; };
+		0D5DFE4918B8792500885BDB /* dcfee3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE4218B8792500885BDB /* dcfee3ViewController.m */; };
+		0D5DFE4A18B8792500885BDB /* dcfee4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE4418B8792500885BDB /* dcfee4ViewController.m */; };
+		0D5DFE4B18B8792500885BDB /* dcfeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE4618B8792500885BDB /* dcfeeViewController.m */; };
 		0D6799911818DF4900BDC1FC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6799901818DF4900BDC1FC /* libsqlite3.dylib */; };
 		0D6799961818EE8B00BDC1FC /* logindr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799921818EE8B00BDC1FC /* logindr.png */; };
 		0D6799971818EE8B00BDC1FC /* loginad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D6799931818EE8B00BDC1FC /* loginad.png */; };
@@ -56,6 +64,10 @@
 		0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6799A2181900B100BDC1FC /* doctorloginViewController.m */; };
 		0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D820F1D182CDDE400BA3A5B /* testingViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
+		0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFF01901D72D00E1AE6C /* hipViewController.m */; };
+		0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */; };
+		0D9BB0091901D72D00E1AE6C /* footViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BB0081901D72D00E1AE6C /* footViewController.m */; };
+		0D9BB00A1901D72D00E1AE6C /* hip1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFEE1901D72D00E1AE6C /* hip1ViewController.m */; };
 		0D9C35E1180C850F00134BB6 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DE180C850F00134BB6 /* reset.png */; };
 		0D9C35E2180C850F00134BB6 /* saveandcontinue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35DF180C850F00134BB6 /* saveandcontinue.png */; };
 		0D9C35E3180C850F00134BB6 /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C35E0180C850F00134BB6 /* submit.png */; };
@@ -135,6 +147,12 @@
 		0D1FBC0C180EDF3500E38505 /* aobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aobViewController.m; sourceTree = "<group>"; };
 		0D1FBC0F180FAC6D00E38505 /* perryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perryViewController.h; sourceTree = "<group>"; };
 		0D1FBC10180FAC6D00E38505 /* perryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = perryViewController.m; sourceTree = "<group>"; };
+		0D20316018B8DA0600033508 /* duties2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = duties2ViewController.h; sourceTree = "<group>"; };
+		0D20316118B8DA0600033508 /* duties2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = duties2ViewController.m; sourceTree = "<group>"; };
+		0D20316418B9221F00033508 /* cervicalexam2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cervicalexam2ViewController.h; sourceTree = "<group>"; };
+		0D20316518B9221F00033508 /* cervicalexam2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cervicalexam2ViewController.m; sourceTree = "<group>"; };
+		0D20316718B9223300033508 /* cervicalexamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cervicalexamViewController.h; sourceTree = "<group>"; };
+		0D20316818B9223300033508 /* cervicalexamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cervicalexamViewController.m; sourceTree = "<group>"; };
 		0D2CBBFE180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authorizeandconsenttreatViewController.h; sourceTree = "<group>"; };
 		0D2CBBFF180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = authorizeandconsenttreatViewController.m; sourceTree = "<group>"; };
 		0D2CBC02180DAD5300D7B1D0 /* healthinsuranceverificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = healthinsuranceverificationViewController.h; sourceTree = "<group>"; };
@@ -169,6 +187,16 @@
 		0D2EAB8B18047CB6004F5859 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
 		0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button@2x.png"; sourceTree = "<group>"; };
 		0D2EAB9B18051F21004F5859 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
+		0D5DFE3D18B8792500885BDB /* dcfee1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee1ViewController.h; sourceTree = "<group>"; };
+		0D5DFE3E18B8792500885BDB /* dcfee1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfee1ViewController.m; sourceTree = "<group>"; };
+		0D5DFE3F18B8792500885BDB /* dcfee2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee2ViewController.h; sourceTree = "<group>"; };
+		0D5DFE4018B8792500885BDB /* dcfee2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfee2ViewController.m; sourceTree = "<group>"; };
+		0D5DFE4118B8792500885BDB /* dcfee3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee3ViewController.h; sourceTree = "<group>"; };
+		0D5DFE4218B8792500885BDB /* dcfee3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfee3ViewController.m; sourceTree = "<group>"; };
+		0D5DFE4318B8792500885BDB /* dcfee4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee4ViewController.h; sourceTree = "<group>"; };
+		0D5DFE4418B8792500885BDB /* dcfee4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfee4ViewController.m; sourceTree = "<group>"; };
+		0D5DFE4518B8792500885BDB /* dcfeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfeeViewController.h; sourceTree = "<group>"; };
+		0D5DFE4618B8792500885BDB /* dcfeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfeeViewController.m; sourceTree = "<group>"; };
 		0D6799901818DF4900BDC1FC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0D6799921818EE8B00BDC1FC /* logindr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logindr.png; sourceTree = "<group>"; };
 		0D6799931818EE8B00BDC1FC /* loginad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginad.png; sourceTree = "<group>"; };
@@ -183,6 +211,14 @@
 		0D820F1D182CDDE400BA3A5B /* testingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testingViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
+		0D9BAFED1901D72D00E1AE6C /* hip1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hip1ViewController.h; sourceTree = "<group>"; };
+		0D9BAFEE1901D72D00E1AE6C /* hip1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hip1ViewController.m; sourceTree = "<group>"; };
+		0D9BAFEF1901D72D00E1AE6C /* hipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hipViewController.h; sourceTree = "<group>"; };
+		0D9BAFF01901D72D00E1AE6C /* hipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hipViewController.m; sourceTree = "<group>"; };
+		0D9BAFFA1901D72D00E1AE6C /* foot1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foot1ViewController.h; sourceTree = "<group>"; };
+		0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foot1ViewController.m; sourceTree = "<group>"; };
+		0D9BB0071901D72D00E1AE6C /* footViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = footViewController.h; sourceTree = "<group>"; };
+		0D9BB0081901D72D00E1AE6C /* footViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = footViewController.m; sourceTree = "<group>"; };
 		0D9C35DE180C850F00134BB6 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		0D9C35DF180C850F00134BB6 /* saveandcontinue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveandcontinue.png; sourceTree = "<group>"; };
 		0D9C35E0180C850F00134BB6 /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
@@ -347,6 +383,26 @@
 			name = perry;
 			sourceTree = "<group>";
 		};
+		0D20315F18B8D9F000033508 /* Duties_under */ = {
+			isa = PBXGroup;
+			children = (
+				0D20316018B8DA0600033508 /* duties2ViewController.h */,
+				0D20316118B8DA0600033508 /* duties2ViewController.m */,
+			);
+			name = Duties_under;
+			sourceTree = "<group>";
+		};
+		0D20316318B921F800033508 /* Cervical Exam */ = {
+			isa = PBXGroup;
+			children = (
+				0D20316718B9223300033508 /* cervicalexamViewController.h */,
+				0D20316818B9223300033508 /* cervicalexamViewController.m */,
+				0D20316418B9221F00033508 /* cervicalexam2ViewController.h */,
+				0D20316518B9221F00033508 /* cervicalexam2ViewController.m */,
+			);
+			name = "Cervical Exam";
+			sourceTree = "<group>";
+		};
 		0D2CBBFD180D58DD00D7B1D0 /* Authorizationandconsenttotreat */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +489,34 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
+		0D5DFE3C18B878F200885BDB /* DcFeeslip */ = {
+			isa = PBXGroup;
+			children = (
+				0D5DFE3D18B8792500885BDB /* dcfee1ViewController.h */,
+				0D5DFE3E18B8792500885BDB /* dcfee1ViewController.m */,
+				0D5DFE3F18B8792500885BDB /* dcfee2ViewController.h */,
+				0D5DFE4018B8792500885BDB /* dcfee2ViewController.m */,
+				0D5DFE4118B8792500885BDB /* dcfee3ViewController.h */,
+				0D5DFE4218B8792500885BDB /* dcfee3ViewController.m */,
+				0D5DFE4318B8792500885BDB /* dcfee4ViewController.h */,
+				0D5DFE4418B8792500885BDB /* dcfee4ViewController.m */,
+				0D5DFE4518B8792500885BDB /* dcfeeViewController.h */,
+				0D5DFE4618B8792500885BDB /* dcfeeViewController.m */,
+			);
+			name = DcFeeslip;
+			sourceTree = "<group>";
+		};
+		0D62AC261901D25C002D679C /* Hip Exam */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BAFED1901D72D00E1AE6C /* hip1ViewController.h */,
+				0D9BAFEE1901D72D00E1AE6C /* hip1ViewController.m */,
+				0D9BAFEF1901D72D00E1AE6C /* hipViewController.h */,
+				0D9BAFF01901D72D00E1AE6C /* hipViewController.m */,
+			);
+			name = "Hip Exam";
+			sourceTree = "<group>";
+		};
 		0D67999C1819003F00BDC1FC /* Adminlogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +542,17 @@
 				0D9AE5C9180D22B600493E14 /* treatminorViewController.m */,
 			);
 			name = Consenttotreatminor;
+			sourceTree = "<group>";
+		};
+		0D9BAFF31901D72D00E1AE6C /* Foot Exam */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BB0071901D72D00E1AE6C /* footViewController.h */,
+				0D9BB0081901D72D00E1AE6C /* footViewController.m */,
+				0D9BAFFA1901D72D00E1AE6C /* foot1ViewController.h */,
+				0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */,
+			);
+			name = "Foot Exam";
 			sourceTree = "<group>";
 		};
 		0D9D0EAD17FDAD1B00E93F81 /* Images */ = {
@@ -505,13 +600,13 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		0D9D0F0617FEA14600E93F81 /* LoginScreen */ = {
+		0D9D0F0617FEA14600E93F81 /* login */ = {
 			isa = PBXGroup;
 			children = (
 				0D9D0F0717FEA19B00E93F81 /* LoginViewController.h */,
 				0D9D0F0817FEA19B00E93F81 /* LoginViewController.m */,
 			);
-			name = LoginScreen;
+			name = login;
 			sourceTree = "<group>";
 		};
 		0DA2496E180DC8D800C9A9C6 /* ScreenDisclosure */ = {
@@ -535,6 +630,11 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D9BAFF31901D72D00E1AE6C /* Foot Exam */,
+				0D62AC261901D25C002D679C /* Hip Exam */,
+				0D20316318B921F800033508 /* Cervical Exam */,
+				0D20315F18B8D9F000033508 /* Duties_under */,
+				0D5DFE3C18B878F200885BDB /* DcFeeslip */,
 				0D820F1C182CDDE400BA3A5B /* testingViewController.h */,
 				0D820F1D182CDDE400BA3A5B /* testingViewController.m */,
 				0DE6A57C181BA1DA00A09BA7 /* soapnotes */,
@@ -565,7 +665,7 @@
 				0D2EAB72180418A0004F5859 /* AutoAccidentpage1 */,
 				0D2EAB6E1804184B004F5859 /* Welcome */,
 				0D5969DD17FF0ACB00015709 /* Register */,
-				0D9D0F0617FEA14600E93F81 /* LoginScreen */,
+				0D9D0F0617FEA14600E93F81 /* login */,
 				0D9D0EAD17FDAD1B00E93F81 /* Images */,
 				0DCD15DB17FD4F5200748DD7 /* EHR */,
 				0DCD15FA17FD4F5200748DD7 /* EHRTests */,
@@ -851,6 +951,7 @@
 				0D2EAB7A1804190B004F5859 /* AutoAccidentViewController2.m in Sources */,
 				0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */,
 				0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */,
+				0D9BB0091901D72D00E1AE6C /* footViewController.m in Sources */,
 				0DCD15E217FD4F5200748DD7 /* main.m in Sources */,
 				0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */,
 				0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */,
@@ -859,20 +960,31 @@
 				0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */,
 				0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */,
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,
+				0D9BB00A1901D72D00E1AE6C /* hip1ViewController.m in Sources */,
 				0DCD15EC17FD4F5200748DD7 /* ViewAppViewController.m in Sources */,
+				0D20316618B9221F00033508 /* cervicalexam2ViewController.m in Sources */,
 				0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */,
+				0D20316918B9223300033508 /* cervicalexamViewController.m in Sources */,
+				0D5DFE4818B8792500885BDB /* dcfee2ViewController.m in Sources */,
 				0D1FBC0D180EDF3500E38505 /* aobViewController.m in Sources */,
 				0D2EAB8C18047CB6004F5859 /* BlockAlertView.m in Sources */,
+				0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */,
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,
+				0D20316218B8DA0600033508 /* duties2ViewController.m in Sources */,
+				0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */,
 				0DA24975180E64F200C9A9C6 /* staffautocheckViewController.m in Sources */,
 				0DA24971180DC8F300C9A9C6 /* screendisclosureViewController.m in Sources */,
 				0DE6A57F181BA20A00A09BA7 /* soapViewController.m in Sources */,
+				0D5DFE4718B8792500885BDB /* dcfee1ViewController.m in Sources */,
+				0D5DFE4A18B8792500885BDB /* dcfee4ViewController.m in Sources */,
+				0D5DFE4918B8792500885BDB /* dcfee3ViewController.m in Sources */,
 				0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,
 				0DE6A58E181BA26C00A09BA7 /* adminportalViewController.m in Sources */,
 				0DA5775A182BE1090043A9B3 /* SWRevealViewController.m in Sources */,
 				0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */,
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
+				0D5DFE4B18B8792500885BDB /* dcfeeViewController.m in Sources */,
 				0DE6A58B181BA25B00A09BA7 /* doctorportalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -751,6 +751,11 @@ temp38=[fdother.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     if(a==1)
     {
         NSLog(@"recorddict %@",recorddict);
+        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Info!" message:@"Success!"];
+        
+        
+        [alert setDestructiveButtonWithTitle:@"x" block:nil];
+        [alert show];
     }
     
 }

@@ -70,6 +70,7 @@
 - (IBAction)save:(id)sender
 
 {
+    c=1;
     
     recorddict=[[NSMutableDictionary alloc]init];
     //[recorddict addEntriesFromDictionary:recorddict];
@@ -1650,6 +1651,7 @@
                                                      
                                                                else
                                                                      {
+                                                                         c=0;
                                                                         BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other7."];
                                                                       [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                       [alert show];
@@ -1658,6 +1660,7 @@
                                                  
                                                             else
                                                           {
+                                                              c=0;
                                                                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other6."];
                                                                [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                                [alert show];
@@ -1667,6 +1670,7 @@
                                              
                                              else
                                              {
+                                                 c=0;
                                                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other5."];
                                                  [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                                  [alert show];
@@ -1675,6 +1679,7 @@
                                          
                                          else
                                          {
+                                             c=0;
                                              BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other4."];
                                              [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                              [alert show];
@@ -1684,6 +1689,7 @@
                                      
                                      else
                                      {
+                                         c=0;
                                          BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other3."];
                                          [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                          [alert show];
@@ -1692,6 +1698,7 @@
                                  
                                  else
                                  {
+                                     c=0;
                                      BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other2."];
                                      [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                      [alert show];
@@ -1700,6 +1707,7 @@
                              
                              else
                              {
+                                 c=0;
                                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other1."];
                                  [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                  [alert show];
@@ -1708,6 +1716,7 @@
                          
                          else
                          {
+                             c=0;
                              BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid other."];
                              [alert setDestructiveButtonWithTitle:@"x" block:nil];
                              [alert show];
@@ -1716,6 +1725,7 @@
 
                         else
                                 {
+                                    c=0;
                                   BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"enter valid date."];
                                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
                                   [alert show];
@@ -1723,6 +1733,7 @@
                            }
                          else
                     {
+                        c=0;
                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid job description ."];
                            [alert setDestructiveButtonWithTitle:@"x" block:nil];
                          [alert show];
@@ -1730,6 +1741,7 @@
                 }
                  else
                  {
+                     c=0;
                     BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid patient name ."];
                      [alert setDestructiveButtonWithTitle:@"x" block:nil];
                      [alert show];
@@ -1739,7 +1751,7 @@
     
     else
              {
-                
+                 c=0;
                  BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter all fields."];
                  
                  //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
@@ -1747,6 +1759,13 @@
                  [alert show];
 
             }
+    if (c==1) {
+        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Info!" message:@"Success!"];
+        
+        
+        [alert setDestructiveButtonWithTitle:@"x" block:nil];
+        [alert show];
+    }
 
 }
 

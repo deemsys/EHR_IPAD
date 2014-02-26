@@ -84,6 +84,7 @@
 @synthesize gait;
 @synthesize muscletf;
 @synthesize swellingtf;
+@synthesize notes;
 
 -(BOOL)validateNames:(NSString *)country1
 {
@@ -96,7 +97,7 @@
 }
 -(BOOL)validateNumbers:(NSString*)number
 {
-    NSString *mobileFormat1 =  @"[0-9_-]{1,2}?";
+    NSString *mobileFormat1 =  @"[0-9_-]{1,3}?";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
@@ -387,7 +388,8 @@
                                                                                                                                                                                                                     [recorddict setValue:varuslabel forKey:@"varusl"];
                                                                                                                                                                                                                     [recorddict setValue:valguslabel forKey:@"valgusl"];
                                                                                                                                                                                                                     [recorddict setValue:forefootvalguslabel forKey:@"forefootvalgusl"];
-                                                                                                                                                                                                                    
+                                                            [recorddict setValue:notes
+                                                             .text forKey:@"notesfield"];
                                                                                                                                                                                                                     a=1;                                                                                                NSLog(@"success!!!recorddict %@",recorddict);
                                                                                                                                                                                                                      }
                                                                                                                                                                                                                     else
@@ -1037,4 +1039,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+ 
+    [super dealloc];
+}
 @end

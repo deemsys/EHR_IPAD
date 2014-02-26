@@ -61,7 +61,7 @@
 }
 -(BOOL)validateNumbers:(NSString*)number
 {
-    NSString *mobileFormat1 =  @"[0-9]{1,10}?";
+    NSString *mobileFormat1 =  @"[0-9]{1,3}?";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
@@ -468,8 +468,15 @@
         
     }
         
-        
-        
+        if(c==1)
+        {
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Info!" message:@"Success!"];
+            
+            
+            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+            [alert show];
+        }
+    
     }
 - (IBAction)patientstatus:(id)sender {
     if ([sender selectedSegmentIndex]==1)
@@ -527,7 +534,7 @@
 {
     
     [super viewDidLoad];
-    NSLog(@"hip%@",recorddict);
+//    NSLog(@"hip%@",recorddict);
     patientstatuslabel=@"";
     
     

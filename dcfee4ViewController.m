@@ -393,6 +393,11 @@
     if(c==1)
     {
 //        [self performSegueWithIdentifier:@"dcfee5" sender:self];
+        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Info!" message:@"Success!"];
+        
+        
+        [alert setDestructiveButtonWithTitle:@"x" block:nil];
+        [alert show];
     }
 
 

@@ -81,7 +81,7 @@
 }
 -(BOOL)validateNumbers:(NSString*)number
 {
-    NSString *mobileFormat1 =  @"[0-9_-]{1,2}?";
+    NSString *mobileFormat1 =  @"[0-9_-]{1,3}?";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
@@ -467,6 +467,13 @@
         [alert setDestructiveButtonWithTitle:@"x" block:nil];
         [alert show];
         
+    }
+    if (c==1) {
+        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Info!" message:@"Success!"];
+        
+        
+        [alert setDestructiveButtonWithTitle:@"x" block:nil];
+        [alert show];
     }
     
     

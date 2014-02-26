@@ -125,6 +125,7 @@
     
     IBOutlet UITextField *ms1right;
  
+    IBOutlet UITextField *notes;
     NSString *aolabel;
     NSString *gaitlabel;
     NSString *palpationlabel;
@@ -229,6 +230,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *swellingtf;
 
 
+@property (retain, nonatomic) IBOutlet UITextField *notes;
 
 
 

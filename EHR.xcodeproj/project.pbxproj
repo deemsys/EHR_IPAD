@@ -77,6 +77,12 @@
 		0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D67999E1819008800BDC1FC /* adminloginViewController.m */; };
 		0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6799A2181900B100BDC1FC /* doctorloginViewController.m */; };
 		0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D820F1D182CDDE400BA3A5B /* testingViewController.m */; };
+		0D82346C18BF8271002CFE54 /* PatientAttorneyCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82346B18BF8271002CFE54 /* PatientAttorneyCoverViewController.m */; };
+		0D82347018BF829E002CFE54 /* PerryFaxCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82346F18BF829E002CFE54 /* PerryFaxCoverViewController.m */; };
+		0D82347418BF82D8002CFE54 /* ResponseAttorneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347318BF82D8002CFE54 /* ResponseAttorneyViewController.m */; };
+		0D82347818BF8314002CFE54 /* ProtectPatientAttorneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347718BF8314002CFE54 /* ProtectPatientAttorneyViewController.m */; };
+		0D82347C18BF8381002CFE54 /* PerryCoverLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347B18BF8381002CFE54 /* PerryCoverLetterViewController.m */; };
+		0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFF01901D72D00E1AE6C /* hipViewController.m */; };
 		0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */; };
@@ -251,6 +257,18 @@
 		0D6799A2181900B100BDC1FC /* doctorloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorloginViewController.m; sourceTree = "<group>"; };
 		0D820F1C182CDDE400BA3A5B /* testingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testingViewController.h; sourceTree = "<group>"; };
 		0D820F1D182CDDE400BA3A5B /* testingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testingViewController.m; sourceTree = "<group>"; };
+		0D82346A18BF8271002CFE54 /* PatientAttorneyCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientAttorneyCoverViewController.h; sourceTree = "<group>"; };
+		0D82346B18BF8271002CFE54 /* PatientAttorneyCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientAttorneyCoverViewController.m; sourceTree = "<group>"; };
+		0D82346E18BF829E002CFE54 /* PerryFaxCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerryFaxCoverViewController.h; sourceTree = "<group>"; };
+		0D82346F18BF829E002CFE54 /* PerryFaxCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerryFaxCoverViewController.m; sourceTree = "<group>"; };
+		0D82347218BF82D8002CFE54 /* ResponseAttorneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseAttorneyViewController.h; sourceTree = "<group>"; };
+		0D82347318BF82D8002CFE54 /* ResponseAttorneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseAttorneyViewController.m; sourceTree = "<group>"; };
+		0D82347618BF8314002CFE54 /* ProtectPatientAttorneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectPatientAttorneyViewController.h; sourceTree = "<group>"; };
+		0D82347718BF8314002CFE54 /* ProtectPatientAttorneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectPatientAttorneyViewController.m; sourceTree = "<group>"; };
+		0D82347A18BF8381002CFE54 /* PerryCoverLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerryCoverLetterViewController.h; sourceTree = "<group>"; };
+		0D82347B18BF8381002CFE54 /* PerryCoverLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerryCoverLetterViewController.m; sourceTree = "<group>"; };
+		0D82347E18BF83D0002CFE54 /* PerryCantionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerryCantionViewController.h; sourceTree = "<group>"; };
+		0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerryCantionViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
 		0D9BAFED1901D72D00E1AE6C /* hip1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hip1ViewController.h; sourceTree = "<group>"; };
@@ -647,6 +665,60 @@
 			name = Doctorlogin;
 			sourceTree = "<group>";
 		};
+		0D82346918BF8239002CFE54 /* Patient attorney cover letter */ = {
+			isa = PBXGroup;
+			children = (
+				0D82346A18BF8271002CFE54 /* PatientAttorneyCoverViewController.h */,
+				0D82346B18BF8271002CFE54 /* PatientAttorneyCoverViewController.m */,
+			);
+			name = "Patient attorney cover letter";
+			sourceTree = "<group>";
+		};
+		0D82346D18BF8275002CFE54 /* Perry fax cover */ = {
+			isa = PBXGroup;
+			children = (
+				0D82346E18BF829E002CFE54 /* PerryFaxCoverViewController.h */,
+				0D82346F18BF829E002CFE54 /* PerryFaxCoverViewController.m */,
+			);
+			name = "Perry fax cover";
+			sourceTree = "<group>";
+		};
+		0D82347118BF82A3002CFE54 /* Response attorney */ = {
+			isa = PBXGroup;
+			children = (
+				0D82347218BF82D8002CFE54 /* ResponseAttorneyViewController.h */,
+				0D82347318BF82D8002CFE54 /* ResponseAttorneyViewController.m */,
+			);
+			name = "Response attorney";
+			sourceTree = "<group>";
+		};
+		0D82347518BF82DD002CFE54 /* Protect Attorney */ = {
+			isa = PBXGroup;
+			children = (
+				0D82347618BF8314002CFE54 /* ProtectPatientAttorneyViewController.h */,
+				0D82347718BF8314002CFE54 /* ProtectPatientAttorneyViewController.m */,
+			);
+			name = "Protect Attorney";
+			sourceTree = "<group>";
+		};
+		0D82347918BF834F002CFE54 /* Perry cover letter to insurance */ = {
+			isa = PBXGroup;
+			children = (
+				0D82347A18BF8381002CFE54 /* PerryCoverLetterViewController.h */,
+				0D82347B18BF8381002CFE54 /* PerryCoverLetterViewController.m */,
+			);
+			name = "Perry cover letter to insurance";
+			sourceTree = "<group>";
+		};
+		0D82347D18BF8387002CFE54 /* Perry chiropratic cantion */ = {
+			isa = PBXGroup;
+			children = (
+				0D82347E18BF83D0002CFE54 /* PerryCantionViewController.h */,
+				0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */,
+			);
+			name = "Perry chiropratic cantion";
+			sourceTree = "<group>";
+		};
 		0D9AE5C7180D222B00493E14 /* Consenttotreatminor */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,6 +814,12 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D82347D18BF8387002CFE54 /* Perry chiropratic cantion */,
+				0D82347918BF834F002CFE54 /* Perry cover letter to insurance */,
+				0D82347518BF82DD002CFE54 /* Protect Attorney */,
+				0D82347118BF82A3002CFE54 /* Response attorney */,
+				0D82346D18BF8275002CFE54 /* Perry fax cover */,
+				0D82346918BF8239002CFE54 /* Patient attorney cover letter */,
 				0D31712318BF5920007A792C /* Shoulder exam */,
 				0D15B63F18BE50B10031E36C /* Lumbopelvic */,
 				0D15B63118BE10280031E36C /* Elbow Exam */,
@@ -1065,9 +1143,12 @@
 				0D2EAB711804187C004F5859 /* RegisterViewController.m in Sources */,
 				0D31712818BF5934007A792C /* shoulder1ViewController.m in Sources */,
 				0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */,
+				0D82347018BF829E002CFE54 /* PerryFaxCoverViewController.m in Sources */,
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
 				0D15B63718BE10360031E36C /* elbowViewController.m in Sources */,
+				0D82346C18BF8271002CFE54 /* PatientAttorneyCoverViewController.m in Sources */,
 				0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */,
+				0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */,
 				0D2EAB8318041B94004F5859 /* WelcomeViewController.m in Sources */,
 				0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */,
 				0D1FBC11180FAC6D00E38505 /* perryViewController.m in Sources */,
@@ -1077,9 +1158,11 @@
 				0D9BB0091901D72D00E1AE6C /* footViewController.m in Sources */,
 				0D15B60A18BDCA330031E36C /* ThoracicExamViewController.m in Sources */,
 				0DCD15E217FD4F5200748DD7 /* main.m in Sources */,
+				0D82347418BF82D8002CFE54 /* ResponseAttorneyViewController.m in Sources */,
 				0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */,
 				0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */,
 				0D155432181169E800BDAAB9 /* Patient2ViewController.m in Sources */,
+				0D82347C18BF8381002CFE54 /* PerryCoverLetterViewController.m in Sources */,
 				0D15543918116F5700BDAAB9 /* Workaccident2ViewController.m in Sources */,
 				0D15B60B18BDCA330031E36C /* ThoracicExamViewController1.m in Sources */,
 				0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */,
@@ -1108,6 +1191,7 @@
 				0D5DFE4918B8792500885BDB /* dcfee3ViewController.m in Sources */,
 				0D31712918BF5934007A792C /* shoulderViewController.m in Sources */,
 				0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */,
+				0D82347818BF8314002CFE54 /* ProtectPatientAttorneyViewController.m in Sources */,
 				0D15B60218BDCA120031E36C /* KneeExamViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,
 				0DE6A58E181BA26C00A09BA7 /* adminportalViewController.m in Sources */,

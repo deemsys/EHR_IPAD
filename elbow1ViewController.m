@@ -576,47 +576,7 @@
 }
 
 - (void)dealloc {
-    [moc5L release];
-    [moc5R release];
-    [moc6L release];
-    [moc6R release];
-    [moc7L release];
-    [moc7R release];
-    [moc8L release];
-    [moc8R release];
-    [mot1L release];
-    [mot1R release];
-    [diag1 release];
-    [diag2 release];
-    [diag3 release];
-    [diag4 release];
-    [diag5 release];
-    [diag6 release];
-    [plan1 release];
-    [plan2 release];
-    [physician_sign release];
-    [b1 release];
-    [b2 release];
-    [b3 release];
-    [b4 release];
-    [b5 release];
-    [b6 release];
-    [b7 release];
-    [b8 release];
-    [b9 release];
-    [b10 release];
-    [b11 release];
-    [b12 release];
-    [b13 release];
-    [b14 release];
-    [b15 release];
-    [b16 release];
-    [b17 release];
-    [b18 release];
 
-    
-    [funcother release];
-    [planother release];
     
     [super dealloc];
 }

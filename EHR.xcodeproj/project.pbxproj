@@ -26,6 +26,8 @@
 		0D15B61518BDCA560031E36C /* WristExamViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B61218BDCA560031E36C /* WristExamViewController2.m */; };
 		0D15B63618BE10360031E36C /* elbow1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B63318BE10360031E36C /* elbow1ViewController.m */; };
 		0D15B63718BE10360031E36C /* elbowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B63518BE10360031E36C /* elbowViewController.m */; };
+		0D15B64218BEFB5F0031E36C /* lumbopelvicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B64118BEFB5F0031E36C /* lumbopelvicViewController.m */; };
+		0D15B64518BEFCEE0031E36C /* lumbopelvic1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B64418BEFCEE0031E36C /* lumbopelvic1ViewController.m */; };
 		0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC00180EDD0400E38505 /* hardshipViewController.m */; };
 		0D1FBC05180EDF0100E38505 /* noticeandrequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC04180EDF0100E38505 /* noticeandrequestViewController.m */; };
 		0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FBC08180EDF1800E38505 /* HippaViewController.m */; };
@@ -57,6 +59,8 @@
 		0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EAB8A18047CB6004F5859 /* BlockBackground.m */; };
 		0D2EAB9C18051F21004F5859 /* alert-red-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */; };
 		0D2EAB9D18051F21004F5859 /* alert-red-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2EAB9B18051F21004F5859 /* alert-red-button.png */; };
+		0D31712818BF5934007A792C /* shoulder1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D31712518BF5933007A792C /* shoulder1ViewController.m */; };
+		0D31712918BF5934007A792C /* shoulderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D31712718BF5933007A792C /* shoulderViewController.m */; };
 		0D3667C71816B3AD0069FF78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D717FD4F5200748DD7 /* CoreGraphics.framework */; };
 		0D3667CA1816B7950069FF78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCD15D517FD4F5200748DD7 /* Foundation.framework */; };
 		0D5DFE4718B8792500885BDB /* dcfee1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DFE3E18B8792500885BDB /* dcfee1ViewController.m */; };
@@ -167,6 +171,10 @@
 		0D15B63318BE10360031E36C /* elbow1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elbow1ViewController.m; sourceTree = "<group>"; };
 		0D15B63418BE10360031E36C /* elbowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elbowViewController.h; sourceTree = "<group>"; };
 		0D15B63518BE10360031E36C /* elbowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elbowViewController.m; sourceTree = "<group>"; };
+		0D15B64018BEFB5F0031E36C /* lumbopelvicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lumbopelvicViewController.h; sourceTree = "<group>"; };
+		0D15B64118BEFB5F0031E36C /* lumbopelvicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lumbopelvicViewController.m; sourceTree = "<group>"; };
+		0D15B64318BEFCEE0031E36C /* lumbopelvic1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lumbopelvic1ViewController.h; sourceTree = "<group>"; };
+		0D15B64418BEFCEE0031E36C /* lumbopelvic1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lumbopelvic1ViewController.m; sourceTree = "<group>"; };
 		0D1FBBFF180EDD0400E38505 /* hardshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardshipViewController.h; sourceTree = "<group>"; };
 		0D1FBC00180EDD0400E38505 /* hardshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hardshipViewController.m; sourceTree = "<group>"; };
 		0D1FBC03180EDF0100E38505 /* noticeandrequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noticeandrequestViewController.h; sourceTree = "<group>"; };
@@ -217,6 +225,10 @@
 		0D2EAB8B18047CB6004F5859 /* BlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
 		0D2EAB9A18051F21004F5859 /* alert-red-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button@2x.png"; sourceTree = "<group>"; };
 		0D2EAB9B18051F21004F5859 /* alert-red-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-red-button.png"; sourceTree = "<group>"; };
+		0D31712418BF5933007A792C /* shoulder1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoulder1ViewController.h; sourceTree = "<group>"; };
+		0D31712518BF5933007A792C /* shoulder1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoulder1ViewController.m; sourceTree = "<group>"; };
+		0D31712618BF5933007A792C /* shoulderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoulderViewController.h; sourceTree = "<group>"; };
+		0D31712718BF5933007A792C /* shoulderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoulderViewController.m; sourceTree = "<group>"; };
 		0D5DFE3D18B8792500885BDB /* dcfee1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee1ViewController.h; sourceTree = "<group>"; };
 		0D5DFE3E18B8792500885BDB /* dcfee1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dcfee1ViewController.m; sourceTree = "<group>"; };
 		0D5DFE3F18B8792500885BDB /* dcfee2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcfee2ViewController.h; sourceTree = "<group>"; };
@@ -416,6 +428,17 @@
 			name = "Elbow Exam";
 			sourceTree = "<group>";
 		};
+		0D15B63F18BE50B10031E36C /* Lumbopelvic */ = {
+			isa = PBXGroup;
+			children = (
+				0D15B64318BEFCEE0031E36C /* lumbopelvic1ViewController.h */,
+				0D15B64418BEFCEE0031E36C /* lumbopelvic1ViewController.m */,
+				0D15B64018BEFB5F0031E36C /* lumbopelvicViewController.h */,
+				0D15B64118BEFB5F0031E36C /* lumbopelvicViewController.m */,
+			);
+			name = Lumbopelvic;
+			sourceTree = "<group>";
+		};
 		0D1FBBFE180EDB5500E38505 /* Hardship */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +579,17 @@
 				0D2EAB8B18047CB6004F5859 /* BlockUI.h */,
 			);
 			name = BlockAlertView;
+			sourceTree = "<group>";
+		};
+		0D31712318BF5920007A792C /* Shoulder exam */ = {
+			isa = PBXGroup;
+			children = (
+				0D31712418BF5933007A792C /* shoulder1ViewController.h */,
+				0D31712518BF5933007A792C /* shoulder1ViewController.m */,
+				0D31712618BF5933007A792C /* shoulderViewController.h */,
+				0D31712718BF5933007A792C /* shoulderViewController.m */,
+			);
+			name = "Shoulder exam";
 			sourceTree = "<group>";
 		};
 		0D5969DD17FF0ACB00015709 /* Register */ = {
@@ -708,6 +742,8 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D31712318BF5920007A792C /* Shoulder exam */,
+				0D15B63F18BE50B10031E36C /* Lumbopelvic */,
 				0D15B63118BE10280031E36C /* Elbow Exam */,
 				0D15B60C18BDCA390031E36C /* Wrist Exam */,
 				0D15B60518BDCA180031E36C /* Thoracic Exam */,
@@ -1024,8 +1060,10 @@
 				0D15542F181169D100BDAAB9 /* PatientInfoViewController.m in Sources */,
 				0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */,
 				0D15B60418BDCA120031E36C /* KneeExamViewController2.m in Sources */,
+				0D15B64218BEFB5F0031E36C /* lumbopelvicViewController.m in Sources */,
 				0DE6A585181BA23600A09BA7 /* initialexamViewController.m in Sources */,
 				0D2EAB711804187C004F5859 /* RegisterViewController.m in Sources */,
+				0D31712818BF5934007A792C /* shoulder1ViewController.m in Sources */,
 				0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */,
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
 				0D15B63718BE10360031E36C /* elbowViewController.m in Sources */,
@@ -1046,6 +1084,7 @@
 				0D15B60B18BDCA330031E36C /* ThoracicExamViewController1.m in Sources */,
 				0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */,
 				0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */,
+				0D15B64518BEFCEE0031E36C /* lumbopelvic1ViewController.m in Sources */,
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,
 				0D9BB00A1901D72D00E1AE6C /* hip1ViewController.m in Sources */,
 				0D15B63618BE10360031E36C /* elbow1ViewController.m in Sources */,
@@ -1067,6 +1106,7 @@
 				0D5DFE4718B8792500885BDB /* dcfee1ViewController.m in Sources */,
 				0D5DFE4A18B8792500885BDB /* dcfee4ViewController.m in Sources */,
 				0D5DFE4918B8792500885BDB /* dcfee3ViewController.m in Sources */,
+				0D31712918BF5934007A792C /* shoulderViewController.m in Sources */,
 				0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */,
 				0D15B60218BDCA120031E36C /* KneeExamViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,

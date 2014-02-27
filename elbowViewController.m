@@ -833,25 +833,7 @@
 }
 - (void)dealloc
         {
-    [domi release];
-    [biceps release];
-    [pronator release];
-    [triceps release];
-    [anconeus release];
-    [common release];
-    [commonexten release];
-    [domi release];
-    [biceps release];
-    [pronator release];
-    [triceps release];
-    [anconeus release];
-    [common release];
-    [commonexten release];
-    [palpation release];
-    [functional release];
-    [ortho release];
-    [neuro release];
-    [date release];
+ 
     [super dealloc];
 }
 

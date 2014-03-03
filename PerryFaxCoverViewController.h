@@ -23,7 +23,8 @@
     IBOutlet UIButton *check3;
     IBOutlet UIButton *check4;
     IBOutlet UITextField *re;
-    IBOutlet UITextField *msg;
+  
+    IBOutlet UITextView *msg;
     IBOutlet UITextField *doi;
  NSMutableDictionary *recorddict;
     IBOutlet UITextField *claim;

@@ -12,7 +12,7 @@
 #import "BlockUI.h"
 
 
-@interface hip1ViewController : UIViewController
+@interface hip1ViewController : UIViewController<UITextViewDelegate>
 
 {
     int c;
@@ -83,6 +83,7 @@
     NSString *other1;
     
     
+    IBOutlet UITextView *addcomments;
 
 
 }

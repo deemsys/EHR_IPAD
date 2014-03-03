@@ -12,7 +12,7 @@
 #import "BlockUI.h"
 
 
-@interface KneeExamViewController1 : UIViewController<UIPickerViewDelegate>
+@interface KneeExamViewController1 : UIViewController<UIPickerViewDelegate,UITextViewDelegate>
 {
     IBOutlet UITextField *sensleft;
     IBOutlet UITextField *sensright;
@@ -53,7 +53,7 @@
     
     IBOutlet UISegmentedControl *segpat;
 
-    IBOutlet UITextField *addcomments;
+    IBOutlet UITextView *addcomments;
 
 }
 

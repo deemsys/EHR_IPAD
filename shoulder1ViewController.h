@@ -1,4 +1,4 @@
-//
+
 //  shoulder1ViewController.h
 //  shoulder
 //
@@ -12,7 +12,7 @@
 #import "BlockUI.h"
 
 
-@interface shoulder1ViewController : UIViewController
+@interface shoulder1ViewController : UIViewController<UITextViewDelegate>
 {
     int a;
     NSMutableDictionary *recorddict;
@@ -83,6 +83,7 @@
 @property (retain, nonatomic) IBOutlet UIButton *walking;
 @property (retain, nonatomic) IBOutlet UIButton *standing;
 
+@property (retain, nonatomic) IBOutlet UITextView *additional;
 @property (retain, nonatomic) IBOutlet UITextField *othertext;
 
 @property (retain, nonatomic) IBOutlet UITextField *othertext1;

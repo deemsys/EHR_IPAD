@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface cervicalexam2ViewController : UIViewController
+@interface cervicalexam2ViewController : UIViewController<UITextViewDelegate>
 {
     IBOutlet UIButton *neuro;
     NSMutableDictionary  *recorddict;
@@ -44,7 +44,7 @@
     IBOutlet UIButton*fd3;
     IBOutlet UIButton*fd4;
     IBOutlet UIButton*fd5;
-    IBOutlet UITextField *additional;
+    IBOutlet UITextView *additional;
     IBOutlet UISegmentedControl *patientstatussseg;
     NSString *patientstatus;
     IBOutlet UITextField*d1;

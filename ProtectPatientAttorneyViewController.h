@@ -11,10 +11,12 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-@interface ProtectPatientAttorneyViewController : UIViewController
+@interface ProtectPatientAttorneyViewController : UIViewController<UITextViewDelegate>
 {
     IBOutlet UITextField *clinicname;
-    IBOutlet UITextField *addrs;
+   
+
+    IBOutlet UITextView *addrs;
     IBOutlet UITextField *patattory;
     IBOutlet UITextField *myclient;
     IBOutlet UITextField *dofacc;

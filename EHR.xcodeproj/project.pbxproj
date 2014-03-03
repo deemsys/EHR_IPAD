@@ -36,6 +36,20 @@
 		0D20316218B8DA0600033508 /* duties2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316118B8DA0600033508 /* duties2ViewController.m */; };
 		0D20316618B9221F00033508 /* cervicalexam2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316518B9221F00033508 /* cervicalexam2ViewController.m */; };
 		0D20316918B9223300033508 /* cervicalexamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D20316818B9223300033508 /* cervicalexamViewController.m */; };
+		0D22B52A18C49163001A8A6B /* InsuranceAttorneyCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B52918C49163001A8A6B /* InsuranceAttorneyCoverViewController.m */; };
+		0D22B52E18C49198001A8A6B /* NoticeOfAssignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B52D18C49198001A8A6B /* NoticeOfAssignmentViewController.m */; };
+		0D22B53218C491CA001A8A6B /* AdminFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53118C491CA001A8A6B /* AdminFormViewController.m */; };
+		0D22B53618C492B4001A8A6B /* MedPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53518C492B4001A8A6B /* MedPayViewController.m */; };
+		0D22B54018C498EA001A8A6B /* narrative1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53918C498EA001A8A6B /* narrative1ViewController.m */; };
+		0D22B54118C498EA001A8A6B /* narrative2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53B18C498EA001A8A6B /* narrative2ViewController.m */; };
+		0D22B54218C498EA001A8A6B /* narrative3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53D18C498EA001A8A6B /* narrative3ViewController.m */; };
+		0D22B54318C498EA001A8A6B /* narrativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B53F18C498EA001A8A6B /* narrativeViewController.m */; };
+		0D2AAEE218C070F900D9AA2D /* JSTextViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEE118C070F900D9AA2D /* JSTextViewClass.m */; };
+		0D2AAEE918C0968000D9AA2D /* chiropractictheraphycenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEE818C0968000D9AA2D /* chiropractictheraphycenterViewController.m */; };
+		0D2AAEED18C09A7800D9AA2D /* certifiedmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEEC18C09A7800D9AA2D /* certifiedmailViewController.m */; };
+		0D2AAF0C18C0EF4E00D9AA2D /* schoolslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAF0B18C0EF4E00D9AA2D /* schoolslipViewController.m */; };
+		0D2AAF1018C0EF6600D9AA2D /* updateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAF0F18C0EF6600D9AA2D /* updateViewController.m */; };
+		0D2AAF1418C0EF7A00D9AA2D /* XrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAF1318C0EF7A00D9AA2D /* XrayViewController.m */; };
 		0D2CBC00180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBBFF180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m */; };
 		0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBC03180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m */; };
 		0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CBC07180DC22200D7B1D0 /* ROMRAViewController.m */; };
@@ -83,6 +97,8 @@
 		0D82347818BF8314002CFE54 /* ProtectPatientAttorneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347718BF8314002CFE54 /* ProtectPatientAttorneyViewController.m */; };
 		0D82347C18BF8381002CFE54 /* PerryCoverLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347B18BF8381002CFE54 /* PerryCoverLetterViewController.m */; };
 		0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */; };
+		0D8234A018BFB830002CFE54 /* reductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82349F18BFB830002CFE54 /* reductionViewController.m */; };
+		0D8234A418BFBAC9002CFE54 /* PI_LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8234A318BFBAC9002CFE54 /* PI_LetterViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFF01901D72D00E1AE6C /* hipViewController.m */; };
 		0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */; };
@@ -197,6 +213,34 @@
 		0D20316518B9221F00033508 /* cervicalexam2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cervicalexam2ViewController.m; sourceTree = "<group>"; };
 		0D20316718B9223300033508 /* cervicalexamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cervicalexamViewController.h; sourceTree = "<group>"; };
 		0D20316818B9223300033508 /* cervicalexamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cervicalexamViewController.m; sourceTree = "<group>"; };
+		0D22B52818C49163001A8A6B /* InsuranceAttorneyCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceAttorneyCoverViewController.h; sourceTree = "<group>"; };
+		0D22B52918C49163001A8A6B /* InsuranceAttorneyCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuranceAttorneyCoverViewController.m; sourceTree = "<group>"; };
+		0D22B52C18C49198001A8A6B /* NoticeOfAssignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeOfAssignmentViewController.h; sourceTree = "<group>"; };
+		0D22B52D18C49198001A8A6B /* NoticeOfAssignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeOfAssignmentViewController.m; sourceTree = "<group>"; };
+		0D22B53018C491CA001A8A6B /* AdminFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminFormViewController.h; sourceTree = "<group>"; };
+		0D22B53118C491CA001A8A6B /* AdminFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminFormViewController.m; sourceTree = "<group>"; };
+		0D22B53418C492B4001A8A6B /* MedPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedPayViewController.h; sourceTree = "<group>"; };
+		0D22B53518C492B4001A8A6B /* MedPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedPayViewController.m; sourceTree = "<group>"; };
+		0D22B53818C498EA001A8A6B /* narrative1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = narrative1ViewController.h; sourceTree = "<group>"; };
+		0D22B53918C498EA001A8A6B /* narrative1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = narrative1ViewController.m; sourceTree = "<group>"; };
+		0D22B53A18C498EA001A8A6B /* narrative2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = narrative2ViewController.h; sourceTree = "<group>"; };
+		0D22B53B18C498EA001A8A6B /* narrative2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = narrative2ViewController.m; sourceTree = "<group>"; };
+		0D22B53C18C498EA001A8A6B /* narrative3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = narrative3ViewController.h; sourceTree = "<group>"; };
+		0D22B53D18C498EA001A8A6B /* narrative3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = narrative3ViewController.m; sourceTree = "<group>"; };
+		0D22B53E18C498EA001A8A6B /* narrativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = narrativeViewController.h; sourceTree = "<group>"; };
+		0D22B53F18C498EA001A8A6B /* narrativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = narrativeViewController.m; sourceTree = "<group>"; };
+		0D2AAEE018C070F900D9AA2D /* JSTextViewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextViewClass.h; sourceTree = "<group>"; };
+		0D2AAEE118C070F900D9AA2D /* JSTextViewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextViewClass.m; sourceTree = "<group>"; };
+		0D2AAEE718C0968000D9AA2D /* chiropractictheraphycenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chiropractictheraphycenterViewController.h; sourceTree = "<group>"; };
+		0D2AAEE818C0968000D9AA2D /* chiropractictheraphycenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chiropractictheraphycenterViewController.m; sourceTree = "<group>"; };
+		0D2AAEEB18C09A7800D9AA2D /* certifiedmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = certifiedmailViewController.h; sourceTree = "<group>"; };
+		0D2AAEEC18C09A7800D9AA2D /* certifiedmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = certifiedmailViewController.m; sourceTree = "<group>"; };
+		0D2AAF0A18C0EF4E00D9AA2D /* schoolslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schoolslipViewController.h; sourceTree = "<group>"; };
+		0D2AAF0B18C0EF4E00D9AA2D /* schoolslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = schoolslipViewController.m; sourceTree = "<group>"; };
+		0D2AAF0E18C0EF6600D9AA2D /* updateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updateViewController.h; sourceTree = "<group>"; };
+		0D2AAF0F18C0EF6600D9AA2D /* updateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updateViewController.m; sourceTree = "<group>"; };
+		0D2AAF1218C0EF7900D9AA2D /* XrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XrayViewController.h; sourceTree = "<group>"; };
+		0D2AAF1318C0EF7A00D9AA2D /* XrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XrayViewController.m; sourceTree = "<group>"; };
 		0D2CBBFE180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authorizeandconsenttreatViewController.h; sourceTree = "<group>"; };
 		0D2CBBFF180D5AAA00D7B1D0 /* authorizeandconsenttreatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = authorizeandconsenttreatViewController.m; sourceTree = "<group>"; };
 		0D2CBC02180DAD5300D7B1D0 /* healthinsuranceverificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = healthinsuranceverificationViewController.h; sourceTree = "<group>"; };
@@ -269,6 +313,10 @@
 		0D82347B18BF8381002CFE54 /* PerryCoverLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerryCoverLetterViewController.m; sourceTree = "<group>"; };
 		0D82347E18BF83D0002CFE54 /* PerryCantionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerryCantionViewController.h; sourceTree = "<group>"; };
 		0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerryCantionViewController.m; sourceTree = "<group>"; };
+		0D82349E18BFB830002CFE54 /* reductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reductionViewController.h; sourceTree = "<group>"; };
+		0D82349F18BFB830002CFE54 /* reductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reductionViewController.m; sourceTree = "<group>"; };
+		0D8234A218BFBAC9002CFE54 /* PI_LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PI_LetterViewController.h; sourceTree = "<group>"; };
+		0D8234A318BFBAC9002CFE54 /* PI_LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PI_LetterViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
 		0D9BAFED1901D72D00E1AE6C /* hip1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hip1ViewController.h; sourceTree = "<group>"; };
@@ -522,6 +570,111 @@
 			name = "Cervical Exam";
 			sourceTree = "<group>";
 		};
+		0D22B52718C49137001A8A6B /* Insurance Cover Form */ = {
+			isa = PBXGroup;
+			children = (
+				0D22B52818C49163001A8A6B /* InsuranceAttorneyCoverViewController.h */,
+				0D22B52918C49163001A8A6B /* InsuranceAttorneyCoverViewController.m */,
+			);
+			name = "Insurance Cover Form";
+			sourceTree = "<group>";
+		};
+		0D22B52B18C49169001A8A6B /* Notice of Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				0D22B52C18C49198001A8A6B /* NoticeOfAssignmentViewController.h */,
+				0D22B52D18C49198001A8A6B /* NoticeOfAssignmentViewController.m */,
+			);
+			name = "Notice of Assignments";
+			sourceTree = "<group>";
+		};
+		0D22B52F18C4919F001A8A6B /* Request Demand */ = {
+			isa = PBXGroup;
+			children = (
+				0D22B53018C491CA001A8A6B /* AdminFormViewController.h */,
+				0D22B53118C491CA001A8A6B /* AdminFormViewController.m */,
+			);
+			name = "Request Demand";
+			sourceTree = "<group>";
+		};
+		0D22B53318C49291001A8A6B /* Medpay */ = {
+			isa = PBXGroup;
+			children = (
+				0D22B53418C492B4001A8A6B /* MedPayViewController.h */,
+				0D22B53518C492B4001A8A6B /* MedPayViewController.m */,
+			);
+			name = Medpay;
+			sourceTree = "<group>";
+		};
+		0D22B53718C498B1001A8A6B /* Narrative Forms */ = {
+			isa = PBXGroup;
+			children = (
+				0D22B53818C498EA001A8A6B /* narrative1ViewController.h */,
+				0D22B53918C498EA001A8A6B /* narrative1ViewController.m */,
+				0D22B53A18C498EA001A8A6B /* narrative2ViewController.h */,
+				0D22B53B18C498EA001A8A6B /* narrative2ViewController.m */,
+				0D22B53C18C498EA001A8A6B /* narrative3ViewController.h */,
+				0D22B53D18C498EA001A8A6B /* narrative3ViewController.m */,
+				0D22B53E18C498EA001A8A6B /* narrativeViewController.h */,
+				0D22B53F18C498EA001A8A6B /* narrativeViewController.m */,
+			);
+			name = "Narrative Forms";
+			sourceTree = "<group>";
+		};
+		0D2AAEDF18C070CC00D9AA2D /* Textview border */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAEE018C070F900D9AA2D /* JSTextViewClass.h */,
+				0D2AAEE118C070F900D9AA2D /* JSTextViewClass.m */,
+			);
+			name = "Textview border";
+			sourceTree = "<group>";
+		};
+		0D2AAEE618C0960C00D9AA2D /* chiropractic */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAEE718C0968000D9AA2D /* chiropractictheraphycenterViewController.h */,
+				0D2AAEE818C0968000D9AA2D /* chiropractictheraphycenterViewController.m */,
+			);
+			name = chiropractic;
+			sourceTree = "<group>";
+		};
+		0D2AAEEA18C09A5600D9AA2D /* Notice of final bill */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAEEB18C09A7800D9AA2D /* certifiedmailViewController.h */,
+				0D2AAEEC18C09A7800D9AA2D /* certifiedmailViewController.m */,
+			);
+			name = "Notice of final bill";
+			sourceTree = "<group>";
+		};
+		0D2AAF0918C0EF2700D9AA2D /* Schoolship */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAF0A18C0EF4E00D9AA2D /* schoolslipViewController.h */,
+				0D2AAF0B18C0EF4E00D9AA2D /* schoolslipViewController.m */,
+			);
+			name = Schoolship;
+			sourceTree = "<group>";
+		};
+		0D2AAF0D18C0EF5100D9AA2D /* updateform */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAF0E18C0EF6600D9AA2D /* updateViewController.h */,
+				0D2AAF0F18C0EF6600D9AA2D /* updateViewController.m */,
+			);
+			name = updateform;
+			sourceTree = "<group>";
+		};
+		0D2AAF1118C0EF6900D9AA2D /* xray form */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AAF1218C0EF7900D9AA2D /* XrayViewController.h */,
+				0D2AAF1318C0EF7A00D9AA2D /* XrayViewController.m */,
+			);
+			name = "xray form";
+			sourceTree = "<group>";
+		};
 		0D2CBBFD180D58DD00D7B1D0 /* Authorizationandconsenttotreat */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,6 +872,24 @@
 			name = "Perry chiropratic cantion";
 			sourceTree = "<group>";
 		};
+		0D82349D18BFB7C7002CFE54 /* Reduction form */ = {
+			isa = PBXGroup;
+			children = (
+				0D82349E18BFB830002CFE54 /* reductionViewController.h */,
+				0D82349F18BFB830002CFE54 /* reductionViewController.m */,
+			);
+			name = "Reduction form";
+			sourceTree = "<group>";
+		};
+		0D8234A118BFBA8B002CFE54 /* PI Letter */ = {
+			isa = PBXGroup;
+			children = (
+				0D8234A218BFBAC9002CFE54 /* PI_LetterViewController.h */,
+				0D8234A318BFBAC9002CFE54 /* PI_LetterViewController.m */,
+			);
+			name = "PI Letter";
+			sourceTree = "<group>";
+		};
 		0D9AE5C7180D222B00493E14 /* Consenttotreatminor */ = {
 			isa = PBXGroup;
 			children = (
@@ -814,6 +985,19 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D22B53718C498B1001A8A6B /* Narrative Forms */,
+				0D22B53318C49291001A8A6B /* Medpay */,
+				0D22B52F18C4919F001A8A6B /* Request Demand */,
+				0D22B52B18C49169001A8A6B /* Notice of Assignments */,
+				0D22B52718C49137001A8A6B /* Insurance Cover Form */,
+				0D2AAF1118C0EF6900D9AA2D /* xray form */,
+				0D2AAF0D18C0EF5100D9AA2D /* updateform */,
+				0D2AAF0918C0EF2700D9AA2D /* Schoolship */,
+				0D2AAEEA18C09A5600D9AA2D /* Notice of final bill */,
+				0D2AAEE618C0960C00D9AA2D /* chiropractic */,
+				0D2AAEDF18C070CC00D9AA2D /* Textview border */,
+				0D8234A118BFBA8B002CFE54 /* PI Letter */,
+				0D82349D18BFB7C7002CFE54 /* Reduction form */,
 				0D82347D18BF8387002CFE54 /* Perry chiropratic cantion */,
 				0D82347918BF834F002CFE54 /* Perry cover letter to insurance */,
 				0D82347518BF82DD002CFE54 /* Protect Attorney */,
@@ -1131,6 +1315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8234A418BFBAC9002CFE54 /* PI_LetterViewController.m in Sources */,
 				0DE6A588181BA24800A09BA7 /* physicalexamViewController.m in Sources */,
 				0DA57760182BE74D0043A9B3 /* sidebarViewController.m in Sources */,
 				0DE6A582181BA22500A09BA7 /* radiologicalViewController.m in Sources */,
@@ -1145,15 +1330,20 @@
 				0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */,
 				0D82347018BF829E002CFE54 /* PerryFaxCoverViewController.m in Sources */,
 				0D9D0F0917FEA19B00E93F81 /* LoginViewController.m in Sources */,
+				0D22B54118C498EA001A8A6B /* narrative2ViewController.m in Sources */,
+				0D22B52E18C49198001A8A6B /* NoticeOfAssignmentViewController.m in Sources */,
 				0D15B63718BE10360031E36C /* elbowViewController.m in Sources */,
 				0D82346C18BF8271002CFE54 /* PatientAttorneyCoverViewController.m in Sources */,
+				0D8234A018BFB830002CFE54 /* reductionViewController.m in Sources */,
 				0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */,
 				0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */,
 				0D2EAB8318041B94004F5859 /* WelcomeViewController.m in Sources */,
 				0D6799A3181900B100BDC1FC /* doctorloginViewController.m in Sources */,
 				0D1FBC11180FAC6D00E38505 /* perryViewController.m in Sources */,
 				0D2EAB7A1804190B004F5859 /* AutoAccidentViewController2.m in Sources */,
+				0D22B54018C498EA001A8A6B /* narrative1ViewController.m in Sources */,
 				0D2EAB8D18047CB6004F5859 /* BlockBackground.m in Sources */,
+				0D22B53618C492B4001A8A6B /* MedPayViewController.m in Sources */,
 				0D1FBC01180EDD0400E38505 /* hardshipViewController.m in Sources */,
 				0D9BB0091901D72D00E1AE6C /* footViewController.m in Sources */,
 				0D15B60A18BDCA330031E36C /* ThoracicExamViewController.m in Sources */,
@@ -1161,6 +1351,7 @@
 				0D82347418BF82D8002CFE54 /* ResponseAttorneyViewController.m in Sources */,
 				0D15542C181169C200BDAAB9 /* Patient3ViewController.m in Sources */,
 				0D1FBC09180EDF1800E38505 /* HippaViewController.m in Sources */,
+				0D2AAEE918C0968000D9AA2D /* chiropractictheraphycenterViewController.m in Sources */,
 				0D155432181169E800BDAAB9 /* Patient2ViewController.m in Sources */,
 				0D82347C18BF8381002CFE54 /* PerryCoverLetterViewController.m in Sources */,
 				0D15543918116F5700BDAAB9 /* Workaccident2ViewController.m in Sources */,
@@ -1171,17 +1362,25 @@
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,
 				0D9BB00A1901D72D00E1AE6C /* hip1ViewController.m in Sources */,
 				0D15B63618BE10360031E36C /* elbow1ViewController.m in Sources */,
+				0D22B54218C498EA001A8A6B /* narrative3ViewController.m in Sources */,
 				0D15B61318BDCA560031E36C /* WristExamViewController.m in Sources */,
+				0D2AAEE218C070F900D9AA2D /* JSTextViewClass.m in Sources */,
+				0D22B52A18C49163001A8A6B /* InsuranceAttorneyCoverViewController.m in Sources */,
 				0DCD15EC17FD4F5200748DD7 /* ViewAppViewController.m in Sources */,
 				0D20316618B9221F00033508 /* cervicalexam2ViewController.m in Sources */,
 				0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */,
 				0D20316918B9223300033508 /* cervicalexamViewController.m in Sources */,
+				0D2AAF1418C0EF7A00D9AA2D /* XrayViewController.m in Sources */,
 				0D5DFE4818B8792500885BDB /* dcfee2ViewController.m in Sources */,
 				0D1FBC0D180EDF3500E38505 /* aobViewController.m in Sources */,
 				0D2EAB8C18047CB6004F5859 /* BlockAlertView.m in Sources */,
 				0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */,
+				0D2AAF0C18C0EF4E00D9AA2D /* schoolslipViewController.m in Sources */,
+				0D2AAEED18C09A7800D9AA2D /* certifiedmailViewController.m in Sources */,
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,
+				0D22B54318C498EA001A8A6B /* narrativeViewController.m in Sources */,
 				0D20316218B8DA0600033508 /* duties2ViewController.m in Sources */,
+				0D2AAF1018C0EF6600D9AA2D /* updateViewController.m in Sources */,
 				0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */,
 				0DA24975180E64F200C9A9C6 /* staffautocheckViewController.m in Sources */,
 				0DA24971180DC8F300C9A9C6 /* screendisclosureViewController.m in Sources */,
@@ -1191,6 +1390,7 @@
 				0D5DFE4918B8792500885BDB /* dcfee3ViewController.m in Sources */,
 				0D31712918BF5934007A792C /* shoulderViewController.m in Sources */,
 				0D820F1E182CDDE400BA3A5B /* testingViewController.m in Sources */,
+				0D22B53218C491CA001A8A6B /* AdminFormViewController.m in Sources */,
 				0D82347818BF8314002CFE54 /* ProtectPatientAttorneyViewController.m in Sources */,
 				0D15B60218BDCA120031E36C /* KneeExamViewController.m in Sources */,
 				0D67999F1819008800BDC1FC /* adminloginViewController.m in Sources */,

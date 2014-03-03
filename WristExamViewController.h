@@ -11,7 +11,7 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-@interface WristExamViewController : UIViewController
+@interface WristExamViewController : UIViewController<UITextViewDelegate>
 {
 
     IBOutlet UITextField *patname;
@@ -51,7 +51,7 @@
     IBOutlet UIButton *check2;
 
     IBOutlet UITextField *first;
-    IBOutlet UITextField *txtv1;
+    IBOutlet UITextView *txtv1;
 
     IBOutlet UITextField *sec;
     IBOutlet UITextField *thr;

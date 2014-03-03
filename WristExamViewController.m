@@ -143,7 +143,7 @@ NSString *checkstring1,*checkstring2,*checkstring3,*checkstring4;
     texty13=[sec.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty14=[thr.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty15=[four.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty38=[txtv1.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty38=[[txtv1.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty16=[fiv.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty17=[six.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty18=[sev.text stringByReplacingOccurrencesOfString:@" " withString:@""];

@@ -309,9 +309,11 @@
                                                                 [recorddict setValue:diag4.text forKey:@"diag4"];
                                                                 [recorddict setValue:diag5.text forKey:@"diag5"];
                                                                 [recorddict setObject:selectedtreatment forKey:@"selectedtreatment"];
+                                                                
                                                                 [recorddict setObject:selecteddefict forKey:@"selecteddefict"];
                                                                 [recorddict setValue:patientstatuslabel forKey:@"patientstatus"];
                                                                 [recorddict setValue:otherte.text forKey:@"othertext"];
+                                                                [recorddict setValue:addcomments.text forKey:@"addcomments"];
                                                                 NSLog(@"success!!!recorddict %@",recorddict);
                                                                 c=1;
                                                                 

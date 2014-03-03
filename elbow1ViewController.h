@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface elbow1ViewController : UIViewController
+@interface elbow1ViewController : UIViewController<UITextViewDelegate>
 {
     NSMutableDictionary *recorddict;
     NSMutableArray *Functional_Deficit;
@@ -35,7 +35,7 @@
     IBOutlet UIButton *b17;
     IBOutlet UIButton *b18;
 
-    IBOutlet UITextField *assessment;
+    IBOutlet UITextView *assessment;
     NSString *over;
     NSString *lift;
     NSString *other;
@@ -62,7 +62,7 @@
 }
 @property (retain, nonatomic) IBOutlet UITextField *moc5L;
 @property (retain, nonatomic) IBOutlet UITextField *moc5R;
-@property (retain, nonatomic) IBOutlet UITextField *assessment;
+@property (retain, nonatomic) IBOutlet UITextView *assessment;
 
 @property (retain, nonatomic) IBOutlet UITextField *moc6L;
 @property (retain, nonatomic) IBOutlet UITextField *moc6R;

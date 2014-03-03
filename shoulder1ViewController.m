@@ -22,7 +22,7 @@
 @synthesize c7right;
 @synthesize walking;
 @synthesize standing;
-
+@synthesize additional;
 @synthesize other;
 @synthesize d1;
 @synthesize d2;
@@ -291,7 +291,7 @@
                                                                 [recorddict setValue:d5.text forKey:@"d5"];
                                                                 [recorddict setValue:plantime.text forKey:@"plantime"];
                                                                 [recorddict setValue:physiciansign.text forKey:@"sign"];
-                                                                
+                                                                [recorddict setValue:additional.text forKey:@"additional"];
                                                                 [recorddict setValue:planweek.text forKey:@"planweek"];
                                                 NSLog(@"success!!!recorddict %@",recorddict);                
                                                             }
@@ -563,6 +563,7 @@
 }*/
 - (void)dealloc {
   
+
     [super dealloc];
 }
 @end

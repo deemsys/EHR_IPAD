@@ -78,7 +78,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     texty1=[date.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty2=[patattory.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty3=[clinicname.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty4=[addrs.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty4=[[addrs.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty5=[myclient.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty6=[dofacc.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty7=[dearname.text stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -219,4 +219,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
 }
 
 
+- (void)dealloc {
+        [super dealloc];
+}
 @end

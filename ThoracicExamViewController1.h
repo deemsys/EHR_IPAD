@@ -11,7 +11,7 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-@interface ThoracicExamViewController1 : UIViewController<UIPickerViewDelegate>{
+@interface ThoracicExamViewController1 : UIViewController<UIPickerViewDelegate,UITextViewDelegate>{
 
     IBOutlet UITextField *first;
     
@@ -25,10 +25,10 @@
     
     
     IBOutlet UITextField *six;
-    IBOutlet UITextField *textv1;
+    IBOutlet UITextView *textv1;
     
     IBOutlet UITextField *othertext0;
-    IBOutlet UITextField *textv2;
+    IBOutlet UITextView *textv2;
    
     IBOutlet UISegmentedControl *segmentnew2;
     IBOutlet UILabel *pickonelab;

@@ -87,6 +87,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
 }
 - (void)dealloc {
   
+    [msg release];
     [super dealloc];
 }
 - (IBAction)cancel:(id)sender {
@@ -121,7 +122,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     texty4=[from.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty5=[re.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty6=[nubofpag.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty7=[msg.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty7=[[msg.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty8=[claim.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty9=[doi.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     if([date.text length]!=0&&[to.text length]!=0&&[from.text length]!=0&&[msg.text length]!=0&&[doi.text length]!=0&&[re.text length]!=0&&[fax.text length]!=0&&[claim.text length]!=0&&[nubofpag.text length]!=0){

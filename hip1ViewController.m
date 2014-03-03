@@ -291,6 +291,7 @@
                                                             if((([temp15 length]>0)&&([self validateNames:temp15]==1))||([temp15 length]==0))
                                                                 
                                                             {
+                                                                [recorddict setValue:addcomments.text forKey:@"addcomments"];
                                                                 
                                                                 [recorddict setValue:physiciansign.text forKey:@"physiciansign"];
                                                                 [recorddict setValue:l4left.text forKey:@"l4left"];
@@ -551,6 +552,7 @@
     [patientstatus release];
     [otherte release];
   
+    [addcomments release];
     [super dealloc];
 }
 @end

@@ -365,8 +365,8 @@ NSString *chec1,*chec2,*chec3,*chec4,*chec5,*chec6,*chec7,*chec8,*chec9,*chec10,
     [signature resignFirstResponder];
 }
 - (IBAction)save:(id)sender {
-    textview1=[textv1.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    textview2=[textv2.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    textview1=[[textv1.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
+    textview2=[[textv2.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     oth=[othertext0.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty1=[first.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty2=[second.text stringByReplacingOccurrencesOfString:@" " withString:@""];

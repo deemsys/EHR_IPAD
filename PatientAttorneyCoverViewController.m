@@ -64,6 +64,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
 - (void)dealloc {
     
     
+    [addrs release];
     [super dealloc];
 }
 -(BOOL)validateString:(NSString *)user
@@ -89,7 +90,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
 - (IBAction)submit:(id)sender {
     texty1=[patattory.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty2=[reg.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty3=[addrs.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty3=[[addrs.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty4=[patname.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty5=[dofacc.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty6=[dearname.text stringByReplacingOccurrencesOfString:@" " withString:@""];

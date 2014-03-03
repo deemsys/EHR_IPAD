@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface lumbopelvic1ViewController : UIViewController
+@interface lumbopelvic1ViewController : UIViewController<UITextViewDelegate>
 {
 int c;
 NSMutableDictionary *recorddict;
@@ -56,7 +56,7 @@ NSString *dc;
 NSString *other1;
 NSString *patientstatus;
 NSString *temp1,*temp2,*temp3,*temp4,*temp5,*temp6,*temp7,*temp8,*temp9,*temp10,*temp11,*temp12,*temp13,*temp14,*temp15,*temp16,*temp17,*temp18,*temp19,*temp20,*temp21,*temp22,*temp23,*temp24,*temp25,*temp26,*temp27,*temp28,*temp29,*temp30;
-IBOutlet UITextField *assessment;
+IBOutlet UITextView *assessment;
 IBOutlet UISegmentedControl *patient;
 IBOutlet UITextField *fdother;
 

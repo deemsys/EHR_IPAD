@@ -12,10 +12,10 @@
 #import "BlockUI.h"
 
 
-@interface foot1ViewController : UIViewController
+@interface foot1ViewController : UIViewController<UITextViewDelegate>
 {
     int c;
-    NSMutableDictionary *recordict;
+    NSMutableDictionary *recorddict;
     
     IBOutlet UITextField *l4left;
 
@@ -85,7 +85,7 @@
     IBOutlet UITextField *d1;
     IBOutlet UITextField *nerve1;
     NSString *patientstatuslabel;
-    
+    IBOutlet UITextView *addcomments;
     NSMutableArray *circle;
     NSMutableDictionary*temp;
     NSMutableArray*selectedtreatment;

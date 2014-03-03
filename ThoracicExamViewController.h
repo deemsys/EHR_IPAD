@@ -10,7 +10,7 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-@interface ThoracicExamViewController : UIViewController
+@interface ThoracicExamViewController : UIViewController<UITextViewDelegate>
 {
     
     IBOutlet UITextField *patname;

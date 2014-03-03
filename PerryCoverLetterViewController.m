@@ -63,6 +63,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
 - (void)dealloc {
     
     
+    [addrs release];
     [super dealloc];
 }
 -(BOOL)validateString:(NSString *)user
@@ -85,10 +86,18 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     return [countryTest1 evaluateWithObject:country1];
     
 }
+-(BOOL)validateaddress:(NSString *)country1
+{
+    NSString *countryFormat1 = @"[A-Z0-9a-z._/-]+";
+    
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
 - (IBAction)submit:(id)sender {
     texty1=[patattory.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty2=[reg.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty3=[addrs.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty3=[[addrs.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty4=[patname.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty5=[dofacc.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty6=[dearname.text stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -99,7 +108,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
         {
             if([reg.text length]==0||([self validateString:texty2]==1))
             {
-                if([addrs.text length]==0||([self validateString:texty3]==1))
+                if([addrs.text length]==0||([self validateaddress:texty3]==1))
                 {
                     if([patname.text length]==0||([self validateString:texty4]==1))
                     {

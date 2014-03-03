@@ -13,7 +13,7 @@
 #import "BlockUI.h"
 
 
-@interface WristExamViewController1 : UIViewController
+@interface WristExamViewController1 : UIViewController<UITextViewDelegate>
 {
 
     IBOutlet UISegmentedControl *seg1;
@@ -30,7 +30,7 @@
     IBOutlet UITextField *sec;
 
     IBOutlet UITextField *other;
-    IBOutlet UITextField *addcomments;
+    IBOutlet UITextView *addcomments;
     IBOutlet UITextField *twentysix;
     IBOutlet UITextField *twentyfive;
     IBOutlet UITextField *twentyfour;

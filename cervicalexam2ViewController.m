@@ -99,14 +99,21 @@
         patientstatus=@"Poor";
     }
 }
-
+-(BOOL)validateaddress:(NSString *)country1
+{
+    NSString *countryFormat1 = @"[A-Z0-9a-z._/-]+";
+    
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
 -(IBAction)saveandcontinue:(id)sender
 {
 temp1 = [sign.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp2 = [plan1.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp3 = [plan2.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp4 = [planother.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-temp5 = [additional.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+temp5 = [[additional.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp6=[d1.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp7=[d2.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 temp8=[d3.text stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -353,7 +360,7 @@ temp38=[fdother.text stringByReplacingOccurrencesOfString:@" " withString:@""];
                                                                                                             {
                                                                                                                 if((([temp37 length]>0)&&([self validateNumber:temp37]==1))||([temp37 length]==0))
                                                                                                                 {
-                                                                                                                    if((([temp5 length]>0)&&([self validateNames:temp5]==1))||([temp5 length]==0))
+                                                                                                                    if((([temp5 length]>0)&&([self validateaddress:temp5]==1))||([temp5 length]==0))
                                                                                                                     {
                                                                                                                         if((([temp2 length]>0)&&([self validateNames:temp2]==1))||([temp2 length]==0))
                                                                                                                         {

@@ -11,9 +11,10 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-@interface PerryCoverLetterViewController : UIViewController
+@interface PerryCoverLetterViewController : UIViewController<UITextViewDelegate>
 {IBOutlet UITextField *patname;
-    IBOutlet UITextField *addrs;
+
+    IBOutlet UITextView *addrs;
     IBOutlet UITextField *patattory;
     IBOutlet UITextField *reg;
     IBOutlet UITextField *dofacc;

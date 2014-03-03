@@ -12,10 +12,11 @@
 #import "BlockUI.h"
 
 
-@interface ResponseAttorneyViewController : UIViewController
+@interface ResponseAttorneyViewController : UIViewController<UITextViewDelegate>
 {
     IBOutlet UITextField *patname;
-    IBOutlet UITextField*addrs;
+  
+    IBOutlet UITextView *addrs;
     IBOutlet UITextField *patattory;
     IBOutlet UITextField *reg;
     IBOutlet UITextField *dofacc;

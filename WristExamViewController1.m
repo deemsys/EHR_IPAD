@@ -66,6 +66,14 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     return [countryTest1 evaluateWithObject:country1];
     
 }
+-(BOOL)validateaddress:(NSString *)country1
+{
+    NSString *countryFormat1 = @"[A-Z0-9a-z._/-]+";
+    
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
 -(BOOL)validateNumbers:(NSString*)number
 {
     NSString *mobileFormat1 =  @"[0-9_-]{1,3}?";
@@ -205,7 +213,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     texty24=[twentyfour.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty25=[twentyfive.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty26=[twentysix.text stringByReplacingOccurrencesOfString:@" " withString:@""];
-    texty28=[addcomments.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    texty28=[[addcomments.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "]stringByReplacingOccurrencesOfString:@" " withString:@""];
     texty27=[other.text stringByReplacingOccurrencesOfString:@" " withString:@""];
    // texty29=[refsileft.text stringByReplacingOccurrencesOfString:@" " withString:@""];
     //texty30=[refsiright.text stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -264,7 +272,7 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
                                                                                                         {
                                                                                                             if([other.text length]==0||([self validateString:texty27]==1))
                                                                                                             {
-                                                                                                                if([addcomments.text length]==0||([self validateString:texty28]==1))
+                                                                                                                if([addcomments.text length]==0||([self validateaddress:texty28]==1))
                                                                                                                 {
                                                                                                             suc=1;
                                                                           

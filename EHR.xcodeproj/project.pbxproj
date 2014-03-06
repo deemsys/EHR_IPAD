@@ -50,6 +50,9 @@
 		0D22B55418C4B686001A8A6B /* LumbarSpineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B54D18C4B686001A8A6B /* LumbarSpineViewController.m */; };
 		0D22B55518C4B686001A8A6B /* LumbarSpineViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B54F18C4B686001A8A6B /* LumbarSpineViewController1.m */; };
 		0D22B55618C4B686001A8A6B /* ThoracicSpineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D22B55118C4B686001A8A6B /* ThoracicSpineViewController.m */; };
+		0D24DB9218C77C7800E55E3D /* HipKneeViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24DB8F18C77C7800E55E3D /* HipKneeViewController1.m */; };
+		0D24DB9318C77C7800E55E3D /* HipKneeViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24DB9118C77C7800E55E3D /* HipKneeViewController2.m */; };
+		0D24DB9618C77C8B00E55E3D /* HipKneeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24DB9518C77C8B00E55E3D /* HipKneeViewController.m */; };
 		0D2AAEE218C070F900D9AA2D /* JSTextViewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEE118C070F900D9AA2D /* JSTextViewClass.m */; };
 		0D2AAEE918C0968000D9AA2D /* chiropractictheraphycenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEE818C0968000D9AA2D /* chiropractictheraphycenterViewController.m */; };
 		0D2AAEED18C09A7800D9AA2D /* certifiedmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AAEEC18C09A7800D9AA2D /* certifiedmailViewController.m */; };
@@ -105,6 +108,15 @@
 		0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82347F18BF83D0002CFE54 /* PerryCantionViewController.m */; };
 		0D8234A018BFB830002CFE54 /* reductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D82349F18BFB830002CFE54 /* reductionViewController.m */; };
 		0D8234A418BFBAC9002CFE54 /* PI_LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8234A318BFBAC9002CFE54 /* PI_LetterViewController.m */; };
+		0D8C472018C7608D00142E77 /* radio_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C471C18C7608C00142E77 /* radio_button_on.png */; };
+		0D8C472118C7608D00142E77 /* radiobutton_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C471D18C7608D00142E77 /* radiobutton_off.png */; };
+		0D8C472218C7608D00142E77 /* shoulderpainscoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C471F18C7608D00142E77 /* shoulderpainscoreViewController.m */; };
+		0D8C472718C7615600142E77 /* shoulderpainscore1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C472418C7615600142E77 /* shoulderpainscore1ViewController.m */; };
+		0D8C472818C7615600142E77 /* shoulderpainscore2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C472618C7615600142E77 /* shoulderpainscore2ViewController.m */; };
+		0D8C472A18C7616A00142E77 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C472918C7616A00142E77 /* line.png */; };
+		0D8C472E18C769FA00142E77 /* wristandhanddisabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C472D18C769FA00142E77 /* wristandhanddisabilityViewController.m */; };
+		0D8C473318C76A0800142E77 /* wristandhanddisability1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C473018C76A0800142E77 /* wristandhanddisability1ViewController.m */; };
+		0D8C473418C76A0800142E77 /* wristandhanddisability2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C473218C76A0800142E77 /* wristandhanddisability2ViewController.m */; };
 		0D9AE5CA180D22B600493E14 /* treatminorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AE5C9180D22B600493E14 /* treatminorViewController.m */; };
 		0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFF01901D72D00E1AE6C /* hipViewController.m */; };
 		0D9BAFFC1901D72D00E1AE6C /* foot1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BAFFB1901D72D00E1AE6C /* foot1ViewController.m */; };
@@ -246,6 +258,12 @@
 		0D22B54F18C4B686001A8A6B /* LumbarSpineViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumbarSpineViewController1.m; sourceTree = "<group>"; };
 		0D22B55018C4B686001A8A6B /* ThoracicSpineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThoracicSpineViewController.h; sourceTree = "<group>"; };
 		0D22B55118C4B686001A8A6B /* ThoracicSpineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThoracicSpineViewController.m; sourceTree = "<group>"; };
+		0D24DB8E18C77C7800E55E3D /* HipKneeViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HipKneeViewController1.h; sourceTree = "<group>"; };
+		0D24DB8F18C77C7800E55E3D /* HipKneeViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HipKneeViewController1.m; sourceTree = "<group>"; };
+		0D24DB9018C77C7800E55E3D /* HipKneeViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HipKneeViewController2.h; sourceTree = "<group>"; };
+		0D24DB9118C77C7800E55E3D /* HipKneeViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HipKneeViewController2.m; sourceTree = "<group>"; };
+		0D24DB9418C77C8B00E55E3D /* HipKneeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HipKneeViewController.h; sourceTree = "<group>"; };
+		0D24DB9518C77C8B00E55E3D /* HipKneeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HipKneeViewController.m; sourceTree = "<group>"; };
 		0D2AAEE018C070F900D9AA2D /* JSTextViewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextViewClass.h; sourceTree = "<group>"; };
 		0D2AAEE118C070F900D9AA2D /* JSTextViewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextViewClass.m; sourceTree = "<group>"; };
 		0D2AAEE718C0968000D9AA2D /* chiropractictheraphycenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chiropractictheraphycenterViewController.h; sourceTree = "<group>"; };
@@ -334,6 +352,21 @@
 		0D82349F18BFB830002CFE54 /* reductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reductionViewController.m; sourceTree = "<group>"; };
 		0D8234A218BFBAC9002CFE54 /* PI_LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PI_LetterViewController.h; sourceTree = "<group>"; };
 		0D8234A318BFBAC9002CFE54 /* PI_LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PI_LetterViewController.m; sourceTree = "<group>"; };
+		0D8C471C18C7608C00142E77 /* radio_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_button_on.png; sourceTree = "<group>"; };
+		0D8C471D18C7608D00142E77 /* radiobutton_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiobutton_off.png; sourceTree = "<group>"; };
+		0D8C471E18C7608D00142E77 /* shoulderpainscoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoulderpainscoreViewController.h; sourceTree = "<group>"; };
+		0D8C471F18C7608D00142E77 /* shoulderpainscoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoulderpainscoreViewController.m; sourceTree = "<group>"; };
+		0D8C472318C7615600142E77 /* shoulderpainscore1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoulderpainscore1ViewController.h; sourceTree = "<group>"; };
+		0D8C472418C7615600142E77 /* shoulderpainscore1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoulderpainscore1ViewController.m; sourceTree = "<group>"; };
+		0D8C472518C7615600142E77 /* shoulderpainscore2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoulderpainscore2ViewController.h; sourceTree = "<group>"; };
+		0D8C472618C7615600142E77 /* shoulderpainscore2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoulderpainscore2ViewController.m; sourceTree = "<group>"; };
+		0D8C472918C7616A00142E77 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		0D8C472C18C769FA00142E77 /* wristandhanddisabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wristandhanddisabilityViewController.h; sourceTree = "<group>"; };
+		0D8C472D18C769FA00142E77 /* wristandhanddisabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wristandhanddisabilityViewController.m; sourceTree = "<group>"; };
+		0D8C472F18C76A0800142E77 /* wristandhanddisability1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wristandhanddisability1ViewController.h; sourceTree = "<group>"; };
+		0D8C473018C76A0800142E77 /* wristandhanddisability1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wristandhanddisability1ViewController.m; sourceTree = "<group>"; };
+		0D8C473118C76A0800142E77 /* wristandhanddisability2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wristandhanddisability2ViewController.h; sourceTree = "<group>"; };
+		0D8C473218C76A0800142E77 /* wristandhanddisability2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wristandhanddisability2ViewController.m; sourceTree = "<group>"; };
 		0D9AE5C8180D22B600493E14 /* treatminorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treatminorViewController.h; sourceTree = "<group>"; };
 		0D9AE5C9180D22B600493E14 /* treatminorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = treatminorViewController.m; sourceTree = "<group>"; };
 		0D9BAFED1901D72D00E1AE6C /* hip1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hip1ViewController.h; sourceTree = "<group>"; };
@@ -905,6 +938,48 @@
 			name = "PI Letter";
 			sourceTree = "<group>";
 		};
+		0D8C471B18C7605E00142E77 /* Shoulder pain */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C472918C7616A00142E77 /* line.png */,
+				0D8C471C18C7608C00142E77 /* radio_button_on.png */,
+				0D8C471D18C7608D00142E77 /* radiobutton_off.png */,
+				0D8C471E18C7608D00142E77 /* shoulderpainscoreViewController.h */,
+				0D8C471F18C7608D00142E77 /* shoulderpainscoreViewController.m */,
+				0D8C472318C7615600142E77 /* shoulderpainscore1ViewController.h */,
+				0D8C472418C7615600142E77 /* shoulderpainscore1ViewController.m */,
+				0D8C472518C7615600142E77 /* shoulderpainscore2ViewController.h */,
+				0D8C472618C7615600142E77 /* shoulderpainscore2ViewController.m */,
+			);
+			name = "Shoulder pain";
+			sourceTree = "<group>";
+		};
+		0D8C472B18C768F200142E77 /* Wrist Hand idsability */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C472F18C76A0800142E77 /* wristandhanddisability1ViewController.h */,
+				0D8C473018C76A0800142E77 /* wristandhanddisability1ViewController.m */,
+				0D8C473118C76A0800142E77 /* wristandhanddisability2ViewController.h */,
+				0D8C473218C76A0800142E77 /* wristandhanddisability2ViewController.m */,
+				0D8C472C18C769FA00142E77 /* wristandhanddisabilityViewController.h */,
+				0D8C472D18C769FA00142E77 /* wristandhanddisabilityViewController.m */,
+			);
+			name = "Wrist Hand idsability";
+			sourceTree = "<group>";
+		};
+		0D8C473518C76CE400142E77 /* Hip and knee questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				0D24DB9418C77C8B00E55E3D /* HipKneeViewController.h */,
+				0D24DB9518C77C8B00E55E3D /* HipKneeViewController.m */,
+				0D24DB8E18C77C7800E55E3D /* HipKneeViewController1.h */,
+				0D24DB8F18C77C7800E55E3D /* HipKneeViewController1.m */,
+				0D24DB9018C77C7800E55E3D /* HipKneeViewController2.h */,
+				0D24DB9118C77C7800E55E3D /* HipKneeViewController2.m */,
+			);
+			name = "Hip and knee questionnaire";
+			sourceTree = "<group>";
+		};
 		0D9AE5C7180D222B00493E14 /* Consenttotreatminor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1000,6 +1075,9 @@
 		0DCD15C917FD4F5200748DD7 = {
 			isa = PBXGroup;
 			children = (
+				0D8C473518C76CE400142E77 /* Hip and knee questionnaire */,
+				0D8C472B18C768F200142E77 /* Wrist Hand idsability */,
+				0D8C471B18C7605E00142E77 /* Shoulder pain */,
 				0D22B53718C498B1001A8A6B /* Narrative Forms */,
 				0D22B53318C49291001A8A6B /* Medpay */,
 				0D22B52F18C4919F001A8A6B /* Request Demand */,
@@ -1291,6 +1369,7 @@
 				0DE6A571181B889A00A09BA7 /* resetbutton.png in Resources */,
 				0D9C35E1180C850F00134BB6 /* reset.png in Resources */,
 				0D2EAB551802D101004F5859 /* logo2.png in Resources */,
+				0D8C472A18C7616A00142E77 /* line.png in Resources */,
 				0D0EE991181E7ACB00FEED75 /* cancelbutton.png in Resources */,
 				0D6799981818EE8B00BDC1FC /* regist.png in Resources */,
 				0D2EAB8518041FC1004F5859 /* redTextBox.png in Resources */,
@@ -1316,8 +1395,10 @@
 				0D2EAB5E18033B1A004F5859 /* signin.png in Resources */,
 				0D0EE992181E7ACB00FEED75 /* reviewbutton.png in Resources */,
 				0D2EAB5B18033A77004F5859 /* Select.png in Resources */,
+				0D8C472018C7608D00142E77 /* radio_button_on.png in Resources */,
 				0D0EE994181FE29B00FEED75 /* updatebutton.png in Resources */,
 				0DE6A572181B889A00A09BA7 /* signinbutton.png in Resources */,
+				0D8C472118C7608D00142E77 /* radiobutton_off.png in Resources */,
 				0DA2497B180E6F3100C9A9C6 /* checkBox@2x.png in Resources */,
 				0DCD15E917FD4F5200748DD7 /* Main.storyboard in Resources */,
 				0DC11AFF18003E1D00195C56 /* Default-Portrait~ipad.png in Resources */,
@@ -1361,6 +1442,7 @@
 				0D82346C18BF8271002CFE54 /* PatientAttorneyCoverViewController.m in Sources */,
 				0D8234A018BFB830002CFE54 /* reductionViewController.m in Sources */,
 				0D15543618116F4B00BDAAB9 /* WorkaccidentViewController.m in Sources */,
+				0D8C472E18C769FA00142E77 /* wristandhanddisabilityViewController.m in Sources */,
 				0D82348018BF83D0002CFE54 /* PerryCantionViewController.m in Sources */,
 				0D2EAB8318041B94004F5859 /* WelcomeViewController.m in Sources */,
 				0D22B55318C4B686001A8A6B /* CervicalSpineViewController1.m in Sources */,
@@ -1384,7 +1466,9 @@
 				0D15543918116F5700BDAAB9 /* Workaccident2ViewController.m in Sources */,
 				0D15B60B18BDCA330031E36C /* ThoracicExamViewController1.m in Sources */,
 				0D2CBC04180DAD5300D7B1D0 /* healthinsuranceverificationViewController.m in Sources */,
+				0D24DB9618C77C8B00E55E3D /* HipKneeViewController.m in Sources */,
 				0D2CBC08180DC22200D7B1D0 /* ROMRAViewController.m in Sources */,
+				0D24DB9218C77C7800E55E3D /* HipKneeViewController1.m in Sources */,
 				0D15B64518BEFCEE0031E36C /* lumbopelvic1ViewController.m in Sources */,
 				0D2EAB7D18041928004F5859 /* AutoAccidentViewController1.m in Sources */,
 				0D9BB00A1901D72D00E1AE6C /* hip1ViewController.m in Sources */,
@@ -1395,8 +1479,11 @@
 				0D22B55518C4B686001A8A6B /* LumbarSpineViewController1.m in Sources */,
 				0D22B52A18C49163001A8A6B /* InsuranceAttorneyCoverViewController.m in Sources */,
 				0DCD15EC17FD4F5200748DD7 /* ViewAppViewController.m in Sources */,
+				0D8C473318C76A0800142E77 /* wristandhanddisability1ViewController.m in Sources */,
 				0D20316618B9221F00033508 /* cervicalexam2ViewController.m in Sources */,
+				0D8C473418C76A0800142E77 /* wristandhanddisability2ViewController.m in Sources */,
 				0D1554281811612300BDAAB9 /* insuranceverifyViewController.m in Sources */,
+				0D8C472718C7615600142E77 /* shoulderpainscore1ViewController.m in Sources */,
 				0D20316918B9223300033508 /* cervicalexamViewController.m in Sources */,
 				0D2AAF1418C0EF7A00D9AA2D /* XrayViewController.m in Sources */,
 				0D5DFE4818B8792500885BDB /* dcfee2ViewController.m in Sources */,
@@ -1405,6 +1492,7 @@
 				0D9BAFF21901D72D00E1AE6C /* hipViewController.m in Sources */,
 				0D2AAF0C18C0EF4E00D9AA2D /* schoolslipViewController.m in Sources */,
 				0D2AAEED18C09A7800D9AA2D /* certifiedmailViewController.m in Sources */,
+				0D8C472218C7608D00142E77 /* shoulderpainscoreViewController.m in Sources */,
 				0D2EAB801804193A004F5859 /* AutoAccidentViewController3.m in Sources */,
 				0D22B54318C498EA001A8A6B /* narrativeViewController.m in Sources */,
 				0D20316218B8DA0600033508 /* duties2ViewController.m in Sources */,
@@ -1429,6 +1517,8 @@
 				0DCD15E617FD4F5200748DD7 /* ViewAppAppDelegate.m in Sources */,
 				0D5DFE4B18B8792500885BDB /* dcfeeViewController.m in Sources */,
 				0D15B61418BDCA560031E36C /* WristExamViewController1.m in Sources */,
+				0D8C472818C7615600142E77 /* shoulderpainscore2ViewController.m in Sources */,
+				0D24DB9318C77C7800E55E3D /* HipKneeViewController2.m in Sources */,
 				0DE6A58B181BA25B00A09BA7 /* doctorportalViewController.m in Sources */,
 				0D15B60318BDCA120031E36C /* KneeExamViewController1.m in Sources */,
 				0D22B55218C4B686001A8A6B /* CervicalSpineViewController.m in Sources */,

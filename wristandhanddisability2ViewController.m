@@ -177,7 +177,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    val10=@"0";
+    val10=@"";
     NSNumber *a=[recorddict objectForKey:@"total1"];
     NSNumber* b=[recorddict objectForKey:@"total2"];
      aa=[a intValue];

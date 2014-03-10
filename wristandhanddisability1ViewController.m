@@ -59,12 +59,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    val5=@"0";
-    val6=@"0";
-    val7=@"0";
-    val8=@"0";
-    val9=@"0";
-	// Do any additional setup after loading the view.
+    val5=@"";
+    val6=@"";
+    val7=@"";
+    val8=@"";
+    val9=@"";
+	// Do a additional setup after loading the view.
 }
 - (IBAction)first:(id)sender {
     

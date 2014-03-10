@@ -46,10 +46,10 @@
 {
     [super viewDidLoad];
     recorddict=[[NSMutableDictionary alloc]init];
-    val1=@"0";
-    val2=@"0";
-    val3=@"0";
-    val4=@"0";
+    val1=@"";
+    val2=@"";
+    val3=@"";
+    val4=@"";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)first:(id)sender {

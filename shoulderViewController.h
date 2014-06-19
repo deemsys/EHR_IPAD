@@ -10,9 +10,10 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
 
-@interface shoulderViewController : UIViewController
+@interface shoulderViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int a;
     NSMutableDictionary *recorddict;

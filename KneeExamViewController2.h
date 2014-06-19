@@ -10,9 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-
-@interface KneeExamViewController2 : UIViewController
+@interface KneeExamViewController2 : UIViewController<TextFieldDatePickerDelegate>
 {
     
     IBOutlet UITextField *first;

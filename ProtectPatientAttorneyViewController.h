@@ -10,8 +10,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface ProtectPatientAttorneyViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface ProtectPatientAttorneyViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *clinicname;
    

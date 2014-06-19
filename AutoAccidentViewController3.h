@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AutoAccidentViewController3 : UIViewController
+#import "TextFieldDatePicker.h"
+@interface AutoAccidentViewController3 : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     IBOutlet UISwitch * anyonecitedswitch;

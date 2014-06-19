@@ -29,6 +29,17 @@ int a;
     return [countryTest1 evaluateWithObject:country1];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)dateexpress:(NSString *)country1
 {
     NSString *countryFormat1 = @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";

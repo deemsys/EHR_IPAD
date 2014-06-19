@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface testingViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface testingViewController : UIViewController<TextFieldDatePickerDelegate>
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

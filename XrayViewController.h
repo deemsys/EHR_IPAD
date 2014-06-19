@@ -5,10 +5,14 @@
 //  Created by Admin on 28/02/14.
 //  Copyright (c) 2014 Deemsysinc. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
+#import "BlockBackground.h"
+#import "BlockAlertView.h"
+#import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface XrayViewController : UIViewController
+
+@interface XrayViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *name;
     IBOutlet UITextField *borrow;

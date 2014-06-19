@@ -11,9 +11,10 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
 
-@interface WristExamViewController1 : UIViewController<UITextViewDelegate>
+@interface WristExamViewController1 : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
 
     IBOutlet UISegmentedControl *seg1;

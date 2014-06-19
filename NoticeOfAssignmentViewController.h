@@ -9,8 +9,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface NoticeOfAssignmentViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface NoticeOfAssignmentViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *insname;
     IBOutlet UITextField *patname;

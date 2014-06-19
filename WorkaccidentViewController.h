@@ -11,8 +11,8 @@
 #import "BlockBackground.h"
 #import "BlockUI.h"
 #import "Workaccident2ViewController.h"
-
-@interface WorkaccidentViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface WorkaccidentViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField*jobclass;
     IBOutlet UILabel*doyou;

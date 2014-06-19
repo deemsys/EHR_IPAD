@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface cervicalexam2ViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface cervicalexam2ViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UIButton *neuro;
     NSMutableDictionary  *recorddict;

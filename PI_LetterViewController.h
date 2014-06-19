@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlockBackground.h"
+#import "BlockAlertView.h"
+#import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface PI_LetterViewController : UIViewController
+
+@interface PI_LetterViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int a;
     IBOutlet UITextField *date;

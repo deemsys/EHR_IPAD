@@ -11,8 +11,8 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 //#import "/usr/include/sqlite3.h"
-
-@interface Patient3ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface Patient3ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
    // sqlite3*ehrdb6;
     NSString*databasePath;

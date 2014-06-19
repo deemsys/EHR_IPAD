@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface AdminFormViewController : UIViewController
+@interface AdminFormViewController : UIViewController<TextFieldDatePickerDelegate>
 
 {
     

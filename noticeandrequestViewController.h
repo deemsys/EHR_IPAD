@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface noticeandrequestViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface noticeandrequestViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * insurancecompanyname;
     IBOutlet UITextField * address;

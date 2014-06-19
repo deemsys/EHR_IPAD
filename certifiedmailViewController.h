@@ -10,9 +10,9 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-
-@interface certifiedmailViewController :UIViewController<UITextViewDelegate>
+@interface certifiedmailViewController :UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 
 {
     int a;

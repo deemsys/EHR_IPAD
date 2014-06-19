@@ -11,8 +11,8 @@
 #import "BlockBackground.h"
 #import "BlockUI.h"
 
-
-@interface hip1ViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface hip1ViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 
 {
     int c;

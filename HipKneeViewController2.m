@@ -7,6 +7,7 @@
 //
 
 #import "HipKneeViewController2.h"
+#import "TextFieldDatePicker.h"
 
 @interface HipKneeViewController2 ()
 
@@ -16,7 +17,17 @@
 @synthesize recorddict;
 NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9,*texty10,*texty11,*texty12,*texty13,*texty14,*texty15,*texty16,*texty17,*texty18,*texty19,*texty20,*texty21,*texty22,*texty23,*texty24,*texty25,*texty26,*texty27,*texty28,*texty29,*texty30,*texty31,*texty32,*texty33,*texty34,*texty35,*texty36,*texty37,*texty38,*texty39;
 int suc;
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+//	NSLog(@"%@", date);
+  
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+//	NSLog(@"begin editing");
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +38,7 @@ int suc;
 }
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 = @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];

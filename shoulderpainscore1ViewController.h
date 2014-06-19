@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-@interface shoulderpainscore1ViewController : UIViewController
+@interface shoulderpainscore1ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int a;
     NSString *firstrow;

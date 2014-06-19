@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface wristandhanddisabilityViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface wristandhanddisabilityViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSString *val1;
      NSString *val2;

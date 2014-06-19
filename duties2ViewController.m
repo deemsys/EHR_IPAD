@@ -29,7 +29,17 @@
 @synthesize other7;
 @synthesize recorddict;
 
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)validateNames:(NSString *)country1
 {
     NSString *countryFormat1 =@"(?:[A-Za-z]+[A-Za-z]*)";
@@ -40,7 +50,7 @@
 }
 -(BOOL)validateDate:(NSString *)dates
 {
-    NSString *DateFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+  NSString *DateFormat1 = @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *datesTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", DateFormat1];

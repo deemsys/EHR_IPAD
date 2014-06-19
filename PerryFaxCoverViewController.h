@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface PerryFaxCoverViewController : UIViewController
+@interface PerryFaxCoverViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *fax;
     IBOutlet UITextField *nubofpag;

@@ -9,8 +9,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface ThoracicExamViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface ThoracicExamViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     
     IBOutlet UITextField *patname;

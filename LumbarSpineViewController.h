@@ -11,8 +11,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface LumbarSpineViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface LumbarSpineViewController : UIViewController<TextFieldDatePickerDelegate>
 {
 
     IBOutlet UITextField *_1;

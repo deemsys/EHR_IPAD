@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "/usr/include/sqlite3.h"
-
-@interface perryViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface perryViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     IBOutlet UITextField * name;

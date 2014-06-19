@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 //#import "/usr/include/sqlite3.h"
-@interface staffautocheckViewController : UIViewController
+@interface staffautocheckViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     NSMutableArray * selectforms;
@@ -36,8 +37,9 @@
     IBOutlet UITextField * botherattroney;
     IBOutlet UITextField * protectionreceived;
     IBOutlet UITextField * billed;
+     IBOutlet UITextField * billeddate;
     IBOutlet UITextField * remdate;
-    IBOutlet UITextField*patinfo;
+    IBOutlet UITextField *patinfo;
         IBOutlet UITextField*screening;
         IBOutlet UITextField*aob;
         IBOutlet UITextField*history;

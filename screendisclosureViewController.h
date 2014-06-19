@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "/usr/include/sqlite3.h"
-
-@interface screendisclosureViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface screendisclosureViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * date;
     IBOutlet UITextField * name;

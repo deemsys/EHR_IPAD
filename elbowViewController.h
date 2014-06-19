@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface elbowViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface elbowViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int c,a;
     NSMutableDictionary *recorddict;

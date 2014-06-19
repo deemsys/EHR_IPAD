@@ -10,7 +10,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-@interface InsuranceAttorneyCoverViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface InsuranceAttorneyCoverViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
 IBOutlet UITextField *patname;
 IBOutlet UITextView *addrs;

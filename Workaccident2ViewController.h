@@ -10,8 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
-
-@interface Workaccident2ViewController : UIViewController{
+#import "TextFieldDatePicker.h"
+@interface Workaccident2ViewController : UIViewController<TextFieldDatePickerDelegate>{
     NSMutableDictionary*recorddict;
     IBOutlet UITextField *givespecificsyestext;
     IBOutlet UISwitch*switch1;

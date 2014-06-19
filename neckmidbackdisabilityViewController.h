@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-@interface neckmidbackdisabilityViewController : UIViewController
+@interface neckmidbackdisabilityViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSString *val1;
     NSString *val2;

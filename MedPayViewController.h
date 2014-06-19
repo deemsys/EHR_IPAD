@@ -11,9 +11,10 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
 
-@interface MedPayViewController : UIViewController
+@interface MedPayViewController : UIViewController<TextFieldDatePickerDelegate>
 {
 IBOutlet UITextField *patname;
 IBOutlet UITextView *addrs;

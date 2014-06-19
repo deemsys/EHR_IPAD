@@ -44,7 +44,17 @@ NSString *chec1,*chec2,*chec3,*chec4,*chec5,*chec6,*chec7,*chec8,*chec9,*chec10,
     }
     return self;
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

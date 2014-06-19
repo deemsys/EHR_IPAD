@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import <sqlite3.h>
-
-@interface authorizeandconsenttreatViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface authorizeandconsenttreatViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * sign;
     IBOutlet UITextField * date;

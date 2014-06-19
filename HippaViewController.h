@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 //#import "/usr/include/sqlite3.h"
 
+#import "TextFieldDatePicker.h"
 
 
 
-
-@interface HippaViewController : UIViewController
+@interface HippaViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     IBOutlet UITextField * name;

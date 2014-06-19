@@ -10,7 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
-@interface radiological1ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface radiological1ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int a;
     NSMutableDictionary *recorddict;

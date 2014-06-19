@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
+#import "DatePickerViewController.h"
 
-@interface oswestrydisability4ViewController : UIViewController<UITextViewDelegate>
+@interface oswestrydisability4ViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     int c;
     int aa,bb,result,cc;

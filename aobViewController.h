@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface aobViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface aobViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * RECORDDICT;
     IBOutlet UITextField * day;
@@ -22,6 +22,7 @@
     IBOutlet UITextField * date1;
     IBOutlet UITextField * date2;
     IBOutlet UITextField * date3;
+      IBOutlet UITextField * newy;
 }
 
 -(IBAction)submit:(id)sender;

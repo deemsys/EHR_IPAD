@@ -53,14 +53,24 @@
 }
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 =  @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
    // [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
     return [countryTest1 evaluateWithObject:country1];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 - (void)viewDidLoad
 {
     otherdis.hidden=YES;
@@ -532,7 +542,7 @@
         b=0;
     }
    
-    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0))
+    if(([selecteddisease count]!=0)&&([circle count]!=0)&&([surg.text length]!=0)&&([medhad.text length]!=0)&&([date.text length]!=0)&&([patsign.text length]!=0))
     {
         c=0;
     if([self validateNames:[surg text]]==1)
@@ -541,7 +551,8 @@
      {
          if([self validateNames:[medhad text]]==1)
          {
-           
+             if([self validateNames:[patsign text]]==1)
+             {
         
                    [recorddict setValue:surg.text forKey:@"majorillness"];
                    [recorddict setValue:date.text forKey:@"majorillnessdate"];
@@ -575,6 +586,16 @@
              
            
          }
+             else
+             {
+                 BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Patient Signature."];
+                 
+                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                 [alert show];
+             }
+         }
+         
          else{
              BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter valid Medicines."];
              

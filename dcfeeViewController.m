@@ -52,7 +52,7 @@
 }
 -(BOOL)validateNumbers:(NSString*)number
 {
-    NSString *mobileFormat1 =  @"[0-9]{1,10}?";
+    NSString *mobileFormat1 =  @"[0-9]{10}?";
     
 //   [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
@@ -61,7 +61,7 @@
 }
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 = @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
@@ -117,7 +117,7 @@
         {
             if ([self validateNames:temp2]==1)
             {
-                if([self validateNumbers:temp3 ]==1)
+                if([self validateNames:temp3 ]==1)
                 {
                     if([self validateNumbers:temp4]==1)
                     {
@@ -404,6 +404,17 @@
     if (c==1) {
         [self performSegueWithIdentifier:@"dcfee1" sender:self];
     }
+}
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
 }
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {

@@ -36,6 +36,17 @@ int a;
     return [zipTest1 evaluateWithObject:zipnumber];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)onlyalphabetvalidate:(NSString *)country1
 {
     NSString *countryFormat1 = @"(?:[A-Za-z]+[a-z]*)";

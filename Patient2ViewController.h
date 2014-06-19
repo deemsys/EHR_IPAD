@@ -12,9 +12,9 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 #import "Patient3ViewController.h"
+#import "TextFieldDatePicker.h"
 
-
-@interface Patient2ViewController : UIViewController
+@interface Patient2ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField*sym1;
      IBOutlet UITextField*sym2;
@@ -45,7 +45,7 @@
     NSString*type;
     IBOutlet UILabel*fromd;
     UIDatePicker*datePicker;
-    IBOutlet UIButton*setdate;
+    IBOutlet UITextField*setdate;
     IBOutlet UITextField *optwhen;
     int c;
     int a,b,d ;

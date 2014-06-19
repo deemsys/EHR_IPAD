@@ -10,8 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
-
-@interface hipViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hipViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     int a;
     NSMutableDictionary *recordict;

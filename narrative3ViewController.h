@@ -10,8 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
-
-@interface narrative3ViewController : UIViewController<UITextFieldDelegate>
+#import "TextFieldDatePicker.h"
+@interface narrative3ViewController : UIViewController<UITextFieldDelegate,TextFieldDatePickerDelegate>
 {
     int a;
     NSMutableDictionary*recorddict;

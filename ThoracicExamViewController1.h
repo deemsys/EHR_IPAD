@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface ThoracicExamViewController1 : UIViewController<UIPickerViewDelegate,UITextViewDelegate>{
+@interface ThoracicExamViewController1 : UIViewController<UIPickerViewDelegate,UITextViewDelegate,TextFieldDatePickerDelegate>{
 
     IBOutlet UITextField *first;
     

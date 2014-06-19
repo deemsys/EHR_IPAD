@@ -78,9 +78,29 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     return [userTest1 evaluateWithObject:user];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+-(BOOL)validateNames:(NSString *)country1
+{
+    NSString *countryFormat1 = @"(?:[A-Za-z0-9,/\'.;]*)";
+    
+    [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 = @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
@@ -103,15 +123,15 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
             {
                 if([addrs.text length]==0||([self validateString:texty3]==1))
                 {
-                    if([patname.text length]==0||([self validateString:texty4]==1))
+                    if([patname.text length]==0||([self validateNames:texty4]==1))
                     {
                         if([dofacc.text length]==0||([self validateDate:texty5]==1))
                         {
-                            if([dearname.text length]==0||([self validateString:texty6]==1))
+                            if([dearname.text length]==0||([self validateNames:texty6]==1))
                             {
-                                if([sincname.text length]==0||([self validateString:texty7]==1))
+                                if([sincname.text length]==0||([self validateNames:texty7]==1))
                                 {
-                                    if([physicianname.text length]==0||([self validateString:texty8]==1))
+                                    if([physicianname.text length]==0||([self validateNames:texty8]==1))
                                     {
                                         suc=1;
                                         recorddict=[[NSMutableDictionary alloc]init];

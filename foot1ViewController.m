@@ -51,7 +51,17 @@
 @synthesize recorddict;
 @synthesize patientstatus;
 
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)validateNames:(NSString *)country1
 {
     NSString *countryFormat1 = @"(?:[A-Za-z0-9]+[A-Za-z0-9]*)";

@@ -37,7 +37,25 @@ int a;
     return [countryTest1 evaluateWithObject:country1];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+-(BOOL)number:(NSString *)zipnumber{
+    NSString *zipFormat1 =  @"[0-9]{1,2}?";
+    
+    //  [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
+    NSPredicate *zipTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", zipFormat1];
+    return [zipTest1 evaluateWithObject:zipnumber];
+    
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(IBAction)submit:(id)sender
   {
     recorddict=[[NSMutableDictionary alloc]init];
@@ -51,16 +69,22 @@ int a;
        ([guardsign.text length]!=0)&&
        ([date1.text length]!=0)&&
        ([date2.text length]!=0)&&
-       ([date3.text length]!=0))
+       ([date3.text length]!=0)&&
+       ([newy.text length]!=0))
         
     {
         a=0;
-        if ([self dateexpress:[day text]]==1)
+        if ([self number:[day text]]==1)
         {
-            if([self dateexpress:[year text]]==1)
+            if([self number:[year text]]==1)
+                
             {
-                if([self dateexpress:[nextday text]]==1)
+                if([self number:[newy text]]==1)
                 {
+                    
+                if([self number:[nextday text]]==1)
+                {
+                  
                     if([self onlyalphabetsexpress:[patientname text]]==1)
                     {
                         if ([self onlyalphabetsexpress:[patientsign text]]==1)
@@ -168,7 +192,7 @@ int a;
 
                 else
                 {
-                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
+                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Day."];
                     
                     //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                     [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -176,9 +200,18 @@ int a;
                 }
             }
 
+                else
+                {
+                    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Claimant."];
+                    
+                    //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                    [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                    [alert show];
+                }
+            }
             else
             {
-                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
+                BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Month."];
                 
                 //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
                 [alert setDestructiveButtonWithTitle:@"x" block:nil];
@@ -188,7 +221,7 @@ int a;
 
         else
         {
-            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Date."];
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Day."];
             
             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
             [alert setDestructiveButtonWithTitle:@"x" block:nil];

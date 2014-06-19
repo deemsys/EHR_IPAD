@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "/usr/include/sqlite3.h"
-@interface hardshipViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hardshipViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * date;
     IBOutlet UITextField * name;

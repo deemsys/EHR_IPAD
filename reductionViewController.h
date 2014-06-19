@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlockBackground.h"
+#import "BlockAlertView.h"
+#import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface reductionViewController : UIViewController<UITextViewDelegate>
+
+
+@interface reductionViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     int suc;
     IBOutlet UITextField *attorney;

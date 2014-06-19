@@ -31,6 +31,17 @@
     return [countryTest1 evaluateWithObject:country1];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 
 - (IBAction)checkboxselected:(UIButton *)sender {
 

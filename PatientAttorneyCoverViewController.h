@@ -9,8 +9,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface PatientAttorneyCoverViewController : UIViewController<UITextViewDelegate>
+@interface PatientAttorneyCoverViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *patname;
   

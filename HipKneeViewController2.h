@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface HipKneeViewController2 : UIViewController
+@interface HipKneeViewController2 : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UIButton *radi6;
     IBOutlet UIButton *radi5;

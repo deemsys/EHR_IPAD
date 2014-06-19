@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface hamilViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface hamilViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *gradualH;
     IBOutlet UITextField *gradualD;

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "/usr/include/sqlite3.h"
-
-@interface insuranceverifyViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface insuranceverifyViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     IBOutlet UITextField * patientname;

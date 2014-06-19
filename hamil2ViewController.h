@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface hamil2ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hamil2ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *painlevel;
     IBOutlet UITextField *right;

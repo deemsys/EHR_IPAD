@@ -104,6 +104,17 @@
     return [mobileTest1 evaluateWithObject:number];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)validateNumberlimit:(NSString *)country1
 {
     NSString *countryFormat1 = @"[0-5]{1}";
@@ -115,7 +126,7 @@
 }
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 =  @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];

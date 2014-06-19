@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface WristExamViewController : UIViewController<UITextViewDelegate>
+@interface WristExamViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
 
     IBOutlet UITextField *patname;

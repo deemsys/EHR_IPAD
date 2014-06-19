@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlockBackground.h"
+#import "BlockAlertView.h"
+#import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface schoolslipViewController : UIViewController
+
+@interface schoolslipViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *date;
     IBOutlet UITextField *name;

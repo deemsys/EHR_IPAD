@@ -10,9 +10,10 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
 
-@interface narrative1ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+@interface narrative1ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,TextFieldDatePickerDelegate>
 
 {
     int a;

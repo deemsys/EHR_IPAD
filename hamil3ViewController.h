@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface hamil3ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hamil3ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     
     IBOutlet UITextField *painlevel;

@@ -10,8 +10,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
-@interface PerryCoverLetterViewController : UIViewController<UITextViewDelegate>
+@interface PerryCoverLetterViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {IBOutlet UITextField *patname;
 
     IBOutlet UITextView *addrs;

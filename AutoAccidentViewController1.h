@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-@interface AutoAccidentViewController1 : UIViewController
+@interface AutoAccidentViewController1 : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * claimno;
     IBOutlet UITextField * adjustername;

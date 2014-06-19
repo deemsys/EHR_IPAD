@@ -10,8 +10,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface KneeExamViewController : UIViewController<UIPickerViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface KneeExamViewController : UIViewController<UIPickerViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UILabel *gaitlabel;
     IBOutlet UITextField *datefield;

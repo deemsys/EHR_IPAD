@@ -11,8 +11,9 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface FootAnkleViewController3 : UIViewController
+#import "DatePickerViewController.h"
+#import "TextFieldDatePicker.h"
+@interface FootAnkleViewController3 : UIViewController<TextFieldDatePickerDelegate>
 {
      IBOutlet UITextField *ssn;
     IBOutlet UITextField *birthdate;

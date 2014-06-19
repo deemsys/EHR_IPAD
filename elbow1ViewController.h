@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface elbow1ViewController : UIViewController<UITextViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface elbow1ViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     NSMutableDictionary *recorddict;
     NSMutableArray *Functional_Deficit;

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ROMRAViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface ROMRAViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * name;
     IBOutlet UITextField * doc;

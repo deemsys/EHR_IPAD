@@ -10,8 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockUI.h"
 
-
-@interface physicalexamViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface physicalexamViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *physiciansign;
 

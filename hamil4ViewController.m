@@ -24,6 +24,17 @@
         [sender setImage:[UIImage imageNamed:@"checkBox.png"] forState:UIControlStateNormal];
     }
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 - (IBAction)next:(id)sender
 {
    // recorddict=[[NSMutableDictionary alloc]init];

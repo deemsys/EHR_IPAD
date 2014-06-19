@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-@interface lumbopelvicViewController : UIViewController
+@interface lumbopelvicViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     
     int a,c;

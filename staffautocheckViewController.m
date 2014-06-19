@@ -37,6 +37,17 @@ int a;
     return [countryTest1 evaluateWithObject:country1];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)number:(NSString *)zipnumber{
     NSString *zipFormat1 =  @"[0-9]{1,3}?";
     
@@ -205,9 +216,11 @@ int a;
                                 if([self onlyalphabetsexpress:[protectionreceived text]]==1)
                                 {
 
-                                    if([self dateexpress:[billed text]]==1)
+                                    if([self number:[billed text]]==1)
                                     {
 
+                                        if([self dateexpress:[billeddate text]]==1)
+                                        {
                                         if([self dateexpress:[remdate text]]==1)
                                         {
 
@@ -231,9 +244,18 @@ int a;
                 [alert show];
             }
                                     }
+                                        else
+                                        {
+                                            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Billed Date."];
+                                            
+                                            //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
+                                            [alert setDestructiveButtonWithTitle:@"x" block:nil];
+                                            [alert show];
+                                        }
+                                    }
         else
         {
-            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Billed Date."];
+            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oh Snap!" message:@"Enter Valid Amount."];
             
             //  [alert setCancelButtonWithTitle:@"Cancel" block:nil];
             [alert setDestructiveButtonWithTitle:@"x" block:nil];

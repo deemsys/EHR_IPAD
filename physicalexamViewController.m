@@ -207,6 +207,15 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
         texty18=@"Poor";
     }
 }
+-(BOOL)validateNames:(NSString *)country1
+{
+    NSString *countryFormat1 = @"(?:[A-Za-z0-9,/\'.;]*)";
+    
+    [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
+    NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
+    return [countryTest1 evaluateWithObject:country1];
+    
+}
 -(BOOL)validateString:(NSString *)user
 
 {
@@ -218,13 +227,32 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     return [userTest1 evaluateWithObject:user];
     
 }
+- (void)textFieldDatePicker:(TextFieldDatePicker *)textFieldDatePicker didSelectDate:(NSDate *)date
+{
+    //	NSLog(@"%@", date);
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    //	NSLog(@"begin editing");
+}
 -(BOOL)validateDate:(NSString *)country1
 {
-    NSString *countryFormat1 = @"[0-9]{1,2}+[-]+[0-9]{1,2}+[-]+[0-9]{4}";
+    NSString *countryFormat1 =  @"[0-9]{2}+[/]+[0-9]{2}+[/]+[0-9]{4}";
     
     [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
     NSPredicate *countryTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", countryFormat1];
     return [countryTest1 evaluateWithObject:country1];
+    
+}
+-(BOOL)validateage:(NSString*)mobilenumber{
+    NSString *mobileFormat1 =  @"[0-9]{1,3}?";
+    
+    [(UITextField*)[self.view viewWithTag:101] resignFirstResponder];
+    NSPredicate *mobileTest1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileFormat1];
+    return [mobileTest1 evaluateWithObject:mobilenumber];
     
 }
 /*recorddict=[[NSMutableDictionary alloc]init];
@@ -265,13 +293,13 @@ NSString *texty1,*texty2,*texty3,*texty4,*texty5,*texty6,*texty7,*texty8,*texty9
     if([physiciansign.text length]!=0&&[patname.text length]!=0&&[patid.text length]!=0&&[vitalsage.text length]!=0&&[sex.text length]!=0&&[height.text length]!=0&&[weight.text length]!=0&&[temp.text length]!=0&&[bp.text length]!=0&&[pulse.text length]!=0&&[date.text length]!=0&&[abnormalfind.text length]!=0){
         if([self validateString:texty1]==1)
         {
-            if([self validateString:texty2]==1)
+            if([self validateNames:texty2]==1)
             {
                 if([self validateString:texty3]==1)
                 {
                     if([self validateDate:texty4]==1)
                     {
-                        if([self validateString:texty5]==1)
+                        if([self validateage:texty5]==1)
                         {
                             if([self validateString:texty6]==1)
                             {

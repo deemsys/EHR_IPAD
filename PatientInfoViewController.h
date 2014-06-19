@@ -10,8 +10,8 @@
 #import "BlockAlertView.h"
 #import "BlockBackground.h"
 #import "BlockUI.h"
-
-@interface PatientInfoViewController : UIViewController<UIPickerViewDelegate>
+#import "TextFieldDatePicker.h"
+@interface PatientInfoViewController : UIViewController<UIPickerViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField * name;
     IBOutlet UITextField *todaydate ;
@@ -45,7 +45,7 @@
     int c;
     IBOutlet UILabel *resLabel;
    IBOutlet UILabel*resLabel2;
-    IBOutlet UILabel*fromd;
+    IBOutlet UITextField *fromd;
     
       IBOutlet UIButton*setdate;
         UIDatePicker *datePicker;

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-@interface lumbopelvic1ViewController : UIViewController<UITextViewDelegate>
+@interface lumbopelvic1ViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
 int c;
 NSMutableDictionary *recorddict;

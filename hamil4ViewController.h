@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface hamil4ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hamil4ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UIButton *b1;
     IBOutlet UIButton *b2;

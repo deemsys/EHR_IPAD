@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldDatePicker.h"
 
-
-@interface AutoAccidentViewController2 : UIViewController
+@interface AutoAccidentViewController2 : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UILabel * shoulderseatbeltlabel;
     IBOutlet UILabel * airbagdeployedlabel;

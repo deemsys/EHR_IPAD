@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface hami1ViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface hami1ViewController : UIViewController<TextFieldDatePickerDelegate>
 
 {
     

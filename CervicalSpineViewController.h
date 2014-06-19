@@ -10,8 +10,8 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
-
-@interface CervicalSpineViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface CervicalSpineViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *_1;
     IBOutlet UITextField *_2;

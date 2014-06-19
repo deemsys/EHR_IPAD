@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface treatminorViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface treatminorViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary * recorddict;
     IBOutlet UITextField * parentguardname;

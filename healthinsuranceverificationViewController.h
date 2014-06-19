@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface healthinsuranceverificationViewController : UIViewController
+#import "TextFieldDatePicker.h"
+@interface healthinsuranceverificationViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     IBOutlet UILabel * healthinsuranceswitchlabel;
     IBOutlet UITextField * patientname;

@@ -10,9 +10,10 @@
 #import "BlockBackground.h"
 #import "BlockAlertView.h"
 #import "BlockUI.h"
+#import "TextFieldDatePicker.h"
 
 
-@interface ResponseAttorneyViewController : UIViewController<UITextViewDelegate>
+@interface ResponseAttorneyViewController : UIViewController<UITextViewDelegate,TextFieldDatePickerDelegate>
 {
     IBOutlet UITextField *patname;
   

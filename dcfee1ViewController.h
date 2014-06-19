@@ -11,8 +11,10 @@
 #import "BlockBackground.h"
 #import "BlockUI.h"
 #import "dcfee2ViewController.h"
+#import "TextFieldDatePicker.h"
 
-@interface dcfee1ViewController : UIViewController
+
+@interface dcfee1ViewController : UIViewController<TextFieldDatePickerDelegate>
 {
     NSMutableDictionary *recorddict;
         int c;
